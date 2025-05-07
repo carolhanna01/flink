@@ -18,7 +18,6 @@
 package org.apache.flink.connector.firehose.sink;
 
 import org.apache.flink.annotation.PublicEvolving;
-import org.apache.flink.annotation.VisibleForTesting;
 import org.apache.flink.api.common.serialization.SerializationSchema;
 import org.apache.flink.connector.base.sink.AsyncSinkBaseBuilder;
 
@@ -136,11 +135,10 @@ public class KinesisFirehoseSinkBuilder<InputT>
         return this;
     }
 
-    @VisibleForTesting
-    Properties getClientPropertiesWithDefaultHttpProtocol() {
+    private Properties getClientPropertiesWithDefaultHttpProtocol() {
         Properties clientProperties =
                 Optional.ofNullable(firehoseClientProperties).orElse(new Properties());
-        clientProperties.putIfAbsent(HTTP_PROTOCOL_VERSION, DEFAULT_HTTP_PROTOCOL.toString());
+        clientProperties.putIfAbsent(HTTP_PROTOCOL_VERSION, DEFAULT_HTTP_PROTOCOL);
         return clientProperties;
     }
 
