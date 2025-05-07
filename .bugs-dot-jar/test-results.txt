@@ -1,0 +1,98 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-hadoop-compatibility_2.12:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-hadoop-compatibility_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-hadoop-compatibility/pom.xml, line 32, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-hcatalog_2.12:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-hcatalog_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-hcatalog/pom.xml, line 32, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-connector-hive_2.12:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-connector-hive_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-hive/pom.xml, line 33, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-connector-jdbc:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.testcontainers:postgresql:jar -> duplicate declaration of version (?) @ line 187, column 15
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-connector-cassandra_2.12:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-connector-cassandra_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-cassandra/pom.xml, line 33, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-sql-connector-hive-1.2.2_2.12:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-sql-connector-hive-1.2.2_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-sql-connector-hive-1.2.2/pom.xml, line 33, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-sql-connector-hive-2.2.0_2.12:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-sql-connector-hive-2.2.0_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-sql-connector-hive-2.2.0/pom.xml, line 33, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-sql-connector-hive-2.3.6_2.12:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-sql-connector-hive-2.3.6_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-sql-connector-hive-2.3.6/pom.xml, line 33, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-sql-connector-hive-3.1.2_2.12:jar:1.15-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-sql-connector-hive-3.1.2_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-sql-connector-hive-3.1.2/pom.xml, line 33, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------< [0;36morg.apache.flink:flink-connector-aws-kinesis-firehose[0;1m >--------[m
+[[1;34mINFO[m] [1mBuilding Flink : Connectors : AWS Kinesis Data Firehose 1.15-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-checkstyle-plugin:2.17:check[m [1m(validate)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mspotless-maven-plugin:2.4.2:check[m [1m(spotless-check)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven-version)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(ban-unsafe-snakeyaml)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(ban-unsafe-jackson)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(forbid-log4j-1)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(forbid-direct-akka-rpc-dependencies)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-versions)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mdirectory-maven-plugin:0.1:directory-of[m [1m(directories)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mflink-connector-aws-kinesis-firehose[0;1m ---[m
+[[1;34mINFO[m] Compiling 1 source file to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-aws-kinesis-firehose/target/test-classes
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] COMPILATION ERROR : 
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;31mERROR[m] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-aws-kinesis-firehose/src/test/java/org/apache/flink/connector/firehose/sink/KinesisFirehoseSinkBuilderTest.java:[77,54] getClientPropertiesWithDefaultHttpProtocol() has private access in org.apache.flink.connector.firehose.sink.KinesisFirehoseSinkBuilder
+[[1;34mINFO[m] 1 error
+[[1;34mINFO[m] -------------------------------------------------------------
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  6.419 s
+[[1;34mINFO[m] Finished at: 2025-05-07T23:05:32+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m on project [36mflink-connector-aws-kinesis-firehose[m: [1;31mCompilation failure[m
+[[1;31mERROR[m] [1;31m/home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-aws-kinesis-firehose/src/test/java/org/apache/flink/connector/firehose/sink/KinesisFirehoseSinkBuilderTest.java:[77,54] getClientPropertiesWithDefaultHttpProtocol() has private access in org.apache.flink.connector.firehose.sink.KinesisFirehoseSinkBuilder[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
