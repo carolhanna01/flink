@@ -1,0 +1,117 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Ahmed Hamdy
+        '@username': chalixar
+      attachments: null
+      comments:
+        comment:
+          '#text': <p><a href="https://issues.apache.org/jira/secure/ViewProfile.jspa?name=chalixar"
+            class="user-hover" rel="chalixar">chalixar</a> please update description
+            and issue links</p>
+          '@author': dannycranmer
+          '@created': Thu, 3 Feb 2022 16:05:00 +0000
+          '@id': '17486561'
+      component: Connectors / Kinesis
+      created: Thu, 3 Feb 2022 12:23:26 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '0.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: 'false'
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 3 years, 16 weeks ago
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|z0z828:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+      description: "<h2><a name=\"Description\"></a>Description</h2>\n<p>As captured\
+        \ by <tt>KinesisFirehoseITCase</tt> merged in <a href=\"http://https://github.com/apache/flink/pull/18314\"\
+        \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\">PR#18314</a>\
+        \ , Firehose client created using default values in <tt>KinesisFirehoseSinkBuilder</tt>\
+        \ is unstable. </p>\n\n<h2><a name=\"Proposedchanges\"></a>Proposed changes</h2>\n\
+        <ul class=\"alternate\" type=\"square\">\n\t<li>Default protocol overriden\
+        \ in <tt>KinesisFirehoseSinkBuilder</tt> is instance of <tt>software.amazon.awssdk.http.Protocol</tt>\
+        \ while required type is <tt>String</tt>.<br/>\nProtocol inserted should be\
+        \ of type <tt>String</tt>.</li>\n</ul>\n\n\n<ul class=\"alternate\" type=\"\
+        square\">\n\t<li>Unit tests should be added to capture the issue if reoccured.</li>\n\
+        </ul>"
+      due: null
+      environment: null
+      key:
+        '#text': FLINK-25949
+        '@id': '13426406'
+      labels:
+        label: pull-request-available
+      link: https://issues.apache.org/jira/browse/FLINK-25949
+      priority:
+        '#text': Major
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/major.svg
+        '@id': '3'
+      project:
+        '#text': Flink
+        '@id': '12315522'
+        '@key': FLINK
+      reporter:
+        '#text': Ahmed Hamdy
+        '@username': chalixar
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Thu, 3 Feb 2022 16:05:56 +0000
+      status:
+        '#text': Resolved
+        '@description': A resolution has been taken, and it is awaiting verification
+          by reporter. From here issues are either reopened, or are closed.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/resolved.png
+        '@id': '5'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: '[FLIP-171] Kinesis Firehose sink builder falls back to wrong http
+        protocol.'
+      title: '[FLINK-25949] [FLIP-171] Kinesis Firehose sink builder falls back to
+        wrong http protocol.'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Thu, 3 Feb 2022 16:24:40 +0000
+      votes: '0'
+      watches: '2'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA
