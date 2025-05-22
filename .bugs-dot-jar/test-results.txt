@@ -1,0 +1,1417 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.flink:flink-runtime_2.11:jar:1.11-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-runtime_${scala.binary.version}:1.11-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/pom.xml, line 32, column 14
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ----------------< org.apache.flink:flink-runtime_2.11 >-----------------
+[INFO] Building flink-runtime 1.11-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-runtime_2.11 ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/target
+[INFO] 
+[INFO] --- git-commit-id-plugin:4.0.0:revision (get-the-git-infos) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:highest-basedir (directories) @ flink-runtime_2.11 ---
+[INFO] Highest basedir set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ flink-runtime_2.11 ---
+[INFO] Source directory: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/scala added.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-runtime_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 8 resources
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ flink-runtime_2.11 ---
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java:-1: info: compiling
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/scala:-1: info: compiling
+[INFO] Compiling 1779 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/target/classes at 1747954402435
+[WARNING] warning: there was one deprecation warning; re-run with -deprecation for details
+[WARNING] one warning found
+[INFO] prepare-compile in 0 s
+[INFO] compile in 14 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-runtime_2.11 ---
+[INFO] Compiling 1770 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/target/classes
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/PageSizeUtil.java:[26,16] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/util/SignalHandler.java:[23,16] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/PageSizeUtil.java:[98,25] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/PageSizeUtil.java:[103,32] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/io/network/partition/PageSizeUtil.java:[105,41] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/util/SignalHandler.java:[35,57] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/util/SignalHandler.java:[38,39] sun.misc.SignalHandler is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/util/SignalHandler.java:[42,57] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/util/SignalHandler.java:[42,39] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/util/SignalHandler.java:[51,36] sun.misc.Signal is internal proprietary API and may be removed in a future release
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/rest/handler/legacy/files/StaticFileServerHandler.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/rest/handler/legacy/files/StaticFileServerHandler.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/operators/BatchTask.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/main/java/org/apache/flink/runtime/operators/BatchTask.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-test-source (add-test-source) @ flink-runtime_2.11 ---
+[INFO] Test Source directory: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/scala added.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-runtime_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 25 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile) @ flink-runtime_2.11 ---
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java:-1: info: compiling
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/scala:-1: info: compiling
+[INFO] Compiling 1049 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/target/test-classes at 1747954441076
+[INFO] prepare-compile in 0 s
+[INFO] compile in 15 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-runtime_2.11 ---
+[INFO] Compiling 1044 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/target/test-classes
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/taskexecutor/TaskManagerRunnerConfigurationTest.java:[42,20] sun.net.util.IPAddressUtil is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/taskexecutor/TaskManagerRunnerConfigurationTest.java:[42,20] sun.net.util.IPAddressUtil is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/taskexecutor/TaskManagerRunnerConfigurationTest.java:[42,20] sun.net.util.IPAddressUtil is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/taskexecutor/TaskManagerRunnerConfigurationTest.java:[244,40] sun.net.util.IPAddressUtil is internal proprietary API and may be removed in a future release
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/taskexecutor/TaskManagerRunnerConfigurationTest.java:[244,85] sun.net.util.IPAddressUtil is internal proprietary API and may be removed in a future release
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/blob/BlobServerPutTest.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/blob/BlobServerPutTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/rest/handler/job/metrics/AggregatingMetricsHandlerTestBase.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/src/test/java/org/apache/flink/runtime/rest/handler/job/metrics/AggregatingMetricsHandlerTestBase.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ flink-runtime_2.11 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.DualKeyLinkedMapTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.045 s - in org.apache.flink.runtime.jobmaster.slotpool.DualKeyLinkedMapTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SingleLogicalSlotTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotPoolPendingRequestFailureTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotPoolSlotSpreadOutTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.apache.flink.runtime.jobmaster.slotpool.SingleLogicalSlotTest
+[INFO] Running org.apache.flink.runtime.jobmaster.JobManagerRunnerImplTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotPoolSlotSharingTest
+[INFO] Running org.apache.flink.runtime.minicluster.MiniClusterConfigurationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s - in org.apache.flink.runtime.minicluster.MiniClusterConfigurationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.433 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotPoolSlotSpreadOutTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.513 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotPoolPendingRequestFailureTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.715 s - in org.apache.flink.runtime.jobmaster.JobManagerRunnerImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.317 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotPoolSlotSharingTest
+[INFO] Running org.apache.flink.runtime.jobmaster.JobMasterPartitionReleaseTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.AllocatedSlotsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s - in org.apache.flink.runtime.jobmaster.slotpool.AllocatedSlotsTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.AvailableSlotsTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotPoolInteractionsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in org.apache.flink.runtime.jobmaster.slotpool.AvailableSlotsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.562 s - in org.apache.flink.runtime.jobmaster.JobMasterPartitionReleaseTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotPoolCoLocationTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotPoolBatchSlotRequestTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotSharingManagerTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotPoolRequestCompletionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.524 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotPoolRequestCompletionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.19 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotPoolCoLocationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.807 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotPoolInteractionsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.475 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotPoolBatchSlotRequestTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.557 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotSharingManagerTest
+[INFO] Running org.apache.flink.runtime.scheduler.DeploymentHandleTest
+[INFO] Running org.apache.flink.runtime.jobmaster.slotpool.SlotPoolImplTest
+[INFO] Running org.apache.flink.runtime.jobmaster.JobResultTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.479 s - in org.apache.flink.runtime.jobmaster.JobResultTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.929 s - in org.apache.flink.runtime.jobmaster.slotpool.SlotPoolImplTest
+[INFO] Running org.apache.flink.runtime.scheduler.DefaultSchedulerBatchSchedulingTest
+[INFO] Running org.apache.flink.runtime.scheduler.DefaultExecutionSlotAllocatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.419 s - in org.apache.flink.runtime.scheduler.DeploymentHandleTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.39 s - in org.apache.flink.runtime.scheduler.DefaultExecutionSlotAllocatorTest
+[INFO] Running org.apache.flink.runtime.scheduler.DefaultExecutionSlotAllocatorPreferredLocationsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 s - in org.apache.flink.runtime.scheduler.DefaultExecutionSlotAllocatorPreferredLocationsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.896 s - in org.apache.flink.runtime.scheduler.DefaultSchedulerBatchSchedulingTest
+[INFO] Running org.apache.flink.runtime.jobmaster.JobMasterTest
+[INFO] Running org.apache.flink.runtime.scheduler.LegacySchedulerBatchSchedulingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.094 s - in org.apache.flink.runtime.scheduler.LegacySchedulerBatchSchedulingTest
+[INFO] Running org.apache.flink.runtime.scheduler.DefaultSchedulerTest
+[INFO] Running org.apache.flink.runtime.scheduler.adapter.DefaultExecutionVertexTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.apache.flink.runtime.scheduler.adapter.DefaultExecutionVertexTest
+[INFO] Running org.apache.flink.runtime.scheduler.adapter.DefaultSchedulingPipelinedRegionTest
+[INFO] Running org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopologyTest
+[INFO] Running org.apache.flink.runtime.scheduler.adapter.DefaultResultPartitionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.flink.runtime.scheduler.adapter.DefaultResultPartitionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.597 s - in org.apache.flink.runtime.scheduler.adapter.DefaultExecutionTopologyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.709 s - in org.apache.flink.runtime.scheduler.adapter.DefaultSchedulingPipelinedRegionTest
+[INFO] Running org.apache.flink.runtime.scheduler.ExecutionGraphToInputsLocationsRetrieverAdapterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.093 s - in org.apache.flink.runtime.scheduler.ExecutionGraphToInputsLocationsRetrieverAdapterTest
+[INFO] Running org.apache.flink.runtime.scheduler.ExecutionVertexVersionerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in org.apache.flink.runtime.scheduler.ExecutionVertexVersionerTest
+[INFO] Running org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.165 s - in org.apache.flink.runtime.scheduler.strategy.PipelinedRegionSchedulingStrategyTest
+[INFO] Running org.apache.flink.runtime.source.coordinator.SourceCoordinatorContextTest
+[INFO] Running org.apache.flink.runtime.scheduler.strategy.InputDependencyConstraintCheckerTest
+[INFO] Running org.apache.flink.runtime.scheduler.strategy.LazyFromSourcesSchedulingStrategyTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 s - in org.apache.flink.runtime.scheduler.strategy.InputDependencyConstraintCheckerTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.149 s - in org.apache.flink.runtime.scheduler.strategy.LazyFromSourcesSchedulingStrategyTest
+[INFO] Running org.apache.flink.runtime.scheduler.strategy.EagerSchedulingStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.flink.runtime.scheduler.strategy.EagerSchedulingStrategyTest
+[INFO] Running org.apache.flink.runtime.source.coordinator.SourceCoordinatorTest
+[INFO] Running org.apache.flink.runtime.source.coordinator.SplitAssignmentTrackerTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.656 s - in org.apache.flink.runtime.jobmaster.JobMasterTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.364 s - in org.apache.flink.runtime.source.coordinator.SourceCoordinatorContextTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.212 s - in org.apache.flink.runtime.source.coordinator.SourceCoordinatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.43 s - in org.apache.flink.runtime.source.coordinator.SplitAssignmentTrackerTest
+[INFO] Tests run: 25, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.841 s - in org.apache.flink.runtime.scheduler.DefaultSchedulerTest
+[INFO] Running org.apache.flink.runtime.registration.RetryingRegistrationTest
+[INFO] Running org.apache.flink.runtime.registration.RetryingRegistrationConfigurationTest
+[INFO] Running org.apache.flink.runtime.registration.RegisteredRpcConnectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s - in org.apache.flink.runtime.registration.RetryingRegistrationConfigurationTest
+[INFO] Running org.apache.flink.runtime.util.ScalaUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.apache.flink.runtime.util.ScalaUtilsTest
+[INFO] Running org.apache.flink.runtime.util.EvictingBoundedListTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.flink.runtime.util.EvictingBoundedListTest
+[INFO] Running org.apache.flink.runtime.util.AtomicDisposableReferenceCounterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 s - in org.apache.flink.runtime.util.AtomicDisposableReferenceCounterTest
+[INFO] Running org.apache.flink.runtime.util.bash.FlinkConfigLoaderTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.12 s - in org.apache.flink.runtime.util.bash.FlinkConfigLoaderTest
+[INFO] Running org.apache.flink.runtime.util.ZooKeeperUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 s - in org.apache.flink.runtime.util.ZooKeeperUtilTest
+[INFO] Running org.apache.flink.runtime.util.ClassLoaderUtilsTest
+[INFO] Running org.apache.flink.runtime.util.HardwareTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.331 s - in org.apache.flink.runtime.util.ClassLoaderUtilsTest
+[INFO] Running org.apache.flink.runtime.util.event.TaskEventHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.apache.flink.runtime.util.event.TaskEventHandlerTest
+[INFO] Running org.apache.flink.runtime.util.EnvironmentInformationTest
+[INFO] Running org.apache.flink.runtime.util.RunnablesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.161 s - in org.apache.flink.runtime.util.RunnablesTest
+[INFO] Running org.apache.flink.runtime.util.SerializedThrowableTest
+[INFO] Running org.apache.flink.runtime.util.BlockingShutdownTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.095 s - in org.apache.flink.runtime.util.HardwareTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.188 s - in org.apache.flink.runtime.registration.RegisteredRpcConnectionTest
+[INFO] Running org.apache.flink.runtime.util.NonReusingKeyGroupedIteratorTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.525 s - in org.apache.flink.runtime.registration.RetryingRegistrationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.973 s - in org.apache.flink.runtime.util.EnvironmentInformationTest
+[INFO] Running org.apache.flink.runtime.util.ReusingKeyGroupedIteratorTest
+[INFO] Running org.apache.flink.runtime.util.JvmExitOnFatalErrorTest
+[INFO] Running org.apache.flink.runtime.util.KeyedBudgetManagerTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.101 s - in org.apache.flink.runtime.util.KeyedBudgetManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.763 s - in org.apache.flink.runtime.util.NonReusingKeyGroupedIteratorTest
+[INFO] Running org.apache.flink.runtime.metrics.utils.SystemResourcesCounterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.869 s - in org.apache.flink.runtime.util.ReusingKeyGroupedIteratorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.61 s - in org.apache.flink.runtime.util.SerializedThrowableTest
+[INFO] Running org.apache.flink.runtime.metrics.dump.QueryScopeInfoTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in org.apache.flink.runtime.metrics.dump.QueryScopeInfoTest
+[INFO] Running org.apache.flink.runtime.util.AddressResolutionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 s - in org.apache.flink.runtime.util.AddressResolutionTest
+[INFO] Running org.apache.flink.runtime.metrics.dump.MetricDumpTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.flink.runtime.metrics.dump.MetricDumpTest
+[INFO] Running org.apache.flink.runtime.metrics.dump.MetricDumpSerializerTest
+[INFO] Running org.apache.flink.runtime.metrics.util.MetricUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.328 s - in org.apache.flink.runtime.metrics.dump.MetricDumpSerializerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.382 s - in org.apache.flink.runtime.util.BlockingShutdownTest
+[INFO] Running org.apache.flink.runtime.metrics.MetricRegistryImplTest
+[INFO] Running org.apache.flink.runtime.metrics.dump.MetricQueryServiceTest
+[INFO] Running org.apache.flink.runtime.metrics.ReporterSetupTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.896 s - in org.apache.flink.runtime.util.JvmExitOnFatalErrorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.461 s - in org.apache.flink.runtime.metrics.dump.MetricQueryServiceTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.458 s - in org.apache.flink.runtime.metrics.ReporterSetupTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.727 s - in org.apache.flink.runtime.metrics.util.MetricUtilsTest
+[INFO] Running org.apache.flink.runtime.metrics.DescriptiveStatisticsHistogramTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in org.apache.flink.runtime.metrics.DescriptiveStatisticsHistogramTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.TaskIOMetricGroupTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.MetricGroupTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.421 s - in org.apache.flink.runtime.metrics.groups.MetricGroupTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.06 s - in org.apache.flink.runtime.metrics.MetricRegistryImplTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.TaskManagerGroupTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.JobManagerJobGroupTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 s - in org.apache.flink.runtime.metrics.groups.JobManagerJobGroupTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.571 s - in org.apache.flink.runtime.metrics.groups.TaskManagerGroupTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.727 s - in org.apache.flink.runtime.metrics.groups.TaskIOMetricGroupTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.TaskMetricGroupTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.569 s - in org.apache.flink.runtime.metrics.groups.TaskMetricGroupTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.OperatorGroupTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.524 s - in org.apache.flink.runtime.metrics.groups.OperatorGroupTest
+[INFO] Running org.apache.flink.runtime.memory.MemoryManagerTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.AbstractMetricGroupTest
+[INFO] Running org.apache.flink.runtime.memory.OpaqueMemoryResourceTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.flink.runtime.memory.OpaqueMemoryResourceTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.723 s - in org.apache.flink.runtime.metrics.groups.AbstractMetricGroupTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.TaskManagerJobGroupTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.JobManagerGroupTest
+[INFO] Running org.apache.flink.runtime.memory.MemoryManagerSharedResourcesTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.261 s - in org.apache.flink.runtime.metrics.groups.TaskManagerJobGroupTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.577 s - in org.apache.flink.runtime.metrics.groups.JobManagerGroupTest
+[INFO] Running org.apache.flink.runtime.metrics.groups.MetricGroupRegistrationTest
+[INFO] Running org.apache.flink.runtime.memory.MemorySegmentSimpleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.611 s - in org.apache.flink.runtime.metrics.groups.MetricGroupRegistrationTest
+[INFO] Running org.apache.flink.runtime.memory.SharedResourcesTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.apache.flink.runtime.memory.SharedResourcesTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.745 s - in org.apache.flink.runtime.memory.MemoryManagerTest
+[INFO] Running org.apache.flink.runtime.memory.MemoryManagerConcurrentModReleaseTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.519 s - in org.apache.flink.runtime.memory.MemoryManagerSharedResourcesTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.779 s - in org.apache.flink.runtime.memory.MemorySegmentSimpleTest
+[INFO] Running org.apache.flink.runtime.highavailability.nonha.standalone.StandaloneHaServicesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.492 s - in org.apache.flink.runtime.memory.MemoryManagerConcurrentModReleaseTest
+[INFO] Running org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedHaServicesTest
+[INFO] Running org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.587 s - in org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedLeaderServiceTest
+[INFO] Running org.apache.flink.runtime.highavailability.zookeeper.ZooKeeperRegistryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.142 s - in org.apache.flink.runtime.highavailability.nonha.standalone.StandaloneHaServicesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.723 s - in org.apache.flink.runtime.highavailability.nonha.embedded.EmbeddedHaServicesTest
+[INFO] Running org.apache.flink.runtime.operators.hash.HashTableTest
+[INFO] Running org.apache.flink.runtime.operators.hash.CompactingHashTableTest
+[INFO] Running org.apache.flink.runtime.highavailability.zookeeper.ZooKeeperHaServicesTest
+[INFO] Running org.apache.flink.runtime.highavailability.HighAvailabilityServicesUtilsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.326 s - in org.apache.flink.runtime.highavailability.HighAvailabilityServicesUtilsTest
+[INFO] Running org.apache.flink.runtime.operators.hash.InPlaceMutableHashTableTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.849 s - in org.apache.flink.runtime.highavailability.zookeeper.ZooKeeperRegistryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.76 s - in org.apache.flink.runtime.highavailability.zookeeper.ZooKeeperHaServicesTest
+[INFO] Running org.apache.flink.runtime.operators.util.OutputEmitterTest
+[INFO] Running org.apache.flink.runtime.operators.util.BitSetTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in org.apache.flink.runtime.operators.util.BitSetTest
+[INFO] Running org.apache.flink.runtime.operators.util.BloomFilterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.flink.runtime.operators.util.BloomFilterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.279 s - in org.apache.flink.runtime.operators.util.OutputEmitterTest
+[INFO] Running org.apache.flink.runtime.operators.LeftOuterJoinTaskTest
+[INFO] Running org.apache.flink.runtime.operators.DataSinkTaskTest
+[INFO] Running org.apache.flink.runtime.operators.CoGroupTaskTest
+[INFO] Running org.apache.flink.runtime.operators.JoinTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 41.636 s - in org.apache.flink.runtime.metrics.utils.SystemResourcesCounterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.655 s - in org.apache.flink.runtime.operators.hash.HashTableTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.106 s - in org.apache.flink.runtime.operators.DataSinkTaskTest
+[INFO] Running org.apache.flink.runtime.operators.resettable.NonReusingBlockResettableIteratorTest
+[INFO] Running org.apache.flink.runtime.operators.FlatMapTaskTest
+[INFO] Running org.apache.flink.runtime.operators.FullOuterJoinTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.732 s - in org.apache.flink.runtime.operators.resettable.NonReusingBlockResettableIteratorTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.22 s - in org.apache.flink.runtime.operators.CoGroupTaskTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.143 s - in org.apache.flink.runtime.operators.FlatMapTaskTest
+[INFO] Running org.apache.flink.runtime.operators.resettable.ReusingBlockResettableIteratorTest
+[INFO] Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.872 s - in org.apache.flink.runtime.operators.LeftOuterJoinTaskTest
+[INFO] Running org.apache.flink.runtime.operators.resettable.SpillingResettableIteratorTest
+[INFO] Running org.apache.flink.runtime.operators.resettable.SpillingResettableMutableObjectIteratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.593 s - in org.apache.flink.runtime.operators.resettable.ReusingBlockResettableIteratorTest
+[INFO] Running org.apache.flink.runtime.operators.resettable.BlockResettableMutableObjectIteratorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.408 s - in org.apache.flink.runtime.operators.resettable.SpillingResettableIteratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.733 s - in org.apache.flink.runtime.operators.resettable.BlockResettableMutableObjectIteratorTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.813 s - in org.apache.flink.runtime.operators.hash.CompactingHashTableTest
+[INFO] Running org.apache.flink.runtime.operators.sort.MergeIteratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.apache.flink.runtime.operators.sort.MergeIteratorTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.68 s - in org.apache.flink.runtime.operators.FullOuterJoinTaskTest
+[INFO] Running org.apache.flink.runtime.operators.sort.NormalizedKeySorterTest
+[INFO] Running org.apache.flink.runtime.operators.sort.LargeRecordHandlerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.077 s - in org.apache.flink.runtime.operators.resettable.SpillingResettableMutableObjectIteratorTest
+[INFO] Running org.apache.flink.runtime.operators.sort.FixedLengthRecordSorterTest
+[INFO] Running org.apache.flink.runtime.operators.InvokableClassConstructorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.flink.runtime.operators.InvokableClassConstructorTest
+[INFO] Tests run: 46, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.346 s - in org.apache.flink.runtime.operators.JoinTaskTest
+[INFO] Running org.apache.flink.runtime.operators.sort.UnilateralSortMergerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.58 s - in org.apache.flink.runtime.operators.sort.UnilateralSortMergerTest
+[INFO] Running org.apache.flink.runtime.operators.coordination.OperatorCoordinatorSchedulerTest
+[INFO] Running org.apache.flink.runtime.operators.CachedMatchTaskTest
+[INFO] Running org.apache.flink.runtime.operators.drivers.ReduceDriverTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.995 s - in org.apache.flink.runtime.operators.coordination.OperatorCoordinatorSchedulerTest
+[INFO] Running org.apache.flink.runtime.operators.CombineTaskTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.363 s - in org.apache.flink.runtime.operators.drivers.ReduceDriverTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.403 s - in org.apache.flink.runtime.operators.CombineTaskTest
+[INFO] Running org.apache.flink.runtime.operators.drivers.ReduceCombineDriverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.954 s - in org.apache.flink.runtime.operators.sort.LargeRecordHandlerTest
+[INFO] Running org.apache.flink.runtime.operators.drivers.AllReduceDriverTest
+[INFO] Running org.apache.flink.runtime.operators.drivers.AllGroupReduceDriverTest
+[INFO] Running org.apache.flink.runtime.operators.drivers.GroupReduceDriverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.093 s - in org.apache.flink.runtime.operators.drivers.ReduceCombineDriverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.219 s - in org.apache.flink.runtime.operators.drivers.AllReduceDriverTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.45 s - in org.apache.flink.runtime.operators.sort.FixedLengthRecordSorterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.094 s - in org.apache.flink.runtime.operators.drivers.AllGroupReduceDriverTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.004 s - in org.apache.flink.runtime.operators.drivers.GroupReduceDriverTest
+[INFO] Running org.apache.flink.runtime.operators.chaining.ChainedAllReduceDriverTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.276 s - in org.apache.flink.runtime.operators.CachedMatchTaskTest
+[INFO] Running org.apache.flink.runtime.operators.chaining.ChainedOperatorsMetricTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.085 s - in org.apache.flink.runtime.operators.chaining.ChainedAllReduceDriverTest
+[INFO] Running org.apache.flink.runtime.operators.chaining.ChainTaskTest
+[INFO] Running org.apache.flink.runtime.operators.ReduceTaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.111 s - in org.apache.flink.runtime.operators.chaining.ChainedOperatorsMetricTest
+[INFO] Running org.apache.flink.runtime.operators.CrossTaskTest
+[INFO] Running org.apache.flink.runtime.operators.CombinerOversizedRecordsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.126 s - in org.apache.flink.runtime.operators.chaining.ChainTaskTest
+[INFO] Running org.apache.flink.runtime.operators.DataSourceTaskTest
+[INFO] Running org.apache.flink.runtime.operators.RightOuterJoinTaskTest
+[INFO] Running org.apache.flink.runtime.io.compression.BlockCompressionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.apache.flink.runtime.io.compression.BlockCompressionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.69 s - in org.apache.flink.runtime.operators.CombinerOversizedRecordsTest
+[INFO] Running org.apache.flink.runtime.io.disk.FileChannelStreamsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.11 s - in org.apache.flink.runtime.operators.DataSourceTaskTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.52 s - in org.apache.flink.runtime.io.disk.FileChannelStreamsTest
+[INFO] Running org.apache.flink.runtime.io.disk.SeekableFileChannelInputViewTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.901 s - in org.apache.flink.runtime.operators.ReduceTaskTest
+[INFO] Running org.apache.flink.runtime.io.disk.SpillingBufferTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.729 s - in org.apache.flink.runtime.operators.hash.InPlaceMutableHashTableTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.728 s - in org.apache.flink.runtime.io.disk.SeekableFileChannelInputViewTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.858 s - in org.apache.flink.runtime.io.disk.SpillingBufferTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.903 s - in org.apache.flink.runtime.operators.CrossTaskTest
+[INFO] Running org.apache.flink.runtime.io.disk.FileChannelManagerImplTest
+[INFO] Running org.apache.flink.runtime.io.disk.iomanager.IOManagerAsyncTest
+[INFO] Running org.apache.flink.runtime.io.disk.iomanager.BufferFileWriterFileSegmentReaderTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.844 s - in org.apache.flink.runtime.io.disk.iomanager.BufferFileWriterFileSegmentReaderTest
+[INFO] Running org.apache.flink.runtime.io.disk.iomanager.IOManagerTest
+[INFO] Running org.apache.flink.runtime.io.disk.iomanager.AsynchronousFileIOChannelTest
+[INFO] Running org.apache.flink.runtime.io.disk.iomanager.BufferFileWriterReaderTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.447 s - in org.apache.flink.runtime.io.disk.iomanager.IOManagerAsyncTest
+[INFO] Running org.apache.flink.runtime.io.disk.iomanager.AsynchronousBufferFileWriterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.989 s - in org.apache.flink.runtime.io.disk.iomanager.IOManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.185 s - in org.apache.flink.runtime.io.disk.iomanager.BufferFileWriterReaderTest
+[INFO] Tests run: 44, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.269 s - in org.apache.flink.runtime.operators.RightOuterJoinTaskTest
+[INFO] Running org.apache.flink.runtime.io.network.DefaultChannelSelectorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.flink.runtime.io.network.DefaultChannelSelectorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.176 s - in org.apache.flink.runtime.io.disk.FileChannelManagerImplTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.CancelPartitionRequestTest
+[INFO] Running org.apache.flink.runtime.io.disk.ChannelViewsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.957 s - in org.apache.flink.runtime.io.disk.iomanager.AsynchronousBufferFileWriterTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.CreditBasedPartitionRequestClientHandlerTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.PartitionRequestClientFactoryTest
+[WARNING] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.01 s - in org.apache.flink.runtime.io.network.netty.PartitionRequestClientFactoryTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.ByteBufUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.253 s - in org.apache.flink.runtime.io.network.netty.ByteBufUtilsTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.ServerTransportErrorHandlingTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.583 s - in org.apache.flink.runtime.io.disk.iomanager.AsynchronousFileIOChannelTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.NettyPartitionRequestClientTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.NettyConnectionManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.998 s - in org.apache.flink.runtime.io.network.netty.CancelPartitionRequestTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.154 s - in org.apache.flink.runtime.io.network.netty.NettyPartitionRequestClientTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.194 s - in org.apache.flink.runtime.io.network.netty.NettyConnectionManagerTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.NettyMessageClientDecoderDelegateTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.945 s - in org.apache.flink.runtime.io.network.netty.CreditBasedPartitionRequestClientHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.599 s - in org.apache.flink.runtime.io.network.netty.NettyMessageClientDecoderDelegateTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.433 s - in org.apache.flink.runtime.io.network.netty.ServerTransportErrorHandlingTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.NettyBufferPoolTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.ClientTransportErrorHandlingTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.PartitionRequestServerHandlerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.677 s - in org.apache.flink.runtime.io.network.netty.NettyBufferPoolTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.NettyMessageServerSideSerializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.617 s - in org.apache.flink.runtime.io.network.netty.PartitionRequestServerHandlerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.472 s - in org.apache.flink.runtime.io.network.netty.NettyMessageServerSideSerializationTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.PartitionRequestQueueTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.NettyMessageClientSideSerializationTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.743 s - in org.apache.flink.runtime.io.network.netty.PartitionRequestQueueTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.936 s - in org.apache.flink.runtime.io.network.netty.NettyMessageClientSideSerializationTest
+[INFO] Running org.apache.flink.runtime.io.network.netty.NettyClientServerSslTest
+[INFO] Running org.apache.flink.runtime.io.network.buffer.NetworkBufferPoolTest
+[INFO] Running org.apache.flink.runtime.io.network.buffer.LocalBufferPoolTest
+[INFO] Running org.apache.flink.runtime.io.network.buffer.BufferPoolFactoryTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.947 s - in org.apache.flink.runtime.io.network.netty.ClientTransportErrorHandlingTest
+[INFO] Running org.apache.flink.runtime.io.network.buffer.NetworkBufferTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.334 s - in org.apache.flink.runtime.io.network.buffer.LocalBufferPoolTest
+[INFO] Running org.apache.flink.runtime.io.network.buffer.LocalBufferPoolDestroyTest
+[INFO] Running org.apache.flink.runtime.io.network.buffer.ReadOnlySlicedBufferTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.605 s - in org.apache.flink.runtime.io.network.buffer.NetworkBufferPoolTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.229 s - in org.apache.flink.runtime.io.network.buffer.LocalBufferPoolDestroyTest
+[INFO] Running org.apache.flink.runtime.io.network.buffer.BufferBuilderAndConsumerTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.333 s - in org.apache.flink.runtime.io.network.buffer.ReadOnlySlicedBufferTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.034 s - in org.apache.flink.runtime.io.network.buffer.BufferPoolFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.399 s - in org.apache.flink.runtime.io.network.netty.NettyClientServerSslTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.consumer.SingleInputGateTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.579 s - in org.apache.flink.runtime.io.network.buffer.BufferBuilderAndConsumerTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.consumer.RemoteInputChannelTest
+[INFO] Running org.apache.flink.runtime.io.network.buffer.BufferCompressionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 62.347 s - in org.apache.flink.runtime.operators.sort.NormalizedKeySorterTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.consumer.UnionInputGateTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.consumer.LocalInputChannelTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.consumer.InputBuffersMetricsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.901 s - in org.apache.flink.runtime.io.network.partition.consumer.InputBuffersMetricsTest
+[INFO] Tests run: 78, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.673 s - in org.apache.flink.runtime.io.network.buffer.BufferCompressionTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.009 s - in org.apache.flink.runtime.io.network.partition.consumer.SingleInputGateTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.consumer.InputChannelTest
+[ERROR] Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 6.242 s <<< FAILURE! - in org.apache.flink.runtime.io.network.partition.consumer.UnionInputGateTest
+[ERROR] testUpdateInputChannel(org.apache.flink.runtime.io.network.partition.consumer.UnionInputGateTest)  Time elapsed: 3.472 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: is <LocalInputChannel [918def5f9439b46dc2031493e2f0239d#-1@d1ad05f34874f731d77c7126c25ad4fe]>
+     but: was <UnknownInputChannel [918def5f9439b46dc2031493e2f0239d#-1@d1ad05f34874f731d77c7126c25ad4fe]>
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at org.apache.flink.runtime.io.network.partition.consumer.UnionInputGateTest.testUpdateInputChannel(UnionInputGateTest.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.junit.runners.Suite.runChild(Suite.java:128)
+	at org.junit.runners.Suite.runChild(Suite.java:27)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junitcore.JUnitCore.run(JUnitCore.java:55)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.createRequestAndRun(JUnitCoreWrapper.java:137)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.executeEager(JUnitCoreWrapper.java:107)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:83)
+	at org.apache.maven.surefire.junitcore.JUnitCoreWrapper.execute(JUnitCoreWrapper.java:75)
+	at org.apache.maven.surefire.junitcore.JUnitCoreProvider.invoke(JUnitCoreProvider.java:158)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[INFO] Running org.apache.flink.runtime.io.network.partition.BoundedBlockingSubpartitionAvailabilityTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.ResourceManagerPartitionTrackerImplTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.PipelinedSubpartitionWithReadViewTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 s - in org.apache.flink.runtime.io.network.partition.ResourceManagerPartitionTrackerImplTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.217 s - in org.apache.flink.runtime.io.network.partition.consumer.InputChannelTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.174 s - in org.apache.flink.runtime.io.network.partition.PipelinedSubpartitionWithReadViewTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.PipelinedSubpartitionTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.FileChannelBoundedDataTest
+[INFO] Tests run: 404, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 30.784 s - in org.apache.flink.runtime.io.network.buffer.NetworkBufferTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.19 s - in org.apache.flink.runtime.io.network.partition.FileChannelBoundedDataTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.ResultPartitionFactoryTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.191 s - in org.apache.flink.runtime.io.network.partition.ResultPartitionFactoryTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.345 s - in org.apache.flink.runtime.io.network.partition.consumer.LocalInputChannelTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.BufferReaderWriterUtilTest
+[WARNING] Tests run: 17, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 8.457 s - in org.apache.flink.runtime.io.network.partition.PipelinedSubpartitionTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.BoundedBlockingSubpartitionTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.422 s - in org.apache.flink.runtime.io.network.partition.BoundedBlockingSubpartitionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.604 s - in org.apache.flink.runtime.io.network.partition.BufferReaderWriterUtilTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.FileChannelMemoryMappedBoundedDataTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.ReleaseOnConsumptionResultPartitionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.apache.flink.runtime.io.network.partition.ReleaseOnConsumptionResultPartitionTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.506 s - in org.apache.flink.runtime.io.network.partition.FileChannelMemoryMappedBoundedDataTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.AbstractPartitionTrackerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.07 s - in org.apache.flink.runtime.io.network.partition.AbstractPartitionTrackerTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.ResultPartitionTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.TaskExecutorPartitionTrackerImplTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.13 s - in org.apache.flink.runtime.io.network.partition.ResultPartitionTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.ResultPartitionManagerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.apache.flink.runtime.io.network.partition.ResultPartitionManagerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.136 s - in org.apache.flink.runtime.io.network.partition.TaskExecutorPartitionTrackerImplTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.JobMasterPartitionTrackerImplTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.323 s - in org.apache.flink.runtime.io.network.partition.JobMasterPartitionTrackerImplTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.ProducerFailedExceptionTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.InputGateFairnessTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.PartialConsumePipelinedResultTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.BoundedBlockingSubpartitionWriteReadTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.695 s - in org.apache.flink.runtime.io.network.partition.ProducerFailedExceptionTest
+[INFO] Running org.apache.flink.runtime.io.network.partition.MemoryMappedBoundedDataTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.921 s - in org.apache.flink.runtime.io.network.partition.PartialConsumePipelinedResultTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.433 s - in org.apache.flink.runtime.io.network.partition.InputGateFairnessTest
+[INFO] Running org.apache.flink.runtime.io.network.DataExchangeModeTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.48 s - in org.apache.flink.runtime.io.network.partition.MemoryMappedBoundedDataTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.flink.runtime.io.network.DataExchangeModeTest
+[INFO] Running org.apache.flink.runtime.io.network.TaskEventDispatcherTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.166 s - in org.apache.flink.runtime.io.network.TaskEventDispatcherTest
+[INFO] Running org.apache.flink.runtime.io.network.api.reader.AbstractReaderTest
+[INFO] Running org.apache.flink.runtime.io.network.api.writer.RecordWriterTest
+[INFO] Running org.apache.flink.runtime.io.network.api.writer.BroadcastRecordWriterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.79 s - in org.apache.flink.runtime.io.network.api.reader.AbstractReaderTest
+[INFO] Running org.apache.flink.runtime.io.network.api.writer.RecordWriterDelegateTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.321 s - in org.apache.flink.runtime.io.network.api.writer.RecordWriterDelegateTest
+[INFO] Running org.apache.flink.runtime.io.network.api.CheckpointBarrierTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.911 s - in org.apache.flink.runtime.io.network.api.writer.RecordWriterTest
+[INFO] Running org.apache.flink.runtime.io.network.api.serialization.SpanningRecordSerializerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.225 s - in org.apache.flink.runtime.io.network.api.writer.BroadcastRecordWriterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.054 s - in org.apache.flink.runtime.io.network.api.CheckpointBarrierTest
+[INFO] Running org.apache.flink.runtime.io.network.api.serialization.CheckpointSerializationTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.flink.runtime.io.network.api.serialization.CheckpointSerializationTest
+[INFO] Running org.apache.flink.runtime.io.network.api.serialization.EventSerializerTest
+[INFO] Running org.apache.flink.runtime.io.network.api.serialization.PagedViewsTest
+[INFO] Running org.apache.flink.runtime.io.network.api.serialization.SpanningRecordSerializationTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.592 s - in org.apache.flink.runtime.io.network.api.serialization.SpanningRecordSerializerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.698 s - in org.apache.flink.runtime.io.network.api.serialization.EventSerializerTest
+[INFO] Running org.apache.flink.runtime.io.network.NettyShuffleEnvironmentTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.038 s - in org.apache.flink.runtime.io.network.api.serialization.PagedViewsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.578 s - in org.apache.flink.runtime.io.network.NettyShuffleEnvironmentTest
+[INFO] Running org.apache.flink.runtime.rpc.FencedRpcEndpointTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 59.786 s - in org.apache.flink.runtime.io.network.partition.BoundedBlockingSubpartitionAvailabilityTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.983 s - in org.apache.flink.runtime.rpc.FencedRpcEndpointTest
+[INFO] Running org.apache.flink.runtime.rpc.RpcConnectionTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.MainThreadValidationTest
+[INFO] Running org.apache.flink.runtime.rpc.AsyncCallsTest
+[INFO] Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 74.799 s - in org.apache.flink.runtime.io.network.partition.consumer.RemoteInputChannelTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.272 s - in org.apache.flink.runtime.rpc.AsyncCallsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.328 s - in org.apache.flink.runtime.rpc.RpcConnectionTest
+[INFO] Running org.apache.flink.runtime.rpc.RpcEndpointTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.432 s - in org.apache.flink.runtime.rpc.RpcEndpointTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.054 s - in org.apache.flink.runtime.rpc.akka.MainThreadValidationTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.SupervisorActorTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.AkkaActorSystemTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.TimeoutCallStackTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.656 s - in org.apache.flink.runtime.rpc.akka.TimeoutCallStackTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.827 s - in org.apache.flink.runtime.rpc.akka.SupervisorActorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.3 s - in org.apache.flink.runtime.rpc.akka.AkkaActorSystemTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.AkkaRpcActorHandshakeTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.AkkaRpcServiceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.203 s - in org.apache.flink.runtime.rpc.akka.AkkaRpcActorHandshakeTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.655 s - in org.apache.flink.runtime.io.network.api.serialization.SpanningRecordSerializationTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.872 s - in org.apache.flink.runtime.rpc.akka.AkkaRpcServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 115.19 s - in org.apache.flink.runtime.io.disk.ChannelViewsTest
+[INFO] Running org.apache.flink.runtime.client.ClientUtilsTest
+[INFO] Running org.apache.flink.runtime.client.SerializedJobExecutionResultTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.AkkaRpcActorOversizedResponseMessageTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.AkkaRpcActorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.353 s - in org.apache.flink.runtime.client.SerializedJobExecutionResultTest
+[INFO] Running org.apache.flink.runtime.leaderelection.StandaloneLeaderElectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.apache.flink.runtime.leaderelection.StandaloneLeaderElectionTest
+[INFO] Running org.apache.flink.runtime.leaderelection.ZooKeeperLeaderRetrievalTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.442 s - in org.apache.flink.runtime.rpc.akka.AkkaRpcActorOversizedResponseMessageTest
+[INFO] Running org.apache.flink.runtime.rpc.akka.MessageSerializationTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.249 s - in org.apache.flink.runtime.rpc.akka.AkkaRpcActorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.294 s - in org.apache.flink.runtime.rpc.akka.MessageSerializationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.294 s - in org.apache.flink.runtime.client.ClientUtilsTest
+[INFO] Running org.apache.flink.runtime.leaderelection.ZooKeeperLeaderElectionTest
+[INFO] Running org.apache.flink.runtime.leaderelection.LeaderElectionTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.partitionrelease.PartitionReleaseStrategyFactoryLoaderTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandlerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in org.apache.flink.runtime.executiongraph.failover.flip1.ExecutionFailureHandlerTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.FixedDelayRestartBackoffTimeStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.flink.runtime.executiongraph.failover.flip1.FixedDelayRestartBackoffTimeStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.175 s - in org.apache.flink.runtime.executiongraph.failover.flip1.partitionrelease.PartitionReleaseStrategyFactoryLoaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.538 s - in org.apache.flink.runtime.leaderelection.LeaderElectionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.59 s - in org.apache.flink.runtime.leaderelection.ZooKeeperLeaderRetrievalTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.partitionrelease.PipelinedRegionExecutionViewTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.055 s - in org.apache.flink.runtime.executiongraph.failover.flip1.partitionrelease.PipelinedRegionExecutionViewTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.RestartBackoffTimeStrategyFactoryLoaderTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.114 s - in org.apache.flink.runtime.executiongraph.failover.flip1.RestartBackoffTimeStrategyFactoryLoaderTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategyBuildingTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategyBuildingTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategyTest
+[INFO] Running org.apache.flink.runtime.leaderelection.LeaderChangeClusterComponentsTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.FailureHandlingResultTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.flink.runtime.executiongraph.failover.flip1.FailureHandlingResultTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.447 s - in org.apache.flink.runtime.executiongraph.failover.flip1.RestartPipelinedRegionFailoverStrategyTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.FailureRateRestartBackoffTimeStrategyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.flink.runtime.executiongraph.failover.flip1.FailureRateRestartBackoffTimeStrategyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.084 s - in org.apache.flink.runtime.leaderelection.LeaderChangeClusterComponentsTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.RestartAllFailoverStrategyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.apache.flink.runtime.executiongraph.failover.flip1.RestartAllFailoverStrategyTest
+[INFO] Running org.apache.flink.runtime.executiongraph.failover.flip1.FailoverStrategyFactoryLoaderTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.121 s - in org.apache.flink.runtime.executiongraph.failover.flip1.FailoverStrategyFactoryLoaderTest
+[INFO] Running org.apache.flink.runtime.executiongraph.AdaptedRestartPipelinedRegionStrategyNGConcurrentFailoverTest
+[INFO] Running org.apache.flink.runtime.executiongraph.VertexSlotSharingTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionVertexSchedulingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.931 s - in org.apache.flink.runtime.executiongraph.AdaptedRestartPipelinedRegionStrategyNGConcurrentFailoverTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.528 s - in org.apache.flink.runtime.executiongraph.ExecutionVertexSchedulingTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.795 s - in org.apache.flink.runtime.leaderelection.ZooKeeperLeaderElectionTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionVertexTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.103 s - in org.apache.flink.runtime.executiongraph.ExecutionVertexTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ErrorInfoTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionVertexLocalityTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.439 s - in org.apache.flink.runtime.executiongraph.VertexSlotSharingTest
+[INFO] Running org.apache.flink.runtime.executiongraph.AllVerticesIteratorTest
+[INFO] Running org.apache.flink.runtime.executiongraph.IntermediateResultPartitionTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphConstructionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.316 s - in org.apache.flink.runtime.executiongraph.IntermediateResultPartitionTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphRestartTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.18 s - in org.apache.flink.runtime.executiongraph.ExecutionVertexLocalityTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphPartitionReleaseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.004 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphPartitionReleaseTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.82 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphRestartTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.934 s - in org.apache.flink.runtime.executiongraph.AllVerticesIteratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.411 s - in org.apache.flink.runtime.executiongraph.ErrorInfoTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphVariousFailuesTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.489 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphConstructionTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionJobVertexTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.007 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphVariousFailuesTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphSchedulingTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.984 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphSchedulingTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphNotEnoughResourceTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionTest
+[INFO] Running org.apache.flink.runtime.executiongraph.FinalizeOnMasterTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionVertexInputConstraintTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.984 s - in org.apache.flink.runtime.executiongraph.ExecutionJobVertexTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.065 s - in org.apache.flink.runtime.executiongraph.ExecutionTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphRescalingTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 87.825 s - in org.apache.flink.runtime.io.network.partition.BoundedBlockingSubpartitionWriteReadTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.649 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphNotEnoughResourceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.282 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphRescalingTest
+[INFO] Running org.apache.flink.runtime.executiongraph.RegionPartitionReleaseStrategyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 s - in org.apache.flink.runtime.executiongraph.RegionPartitionReleaseStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.554 s - in org.apache.flink.runtime.executiongraph.FinalizeOnMasterTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphMetricsTest
+[INFO] Running org.apache.flink.runtime.executiongraph.AdaptedRestartPipelinedRegionStrategyNGFailoverTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphSuspendTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.483 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphMetricsTest
+[INFO] Running org.apache.flink.runtime.executiongraph.AdaptedRestartPipelinedRegionStrategyNGAbortPendingCheckpointsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.722 s - in org.apache.flink.runtime.executiongraph.AdaptedRestartPipelinedRegionStrategyNGFailoverTest
+[INFO] Running org.apache.flink.runtime.executiongraph.GlobalModVersionTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.87 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphSuspendTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphCoLocationRestartTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.762 s - in org.apache.flink.runtime.executiongraph.AdaptedRestartPipelinedRegionStrategyNGAbortPendingCheckpointsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.292 s - in org.apache.flink.runtime.executiongraph.ExecutionVertexInputConstraintTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.753 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphCoLocationRestartTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ArchivedExecutionGraphTest
+[INFO] Running org.apache.flink.runtime.executiongraph.LegacyJobVertexIdTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 s - in org.apache.flink.runtime.executiongraph.ArchivedExecutionGraphTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.218 s - in org.apache.flink.runtime.executiongraph.GlobalModVersionTest
+[INFO] Running org.apache.flink.runtime.executiongraph.PointwisePatternTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionVertexDeploymentTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphResultPartitionAvailabilityCheckerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphResultPartitionAvailabilityCheckerTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphDeploymentTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.069 s - in org.apache.flink.runtime.executiongraph.LegacyJobVertexIdTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.597 s - in org.apache.flink.runtime.executiongraph.PointwisePatternTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionVertexCancelTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionPartitionLifecycleTest
+[INFO] Running org.apache.flink.runtime.executiongraph.restart.ThrowingRestartStrategyFactoryTest
+[INFO] Running org.apache.flink.runtime.executiongraph.restart.RestartStrategyFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.flink.runtime.executiongraph.restart.ThrowingRestartStrategyFactoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.44 s - in org.apache.flink.runtime.executiongraph.ExecutionVertexDeploymentTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.094 s - in org.apache.flink.runtime.executiongraph.restart.RestartStrategyFactoryTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.057 s - in org.apache.flink.runtime.executiongraph.ExecutionVertexCancelTest
+[INFO] Running org.apache.flink.runtime.executiongraph.restart.FixedDelayRestartStrategyTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.97 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphDeploymentTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 s - in org.apache.flink.runtime.executiongraph.restart.FixedDelayRestartStrategyTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.347 s - in org.apache.flink.runtime.executiongraph.ExecutionPartitionLifecycleTest
+[INFO] Running org.apache.flink.runtime.executiongraph.restart.RestartStrategyResolvingTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.flink.runtime.executiongraph.restart.RestartStrategyResolvingTest
+[INFO] Running org.apache.flink.runtime.executiongraph.restart.FailureRateRestartStrategyTest
+[INFO] Running org.apache.flink.runtime.security.modules.JaasModuleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.173 s - in org.apache.flink.runtime.executiongraph.restart.FailureRateRestartStrategyTest
+[INFO] Running org.apache.flink.runtime.security.KerberosUtilsTest
+[INFO] Running org.apache.flink.runtime.filecache.FileCacheDirectoriesTest
+[INFO] Running org.apache.flink.runtime.security.SecurityUtilsTest
+[INFO] Running org.apache.flink.runtime.filecache.FileCacheReadsFromBlobTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphDeploymentWithBlobServerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.076 s - in org.apache.flink.runtime.security.modules.JaasModuleTest
+[INFO] Running org.apache.flink.runtime.executiongraph.ExecutionGraphDeploymentWithBlobCacheTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.973 s - in org.apache.flink.runtime.security.KerberosUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.754 s - in org.apache.flink.runtime.filecache.FileCacheDirectoriesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.056 s - in org.apache.flink.runtime.filecache.FileCacheReadsFromBlobTest
+[INFO] Running org.apache.flink.runtime.heartbeat.HeartbeatManagerTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.523 s - in org.apache.flink.runtime.security.SecurityUtilsTest
+[INFO] Running org.apache.flink.runtime.jobmanager.scheduler.CoLocationConstraintTest
+[INFO] Running org.apache.flink.runtime.execution.librarycache.BlobLibraryCacheManagerTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.119 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphDeploymentWithBlobCacheTest
+[INFO] Running org.apache.flink.runtime.execution.librarycache.FlinkUserCodeClassLoadersTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.821 s - in org.apache.flink.runtime.execution.librarycache.BlobLibraryCacheManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.152 s - in org.apache.flink.runtime.jobmanager.scheduler.CoLocationConstraintTest
+[INFO] Running org.apache.flink.runtime.jobmanager.scheduler.ScheduleWithCoLocationHintTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.574 s - in org.apache.flink.runtime.heartbeat.HeartbeatManagerTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.651 s - in org.apache.flink.runtime.executiongraph.ExecutionGraphDeploymentWithBlobServerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.573 s - in org.apache.flink.runtime.jobmanager.scheduler.ScheduleWithCoLocationHintTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.427 s - in org.apache.flink.runtime.execution.librarycache.FlinkUserCodeClassLoadersTest
+[INFO] Running org.apache.flink.runtime.jobmanager.StandaloneJobGraphStoreTest
+[INFO] Running org.apache.flink.runtime.jobmanager.scheduler.SchedulerIsolatedTasksTest
+[INFO] Running org.apache.flink.runtime.jobmanager.ZooKeeperJobGraphStoreTest
+[INFO] Running org.apache.flink.runtime.jobmanager.HighAvailabilityModeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.164 s - in org.apache.flink.runtime.jobmanager.HighAvailabilityModeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.44 s - in org.apache.flink.runtime.jobmanager.StandaloneJobGraphStoreTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.591 s - in org.apache.flink.runtime.jobmanager.ZooKeeperJobGraphStoreTest
+[INFO] Running org.apache.flink.runtime.entrypoint.component.AbstractUserClassPathJobGraphRetrieverTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.162 s - in org.apache.flink.runtime.entrypoint.component.AbstractUserClassPathJobGraphRetrieverTest
+[INFO] Running org.apache.flink.runtime.jobmanager.JobManagerProcessUtilsTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 s - in org.apache.flink.runtime.jobmanager.JobManagerProcessUtilsTest
+[INFO] Running org.apache.flink.runtime.jobmanager.scheduler.ScheduleOrUpdateConsumersTest
+[INFO] Running org.apache.flink.runtime.entrypoint.component.FileJobGraphRetrieverTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 s - in org.apache.flink.runtime.entrypoint.component.FileJobGraphRetrieverTest
+[INFO] Running org.apache.flink.runtime.entrypoint.ClusterConfigurationParserFactoryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in org.apache.flink.runtime.entrypoint.ClusterConfigurationParserFactoryTest
+[INFO] Running org.apache.flink.runtime.entrypoint.EntrypointClusterConfigurationParserFactoryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.123 s - in org.apache.flink.runtime.entrypoint.EntrypointClusterConfigurationParserFactoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.425 s - in org.apache.flink.runtime.jobmanager.scheduler.ScheduleOrUpdateConsumersTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.238 s - in org.apache.flink.runtime.jobmanager.scheduler.SchedulerIsolatedTasksTest
+[INFO] Running org.apache.flink.runtime.rest.RestClientTest
+[INFO] Running org.apache.flink.runtime.rest.versioning.RestAPIVersionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 s - in org.apache.flink.runtime.rest.versioning.RestAPIVersionTest
+[INFO] Running org.apache.flink.runtime.jobmanager.SlotCountExceedingParallelismTest
+[INFO] Running org.apache.flink.runtime.rest.handler.router.RouterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.561 s - in org.apache.flink.runtime.rest.RestClientTest
+[INFO] Running org.apache.flink.runtime.rest.RestServerEndpointConfigurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in org.apache.flink.runtime.rest.RestServerEndpointConfigurationTest
+[INFO] Running org.apache.flink.runtime.rest.RestServerEndpointTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 s - in org.apache.flink.runtime.rest.RestServerEndpointTest
+[INFO] Running org.apache.flink.runtime.rest.handler.cluster.JobManagerLogListHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.FileUploadsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.109 s - in org.apache.flink.runtime.rest.handler.FileUploadsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.687 s - in org.apache.flink.runtime.jobmanager.SlotCountExceedingParallelismTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.516 s - in org.apache.flink.runtime.rest.handler.router.RouterTest
+[INFO] Running org.apache.flink.runtime.rest.handler.InFlightRequestTrackerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.flink.runtime.rest.handler.InFlightRequestTrackerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.219 s - in org.apache.flink.runtime.rest.handler.cluster.JobManagerLogListHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.FileUploadHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.util.HandlerRequestUtilsTest
+[INFO] Running org.apache.flink.runtime.rest.handler.RestHandlerConfigurationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.117 s - in org.apache.flink.runtime.rest.handler.RestHandlerConfigurationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.302 s - in org.apache.flink.runtime.rest.handler.util.HandlerRequestUtilsTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.AbstractMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.JobMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.JobManagerMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.SubtaskMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.TaskManagerMetricsHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.081 s - in org.apache.flink.runtime.rest.handler.job.metrics.AbstractMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.AggregatingJobsMetricsHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.687 s - in org.apache.flink.runtime.rest.handler.job.metrics.JobMetricsHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.281 s - in org.apache.flink.runtime.rest.handler.job.metrics.JobManagerMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.AggregatingSubtasksMetricsHandlerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.253 s - in org.apache.flink.runtime.rest.handler.job.metrics.AggregatingJobsMetricsHandlerTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.264 s - in org.apache.flink.runtime.rest.handler.job.metrics.AggregatingSubtasksMetricsHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.688 s - in org.apache.flink.runtime.rest.handler.job.metrics.SubtaskMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.JobVertexWatermarksHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.732 s - in org.apache.flink.runtime.rest.handler.job.metrics.TaskManagerMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.JobVertexBackPressureHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.JobVertexMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.JobSubmitHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.savepoints.StopWithSavepointHandlersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.896 s - in org.apache.flink.runtime.rest.handler.job.JobVertexBackPressureHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.savepoints.SavepointHandlersTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.238 s - in org.apache.flink.runtime.rest.handler.job.savepoints.StopWithSavepointHandlersTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.metrics.AggregatingTaskManagersMetricsHandlerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.852 s - in org.apache.flink.runtime.rest.handler.job.metrics.JobVertexWatermarksHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.61 s - in org.apache.flink.runtime.rest.handler.job.metrics.JobVertexMetricsHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.418 s - in org.apache.flink.runtime.rest.handler.job.savepoints.SavepointHandlersTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.133 s - in org.apache.flink.runtime.rest.handler.job.metrics.AggregatingTaskManagersMetricsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.JobExceptionsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.SubtaskExecutionAttemptDetailsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.SubtaskCurrentAttemptDetailsHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.104 s - in org.apache.flink.runtime.rest.handler.job.JobExceptionsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.SubtaskExecutionAttemptAccumulatorsHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.595 s - in org.apache.flink.runtime.rest.handler.job.SubtaskExecutionAttemptDetailsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.JobConfigHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.job.JobExecutionResultHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.025 s - in org.apache.flink.runtime.rest.handler.job.SubtaskCurrentAttemptDetailsHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.418 s - in org.apache.flink.runtime.rest.handler.job.SubtaskExecutionAttemptAccumulatorsHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.legacy.checkpoints.CheckpointStatsCacheTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.839 s - in org.apache.flink.runtime.rest.handler.job.JobSubmitHandlerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.324 s - in org.apache.flink.runtime.rest.FileUploadHandlerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.562 s - in org.apache.flink.runtime.rest.handler.job.JobExecutionResultHandlerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.641 s - in org.apache.flink.runtime.rest.handler.job.JobConfigHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.legacy.files.MimeTypesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.flink.runtime.rest.handler.legacy.files.MimeTypesTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.985 s - in org.apache.flink.runtime.rest.handler.legacy.checkpoints.CheckpointStatsCacheTest
+[INFO] Running org.apache.flink.runtime.rest.handler.legacy.metrics.MetricFetcherTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.491 s - in org.apache.flink.runtime.rest.handler.legacy.metrics.MetricFetcherTest
+[INFO] Running org.apache.flink.runtime.rest.handler.legacy.metrics.MetricStoreTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.176 s - in org.apache.flink.runtime.rest.handler.legacy.metrics.MetricStoreTest
+[INFO] Running org.apache.flink.runtime.rest.handler.legacy.DefaultExecutionGraphCacheTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.235 s - in org.apache.flink.runtime.rest.handler.legacy.DefaultExecutionGraphCacheTest
+[INFO] Running org.apache.flink.runtime.rest.handler.legacy.backpressure.BackPressureRequestCoordinatorTest
+[INFO] Running org.apache.flink.runtime.rest.handler.legacy.messages.ClusterOverviewWithVersionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.924 s - in org.apache.flink.runtime.rest.handler.legacy.messages.ClusterOverviewWithVersionTest
+[INFO] Running org.apache.flink.runtime.rest.handler.legacy.backpressure.BackPressureStatsTrackerImplTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.358 s - in org.apache.flink.runtime.rest.handler.legacy.backpressure.BackPressureStatsTrackerImplTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.827 s - in org.apache.flink.runtime.rest.handler.legacy.backpressure.BackPressureRequestCoordinatorTest
+[INFO] Running org.apache.flink.runtime.rest.handler.AbstractHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.taskmanager.AbstractTaskManagerFileHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerLogListHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.async.AbstractAsynchronousOperationHandlersTest
+[INFO] Running org.apache.flink.runtime.rest.handler.async.CompletedOperationCacheTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.209 s - in org.apache.flink.runtime.rest.handler.async.CompletedOperationCacheTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.493 s - in org.apache.flink.runtime.rest.handler.AbstractHandlerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.606 s - in org.apache.flink.runtime.rest.handler.async.AbstractAsynchronousOperationHandlersTest
+[INFO] Running org.apache.flink.runtime.rest.handler.async.TriggerResponseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.677 s - in org.apache.flink.runtime.rest.handler.taskmanager.TaskManagerLogListHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.handler.async.AsynchronousOperationResultTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.75 s - in org.apache.flink.runtime.rest.handler.async.AsynchronousOperationResultTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.089 s - in org.apache.flink.runtime.rest.handler.async.TriggerResponseTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.094 s - in org.apache.flink.runtime.rest.handler.taskmanager.AbstractTaskManagerFileHandlerTest
+[INFO] Running org.apache.flink.runtime.rest.messages.VertexBackPressureStatusTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobVertexBackPressureInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.931 s - in org.apache.flink.runtime.rest.messages.VertexBackPressureStatusTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobAccumulatorsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.YarnCancelJobTerminationHeadersTest
+[INFO] Running org.apache.flink.runtime.rest.messages.checkpoints.CheckpointConfigInfoTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 s - in org.apache.flink.runtime.rest.messages.YarnCancelJobTerminationHeadersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.401 s - in org.apache.flink.runtime.rest.messages.JobVertexBackPressureInfoTest
+[INFO] Running org.apache.flink.runtime.rest.RestClientMultipartTest
+[INFO] Running org.apache.flink.runtime.rest.messages.checkpoints.TaskCheckpointStatisticsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.176 s - in org.apache.flink.runtime.rest.messages.JobAccumulatorsInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.128 s - in org.apache.flink.runtime.rest.messages.checkpoints.CheckpointConfigInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.109 s - in org.apache.flink.runtime.rest.messages.checkpoints.TaskCheckpointStatisticsTest
+[INFO] Running org.apache.flink.runtime.rest.messages.checkpoints.TaskCheckpointStatisticsWithSubtaskDetailsTest
+[INFO] Running org.apache.flink.runtime.rest.messages.SubtaskIndexPathParameterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.961 s - in org.apache.flink.runtime.rest.messages.checkpoints.TaskCheckpointStatisticsWithSubtaskDetailsTest
+[INFO] Running org.apache.flink.runtime.rest.messages.checkpoints.CheckpointingStatisticsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in org.apache.flink.runtime.rest.messages.SubtaskIndexPathParameterTest
+[INFO] Running org.apache.flink.runtime.rest.messages.SubtasksTimesInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobConfigInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobVertexTaskManagersInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.055 s - in org.apache.flink.runtime.rest.messages.checkpoints.CheckpointingStatisticsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.437 s - in org.apache.flink.runtime.rest.messages.SubtasksTimesInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.dataset.ClusterDataSetListResponseBodyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.324 s - in org.apache.flink.runtime.rest.messages.JobConfigInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.337 s - in org.apache.flink.runtime.rest.messages.JobVertexTaskManagersInfoTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.842 s - in org.apache.flink.runtime.rest.messages.dataset.ClusterDataSetListResponseBodyTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobVertexDetailsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobPlanInfoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.313 s - in org.apache.flink.runtime.rest.RestClientMultipartTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.802 s - in org.apache.flink.runtime.rest.messages.JobVertexDetailsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.ClusterConfigurationInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobExceptionsInfoNoRootTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.758 s - in org.apache.flink.runtime.rest.messages.JobPlanInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.json.JobResultDeserializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.225 s - in org.apache.flink.runtime.rest.messages.ClusterConfigurationInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.113 s - in org.apache.flink.runtime.rest.messages.JobExceptionsInfoNoRootTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.654 s - in org.apache.flink.runtime.rest.messages.json.JobResultDeserializerTest
+[INFO] Running org.apache.flink.runtime.rest.messages.json.SerializedThrowableSerializerTest
+[INFO] Running org.apache.flink.runtime.rest.messages.json.SerializedValueSerializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 s - in org.apache.flink.runtime.rest.messages.json.SerializedThrowableSerializerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.562 s - in org.apache.flink.runtime.rest.messages.json.SerializedValueSerializerTest
+[INFO] Running org.apache.flink.runtime.rest.messages.ResourceProfileInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobSubmitRequestBodyTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.metrics.MetricCollectionResponseBodyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.338 s - in org.apache.flink.runtime.rest.messages.ResourceProfileInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.metrics.MetricsFilterParameterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.flink.runtime.rest.messages.job.metrics.MetricsFilterParameterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.172 s - in org.apache.flink.runtime.rest.messages.JobSubmitRequestBodyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.865 s - in org.apache.flink.runtime.rest.messages.job.metrics.MetricCollectionResponseBodyTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.metrics.AbstractMetricsHeadersTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 s - in org.apache.flink.runtime.rest.messages.job.metrics.AbstractMetricsHeadersTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.metrics.TaskManagerMetricsHeadersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 s - in org.apache.flink.runtime.rest.messages.job.metrics.TaskManagerMetricsHeadersTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.metrics.SubtaskMetricsHeadersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.flink.runtime.rest.messages.job.metrics.SubtaskMetricsHeadersTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.metrics.JobVertexMetricsHeadersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.flink.runtime.rest.messages.job.metrics.JobVertexMetricsHeadersTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.metrics.JobMetricsHeadersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.021 s - in org.apache.flink.runtime.rest.messages.job.metrics.JobMetricsHeadersTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.JobDetailsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.metrics.JobManagerMetricsHeadersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 s - in org.apache.flink.runtime.rest.messages.job.metrics.JobManagerMetricsHeadersTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.savepoints.SavepointInfoMarshallingTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.savepoints.SavepointInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in org.apache.flink.runtime.rest.messages.job.savepoints.SavepointInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.savepoints.SavepointDisposalRequestTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.savepoints.SavepointTriggerRequestBodyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.53 s - in org.apache.flink.runtime.rest.messages.job.JobDetailsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.SubtasksAllAccumulatorsInfoTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.246 s - in org.apache.flink.runtime.rest.messages.job.savepoints.SavepointInfoMarshallingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.946 s - in org.apache.flink.runtime.rest.messages.job.savepoints.SavepointDisposalRequestTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.169 s - in org.apache.flink.runtime.rest.messages.job.savepoints.SavepointTriggerRequestBodyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.808 s - in org.apache.flink.runtime.rest.messages.job.SubtasksAllAccumulatorsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.SubtaskExecutionAttemptDetailsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.SubtaskExecutionAttemptAccumulatorsInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.146 s - in org.apache.flink.runtime.rest.messages.job.SubtaskExecutionAttemptAccumulatorsInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.347 s - in org.apache.flink.runtime.rest.messages.job.SubtaskExecutionAttemptDetailsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.job.JobExecutionResultResponseBodyTest
+[INFO] Running org.apache.flink.runtime.rest.messages.YarnStopJobTerminationHeadersTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.177 s - in org.apache.flink.runtime.rest.messages.YarnStopJobTerminationHeadersTest
+[INFO] Running org.apache.flink.runtime.rest.messages.DashboardConfigurationTest
+[INFO] Running org.apache.flink.runtime.rest.messages.taskmanager.LogListInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.taskmanager.ThreadDumpInfoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.235 s - in org.apache.flink.runtime.rest.messages.job.JobExecutionResultResponseBodyTest
+[INFO] Running org.apache.flink.runtime.rest.messages.taskmanager.TaskManagerIdPathParameterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.flink.runtime.rest.messages.taskmanager.TaskManagerIdPathParameterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.031 s - in org.apache.flink.runtime.rest.messages.DashboardConfigurationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.961 s - in org.apache.flink.runtime.rest.messages.taskmanager.ThreadDumpInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.067 s - in org.apache.flink.runtime.rest.messages.taskmanager.LogListInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.taskmanager.TaskManagersInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.taskmanager.TaskManagerInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.41 s - in org.apache.flink.runtime.rest.messages.taskmanager.TaskManagersInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.172 s - in org.apache.flink.runtime.rest.messages.taskmanager.TaskManagerInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.taskmanager.TaskManagerDetailsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.VertexBackPressureLevelTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobExceptionsInfoTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobVertexAccumulatorsInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.652 s - in org.apache.flink.runtime.rest.messages.VertexBackPressureLevelTest
+[INFO] Running org.apache.flink.runtime.rest.messages.JobSubmitResponseBodyTest
+[INFO] Running org.apache.flink.runtime.rest.messages.MessageParametersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.888 s - in org.apache.flink.runtime.rest.messages.JobExceptionsInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.191 s - in org.apache.flink.runtime.rest.messages.taskmanager.TaskManagerDetailsInfoTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.apache.flink.runtime.rest.messages.MessageParametersTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.778 s - in org.apache.flink.runtime.rest.messages.JobVertexAccumulatorsInfoTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.72 s - in org.apache.flink.runtime.rest.messages.JobSubmitResponseBodyTest
+[INFO] Running org.apache.flink.runtime.query.KvStateLocationRegistryTest
+[INFO] Running org.apache.flink.runtime.query.KvStateLocationTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.flink.runtime.query.KvStateLocationTest
+[INFO] Running org.apache.flink.runtime.webmonitor.history.ArchivedJsonTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.052 s - in org.apache.flink.runtime.webmonitor.history.ArchivedJsonTest
+[INFO] Running org.apache.flink.runtime.query.KvStateRegistryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 s - in org.apache.flink.runtime.query.KvStateRegistryTest
+[INFO] Running org.apache.flink.runtime.webmonitor.retriever.LeaderGatewayRetrieverTest
+[INFO] Running org.apache.flink.runtime.webmonitor.history.HistoryServerUtilsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s - in org.apache.flink.runtime.webmonitor.history.HistoryServerUtilsTest
+[INFO] Running org.apache.flink.runtime.webmonitor.WebMonitorEndpointTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.645 s - in org.apache.flink.runtime.query.KvStateLocationRegistryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.857 s - in org.apache.flink.runtime.webmonitor.retriever.LeaderGatewayRetrieverTest
+[INFO] Running org.apache.flink.runtime.deployment.TaskDeploymentDescriptorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 s - in org.apache.flink.runtime.deployment.TaskDeploymentDescriptorTest
+[INFO] Running org.apache.flink.runtime.deployment.ShuffleDescriptorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 s - in org.apache.flink.runtime.deployment.ShuffleDescriptorTest
+[INFO] Running org.apache.flink.runtime.deployment.ResultPartitionDeploymentDescriptorTest
+[INFO] Running org.apache.flink.runtime.event.task.TaskEventTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 s - in org.apache.flink.runtime.deployment.ResultPartitionDeploymentDescriptorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.152 s - in org.apache.flink.runtime.webmonitor.WebMonitorEndpointTest
+[INFO] Running org.apache.flink.runtime.webmonitor.retriever.impl.RpcGatewayRetrieverTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.521 s - in org.apache.flink.runtime.webmonitor.retriever.impl.RpcGatewayRetrieverTest
+[INFO] Running org.apache.flink.runtime.clusterframework.types.ResourceBudgetManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.apache.flink.runtime.clusterframework.types.ResourceBudgetManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.914 s - in org.apache.flink.runtime.event.task.TaskEventTest
+[INFO] Running org.apache.flink.runtime.concurrent.ScheduledFutureAdapterTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.flink.runtime.concurrent.ScheduledFutureAdapterTest
+[INFO] Running org.apache.flink.runtime.concurrent.FutureUtilsTest
+[INFO] Running org.apache.flink.runtime.concurrent.ConjunctFutureTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.195 s - in org.apache.flink.runtime.concurrent.ConjunctFutureTest
+[INFO] Running org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.064 s - in org.apache.flink.runtime.concurrent.FutureUtilsTest
+[INFO] Running org.apache.flink.runtime.clusterframework.types.LocationPreferenceSlotSelectionStrategyTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.067 s - in org.apache.flink.runtime.clusterframework.types.LocationPreferenceSlotSelectionStrategyTest
+[INFO] Running org.apache.flink.runtime.clusterframework.overlays.Krb5ConfOverlayTest
+[INFO] Running org.apache.flink.runtime.clusterframework.types.ResourceProfileTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.294 s - in org.apache.flink.runtime.clusterframework.types.ResourceProfileTest
+[INFO] Running org.apache.flink.runtime.clusterframework.overlays.FlinkDistributionOverlayTest
+[INFO] Running org.apache.flink.runtime.clusterframework.overlays.KeytabOverlayTest
+[INFO] Running org.apache.flink.runtime.clusterframework.overlays.HadoopUserOverlayTest
+[INFO] Running org.apache.flink.runtime.clusterframework.types.PreviousAllocationSlotSelectionStrategyTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in org.apache.flink.runtime.clusterframework.types.PreviousAllocationSlotSelectionStrategyTest
+[INFO] Running org.apache.flink.runtime.clusterframework.ApplicationStatusTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 s - in org.apache.flink.runtime.clusterframework.ApplicationStatusTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.755 s - in org.apache.flink.runtime.clusterframework.overlays.Krb5ConfOverlayTest
+[INFO] Running org.apache.flink.runtime.clusterframework.overlays.SSLStoreOverlayTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.534 s - in org.apache.flink.runtime.clusterframework.overlays.FlinkDistributionOverlayTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.745 s - in org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.703 s - in org.apache.flink.runtime.clusterframework.overlays.KeytabOverlayTest
+[INFO] Running org.apache.flink.runtime.clusterframework.overlays.HadoopConfOverlayTest
+[INFO] Running org.apache.flink.runtime.clusterframework.overlays.UserLibOverlayTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.566 s - in org.apache.flink.runtime.clusterframework.overlays.HadoopUserOverlayTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.693 s - in org.apache.flink.runtime.clusterframework.overlays.SSLStoreOverlayTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.735 s - in org.apache.flink.runtime.clusterframework.overlays.HadoopConfOverlayTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.71 s - in org.apache.flink.runtime.clusterframework.overlays.UserLibOverlayTest
+[INFO] Running org.apache.flink.runtime.clusterframework.BootstrapToolsTest
+[INFO] Running org.apache.flink.runtime.clusterframework.TaskExecutorProcessUtilsTest
+[INFO] Tests run: 43, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.031 s - in org.apache.flink.runtime.clusterframework.TaskExecutorProcessUtilsTest
+[INFO] Running org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcessTest
+[INFO] Running org.apache.flink.runtime.dispatcher.runner.DefaultDispatcherRunnerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 s - in org.apache.flink.runtime.dispatcher.runner.DefaultDispatcherRunnerTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.478 s - in org.apache.flink.runtime.dispatcher.runner.SessionDispatcherLeaderProcessTest
+[INFO] Running org.apache.flink.runtime.dispatcher.FileArchivedExecutionGraphStoreTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.365 s - in org.apache.flink.runtime.clusterframework.BootstrapToolsTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.854 s - in org.apache.flink.runtime.dispatcher.FileArchivedExecutionGraphStoreTest
+[INFO] Running org.apache.flink.runtime.dispatcher.runner.ZooKeeperDefaultDispatcherRunnerTest
+[INFO] Running org.apache.flink.runtime.dispatcher.DispatcherResourceCleanupTest
+[INFO] Running org.apache.flink.runtime.dispatcher.DispatcherTest
+[INFO] Running org.apache.flink.runtime.dispatcher.SchedulerNGFactoryFactoryTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.186 s - in org.apache.flink.runtime.dispatcher.SchedulerNGFactoryFactoryTest
+[INFO] Running org.apache.flink.runtime.shuffle.ShuffleServiceLoaderTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.flink.runtime.shuffle.ShuffleServiceLoaderTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.042 s - in org.apache.flink.runtime.dispatcher.DispatcherResourceCleanupTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.633 s - in org.apache.flink.runtime.dispatcher.DispatcherTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.222 s - in org.apache.flink.runtime.dispatcher.runner.ZooKeeperDefaultDispatcherRunnerTest
+[INFO] Running org.apache.flink.runtime.dispatcher.MiniDispatcherTest
+[INFO] Running org.apache.flink.runtime.jobgraph.InputOutputFormatContainerTest
+[INFO] Running org.apache.flink.runtime.jobgraph.topology.DefaultLogicalResultTest
+[INFO] Running org.apache.flink.runtime.jobgraph.topology.DefaultLogicalTopologyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.19 s - in org.apache.flink.runtime.jobgraph.topology.DefaultLogicalResultTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.231 s - in org.apache.flink.runtime.jobgraph.topology.DefaultLogicalTopologyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.995 s - in org.apache.flink.runtime.dispatcher.MiniDispatcherTest
+[INFO] Running org.apache.flink.runtime.jobgraph.topology.DefaultLogicalVertexTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.136 s - in org.apache.flink.runtime.jobgraph.topology.DefaultLogicalVertexTest
+[INFO] Running org.apache.flink.runtime.jobgraph.JobGraphTest
+[INFO] Running org.apache.flink.runtime.jobgraph.JobIdTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 s - in org.apache.flink.runtime.jobgraph.JobIdTest
+[INFO] Running org.apache.flink.runtime.jobgraph.jsonplan.JsonGeneratorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.301 s - in org.apache.flink.runtime.jobgraph.JobGraphTest
+[INFO] Running org.apache.flink.runtime.jobgraph.tasks.JobCheckpointingSettingsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.223 s - in org.apache.flink.runtime.jobgraph.InputOutputFormatContainerTest
+[INFO] Running org.apache.flink.runtime.jobgraph.JobTaskVertexTest
+[INFO] Running org.apache.flink.runtime.jobgraph.ScheduleModeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.flink.runtime.jobgraph.ScheduleModeTest
+[INFO] Running org.apache.flink.runtime.iterative.event.EventWithAggregatorsTest
+[INFO] Running org.apache.flink.runtime.iterative.concurrent.SuperstepKickoffLatchTest
+[INFO] Running org.apache.flink.runtime.iterative.concurrent.SuperstepBarrierTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.193 s - in org.apache.flink.runtime.jobgraph.jsonplan.JsonGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.85 s - in org.apache.flink.runtime.jobgraph.tasks.JobCheckpointingSettingsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.484 s - in org.apache.flink.runtime.iterative.concurrent.SuperstepKickoffLatchTest
+[INFO] Running org.apache.flink.runtime.iterative.concurrent.BrokerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.629 s - in org.apache.flink.runtime.iterative.concurrent.SuperstepBarrierTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.789 s - in org.apache.flink.runtime.jobgraph.JobTaskVertexTest
+[INFO] Running org.apache.flink.runtime.leaderretrieval.SettableLeaderRetrievalServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.flink.runtime.leaderretrieval.SettableLeaderRetrievalServiceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.995 s - in org.apache.flink.runtime.iterative.event.EventWithAggregatorsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.868 s - in org.apache.flink.runtime.iterative.concurrent.BrokerTest
+[INFO] Running org.apache.flink.runtime.iterative.concurrent.BlockingBackChannelTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerCleanupTest
+[INFO] Running org.apache.flink.runtime.blob.BlobCacheDeleteTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.333 s - in org.apache.flink.runtime.iterative.concurrent.BlockingBackChannelTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerPutTest
+[INFO] Running org.apache.flink.runtime.blob.BlobCacheCleanupTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerDeleteTest
+[INFO] Running org.apache.flink.runtime.blob.BlobCacheCorruptionTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.flink.runtime.blob.BlobServerTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.833 s - in org.apache.flink.runtime.blob.BlobServerDeleteTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.179 s - in org.apache.flink.runtime.blob.BlobCacheDeleteTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.163 s - in org.apache.flink.runtime.blob.BlobCacheCorruptionTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerGetTest
+[WARNING] Tests run: 5, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 3.183 s - in org.apache.flink.runtime.blob.BlobCacheCleanupTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.412 s - in org.apache.flink.runtime.blob.BlobServerCleanupTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerCorruptionTest
+[INFO] Running org.apache.flink.runtime.blob.BlobUtilsTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.094 s - in org.apache.flink.runtime.blob.BlobServerPutTest
+[INFO] Running org.apache.flink.runtime.blob.BlobCacheRetriesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.46 s - in org.apache.flink.runtime.blob.BlobServerCorruptionTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.697 s - in org.apache.flink.runtime.blob.BlobServerGetTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.382 s - in org.apache.flink.runtime.blob.BlobUtilsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.271 s - in org.apache.flink.runtime.blob.BlobCacheRetriesTest
+[INFO] Running org.apache.flink.runtime.blob.BlobUtilsNonWritableTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 s - in org.apache.flink.runtime.blob.BlobUtilsNonWritableTest
+[INFO] Running org.apache.flink.runtime.blob.BlobClientTest
+[INFO] Running org.apache.flink.runtime.blob.BlobKeyTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 s - in org.apache.flink.runtime.blob.BlobKeyTest
+[INFO] Running org.apache.flink.runtime.blob.BlobCacheGetTest
+[INFO] Running org.apache.flink.runtime.blob.BlobCacheSuccessTest
+[INFO] Running org.apache.flink.runtime.blob.BlobCachePutTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerRangeTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 s - in org.apache.flink.runtime.blob.BlobServerRangeTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.225 s - in org.apache.flink.runtime.blob.BlobCacheSuccessTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerRecoveryTest
+[INFO] Running org.apache.flink.runtime.blob.BlobServerSSLTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 s - in org.apache.flink.runtime.blob.BlobServerRecoveryTest
+[INFO] Running org.apache.flink.runtime.blob.BlobClientSslTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.847 s - in org.apache.flink.runtime.blob.BlobServerSSLTest
+[INFO] Running org.apache.flink.runtime.blob.BlobCacheRecoveryTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.812 s - in org.apache.flink.runtime.blob.BlobCacheGetTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.067 s - in org.apache.flink.runtime.blob.BlobCacheRecoveryTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.ResourceManagerJobMasterTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.slotmanager.TaskManagerReleaseInSlotManagerTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.ResourceManagerTaskExecutorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.86 s - in org.apache.flink.runtime.resourcemanager.slotmanager.TaskManagerReleaseInSlotManagerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.633 s - in org.apache.flink.runtime.resourcemanager.ResourceManagerTaskExecutorTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerFailUnfulfillableTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.slotmanager.LeastUtilizationSlotMatchingStrategyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.589 s - in org.apache.flink.runtime.resourcemanager.ResourceManagerJobMasterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.flink.runtime.resourcemanager.slotmanager.LeastUtilizationSlotMatchingStrategyTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.319 s - in org.apache.flink.runtime.blob.BlobCachePutTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.841 s - in org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerFailUnfulfillableTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.slotmanager.SlotProtocolTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.228 s - in org.apache.flink.runtime.resourcemanager.slotmanager.SlotProtocolTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.slotmanager.AnyMatchingSlotMatchingStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.073 s - in org.apache.flink.runtime.resourcemanager.slotmanager.AnyMatchingSlotMatchingStrategyTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerImplTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerConfigurationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 s - in org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerConfigurationTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.ResourceManagerHATest
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.818 s - in org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerImplTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.ActiveResourceManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.083 s - in org.apache.flink.runtime.resourcemanager.ActiveResourceManagerTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.StandaloneResourceManagerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.749 s - in org.apache.flink.runtime.resourcemanager.ResourceManagerHATest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.901 s - in org.apache.flink.runtime.resourcemanager.StandaloneResourceManagerTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.WorkerResourceSpecTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.JobLeaderIdServiceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.215 s - in org.apache.flink.runtime.resourcemanager.WorkerResourceSpecTest
+[INFO] Running org.apache.flink.runtime.taskmanager.TaskExecutionStateTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.303 s - in org.apache.flink.runtime.resourcemanager.JobLeaderIdServiceTest
+[INFO] Running org.apache.flink.runtime.taskmanager.TaskManagerLocationTest
+[INFO] Running org.apache.flink.runtime.taskmanager.TaskTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.ResourceManagerPartitionLifecycleTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.958 s - in org.apache.flink.runtime.taskmanager.TaskExecutionStateTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.069 s - in org.apache.flink.runtime.resourcemanager.ResourceManagerPartitionLifecycleTest
+[INFO] Running org.apache.flink.runtime.resourcemanager.ResourceManagerTest
+[INFO] Running org.apache.flink.runtime.messages.WebMonitorMessagesTest
+[INFO] Running org.apache.flink.runtime.taskmanager.TaskAsyncCallTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.166 s - in org.apache.flink.runtime.resourcemanager.ResourceManagerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.561 s - in org.apache.flink.runtime.taskmanager.TaskManagerLocationTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.641 s - in org.apache.flink.runtime.messages.WebMonitorMessagesTest
+[INFO] Running org.apache.flink.runtime.messages.CheckpointMessagesTest
+[INFO] Running org.apache.flink.runtime.messages.webmonitor.JobIdsWithStatusOverviewTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.844 s - in org.apache.flink.runtime.taskmanager.TaskAsyncCallTest
+[INFO] Running org.apache.flink.runtime.messages.webmonitor.JobDetailsTest
+[INFO] Running org.apache.flink.runtime.messages.webmonitor.MultipleJobsDetailsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.288 s - in org.apache.flink.runtime.messages.webmonitor.JobIdsWithStatusOverviewTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.622 s - in org.apache.flink.runtime.messages.webmonitor.JobDetailsTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.447 s - in org.apache.flink.runtime.taskmanager.TaskTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.949 s - in org.apache.flink.runtime.messages.CheckpointMessagesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.96 s - in org.apache.flink.runtime.messages.webmonitor.MultipleJobsDetailsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 37.448 s - in org.apache.flink.runtime.blob.BlobClientTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointTypeTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.flink.runtime.checkpoint.CheckpointTypeTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointStatsCountsTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointStatsTrackerTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointOptionsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.apache.flink.runtime.checkpoint.CheckpointOptionsTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointCoordinatorFailureTest
+[INFO] Running org.apache.flink.runtime.checkpoint.RestoredCheckpointStatsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 s - in org.apache.flink.runtime.checkpoint.RestoredCheckpointStatsTest
+[INFO] Running org.apache.flink.runtime.checkpoint.ZKCheckpointIDCounterMultiServersTest
+[INFO] Running org.apache.flink.runtime.checkpoint.TaskStateStatsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 s - in org.apache.flink.runtime.checkpoint.TaskStateStatsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.68 s - in org.apache.flink.runtime.checkpoint.CheckpointStatsCountsTest
+[INFO] Running org.apache.flink.runtime.checkpoint.FailedCheckpointStatsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.1 s - in org.apache.flink.runtime.checkpoint.FailedCheckpointStatsTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CompletedCheckpointTest
+[INFO] Running org.apache.flink.runtime.checkpoint.channel.ChannelStateSerializerImplTest
+[INFO] Running org.apache.flink.runtime.checkpoint.channel.ChannelStateWriteRequestExecutorImplTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.353 s - in org.apache.flink.runtime.checkpoint.CheckpointStatsTrackerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.941 s - in org.apache.flink.runtime.checkpoint.CheckpointCoordinatorFailureTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointCoordinatorRestoringTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.43 s - in org.apache.flink.runtime.checkpoint.ZKCheckpointIDCounterMultiServersTest
+[INFO] Running org.apache.flink.runtime.checkpoint.channel.ChannelStateWriteRequestDispatcherTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.434 s - in org.apache.flink.runtime.checkpoint.channel.ChannelStateSerializerImplTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.504 s - in org.apache.flink.runtime.checkpoint.channel.ChannelStateWriteRequestExecutorImplTest
+[INFO] Running org.apache.flink.runtime.checkpoint.channel.ChannelStateCheckpointWriterTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.819 s - in org.apache.flink.runtime.checkpoint.CompletedCheckpointTest
+[INFO] Running org.apache.flink.runtime.checkpoint.channel.CheckpointInProgressRequestTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.flink.runtime.checkpoint.channel.CheckpointInProgressRequestTest
+[INFO] Running org.apache.flink.runtime.checkpoint.channel.ChannelStateWriterImplTest
+[INFO] Running org.apache.flink.runtime.checkpoint.channel.ChannelStateReaderImplTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.905 s - in org.apache.flink.runtime.checkpoint.channel.ChannelStateWriteRequestDispatcherTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.825 s - in org.apache.flink.runtime.checkpoint.channel.ChannelStateCheckpointWriterTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointStatsSnapshotTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointStateRestoreTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.726 s - in org.apache.flink.runtime.checkpoint.channel.ChannelStateReaderImplTest
+[INFO] Running org.apache.flink.runtime.checkpoint.MinMaxAvgStatsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 s - in org.apache.flink.runtime.checkpoint.MinMaxAvgStatsTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.174 s - in org.apache.flink.runtime.checkpoint.channel.ChannelStateWriterImplTest
+[INFO] Running org.apache.flink.runtime.checkpoint.PendingCheckpointStatsTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.291 s - in org.apache.flink.runtime.checkpoint.CheckpointCoordinatorRestoringTest
+[INFO] Running org.apache.flink.runtime.checkpoint.metadata.MetadataV3SerializerTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointPropertiesTest
+[INFO] Running org.apache.flink.runtime.checkpoint.metadata.CheckpointMetadataTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.191 s - in org.apache.flink.runtime.checkpoint.CheckpointStatsSnapshotTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.065 s - in org.apache.flink.runtime.checkpoint.PendingCheckpointStatsTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointStatsHistoryTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.487 s - in org.apache.flink.runtime.checkpoint.metadata.CheckpointMetadataTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.763 s - in org.apache.flink.runtime.checkpoint.CheckpointPropertiesTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointStatsStatusTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0 s - in org.apache.flink.runtime.checkpoint.CheckpointStatsStatusTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.643 s - in org.apache.flink.runtime.checkpoint.CheckpointStatsHistoryTest
+[INFO] Running org.apache.flink.runtime.checkpoint.FailoverStrategyCheckpointCoordinatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.814 s - in org.apache.flink.runtime.checkpoint.CheckpointStateRestoreTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.854 s - in org.apache.flink.runtime.checkpoint.metadata.MetadataV3SerializerTest
+[INFO] Running org.apache.flink.runtime.checkpoint.PrioritizedOperatorSubtaskStateTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.494 s - in org.apache.flink.runtime.checkpoint.PrioritizedOperatorSubtaskStateTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointMetadataLoadingTest
+[INFO] Running org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStoreTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.751 s - in org.apache.flink.runtime.checkpoint.FailoverStrategyCheckpointCoordinatorTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointCoordinatorMasterHooksTest
+[INFO] Running org.apache.flink.runtime.checkpoint.StateObjectCollectionTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.735 s - in org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStoreTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointSettingsSerializableTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CompletedCheckpointStatsSummaryTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.819 s - in org.apache.flink.runtime.checkpoint.StateObjectCollectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.544 s - in org.apache.flink.runtime.checkpoint.CheckpointMetadataLoadingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.207 s - in org.apache.flink.runtime.checkpoint.CompletedCheckpointStatsSummaryTest
+[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.891 s - in org.apache.flink.runtime.checkpoint.CheckpointCoordinatorMasterHooksTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointFailureManagerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 s - in org.apache.flink.runtime.checkpoint.CheckpointFailureManagerTest
+[INFO] Running org.apache.flink.runtime.checkpoint.TaskStateSnapshotTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.366 s - in org.apache.flink.runtime.checkpoint.CheckpointSettingsSerializableTest
+[INFO] Running org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTriggeringTest
+[INFO] Running org.apache.flink.runtime.checkpoint.PendingCheckpointTest
+[INFO] Running org.apache.flink.runtime.checkpoint.SubtaskStateStatsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.apache.flink.runtime.checkpoint.SubtaskStateStatsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.767 s - in org.apache.flink.runtime.checkpoint.TaskStateSnapshotTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.35 s - in org.apache.flink.runtime.checkpoint.PendingCheckpointTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.835 s - in org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTest
+[INFO] Running org.apache.flink.runtime.checkpoint.StateAssignmentOperationTest
+[INFO] Running org.apache.flink.runtime.checkpoint.ChannelStateNoRescalingPartitionerTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.661 s - in org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTriggeringTest
+[INFO] Running org.apache.flink.runtime.checkpoint.hooks.MasterHooksTest
+[INFO] Running org.apache.flink.runtime.checkpoint.ExecutionGraphCheckpointCoordinatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.302 s - in org.apache.flink.runtime.checkpoint.StateAssignmentOperationTest
+[INFO] Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.831 s - in org.apache.flink.runtime.checkpoint.ChannelStateNoRescalingPartitionerTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 76.495 s - in org.apache.flink.runtime.blob.BlobClientSslTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.81 s - in org.apache.flink.runtime.checkpoint.hooks.MasterHooksTest
+[INFO] Running org.apache.flink.runtime.misc.KryoSerializerRegistrationsTest
+[INFO] Running org.apache.flink.runtime.checkpoint.ZooKeeperCompletedCheckpointStoreMockitoTest
+[INFO] Running org.apache.flink.runtime.state.KeyGroupRangeOffsetTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.122 s - in org.apache.flink.runtime.state.KeyGroupRangeOffsetTest
+[INFO] Running org.apache.flink.runtime.checkpoint.ZooKeeperCompletedCheckpointStoreTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.306 s - in org.apache.flink.runtime.checkpoint.ZooKeeperCompletedCheckpointStoreTest
+[INFO] Running org.apache.flink.runtime.state.AsyncSnapshotCallableTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.563 s - in org.apache.flink.runtime.checkpoint.ExecutionGraphCheckpointCoordinatorTest
+[INFO] Running org.apache.flink.runtime.state.KeyGroupsStateHandleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.flink.runtime.state.KeyGroupsStateHandleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.29 s - in org.apache.flink.runtime.misc.KryoSerializerRegistrationsTest
+[INFO] Running org.apache.flink.runtime.state.TaskStateManagerImplTest
+[INFO] Running org.apache.flink.runtime.state.ArrayListSerializerMigrationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in org.apache.flink.runtime.state.TaskStateManagerImplTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.528 s - in org.apache.flink.runtime.checkpoint.ZooKeeperCompletedCheckpointStoreMockitoTest
+[INFO] Running org.apache.flink.runtime.state.memory.ByteStreamStateHandleTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 s - in org.apache.flink.runtime.state.memory.ByteStreamStateHandleTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.234 s - in org.apache.flink.runtime.state.ArrayListSerializerMigrationTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.501 s - in org.apache.flink.runtime.state.AsyncSnapshotCallableTest
+[INFO] Running org.apache.flink.runtime.state.memory.MemoryCheckpointStorageTest
+[INFO] Running org.apache.flink.runtime.state.memory.MemoryCheckpointOutputStreamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.531 s - in org.apache.flink.runtime.state.memory.MemoryCheckpointOutputStreamTest
+[INFO] Running org.apache.flink.runtime.state.SharedStateRegistryTest
+[INFO] Running org.apache.flink.runtime.state.OperatorStateOutputCheckpointStreamTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 s - in org.apache.flink.runtime.state.OperatorStateOutputCheckpointStreamTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.035 s - in org.apache.flink.runtime.state.SharedStateRegistryTest
+[INFO] Running org.apache.flink.runtime.state.OperatorStateBackendTest
+[INFO] Running org.apache.flink.runtime.state.VoidNamespaceTypeInfoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.023 s - in org.apache.flink.runtime.state.VoidNamespaceTypeInfoTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.794 s - in org.apache.flink.runtime.state.memory.MemoryCheckpointStorageTest
+[INFO] Running org.apache.flink.runtime.state.LocalRecoveryDirectoryProviderImplTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.15 s - in org.apache.flink.runtime.state.LocalRecoveryDirectoryProviderImplTest
+[INFO] Running org.apache.flink.runtime.state.IncrementalRemoteKeyedStateHandleTest
+[INFO] Running org.apache.flink.runtime.state.JavaSerializerSnapshotMigrationTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.293 s - in org.apache.flink.runtime.state.JavaSerializerSnapshotMigrationTest
+[INFO] Running org.apache.flink.runtime.state.filesystem.FileStateHandleTest
+[INFO] Running org.apache.flink.runtime.state.filesystem.FsCheckpointStorageTest
+[INFO] Running org.apache.flink.runtime.state.filesystem.FsStateBackendEntropyTest
+[INFO] Running org.apache.flink.runtime.state.filesystem.FsStorageLocationReferenceTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.032 s - in org.apache.flink.runtime.state.filesystem.FsStorageLocationReferenceTest
+[INFO] Running org.apache.flink.runtime.state.JavaSerializerTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.69 s - in org.apache.flink.runtime.state.JavaSerializerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.852 s - in org.apache.flink.runtime.state.filesystem.FileStateHandleTest
+[INFO] Running org.apache.flink.runtime.state.filesystem.CheckpointStateOutputStreamTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.459 s - in org.apache.flink.runtime.state.filesystem.FsStateBackendEntropyTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.595 s - in org.apache.flink.runtime.state.IncrementalRemoteKeyedStateHandleTest
+[INFO] Running org.apache.flink.runtime.state.filesystem.FsCheckpointStateOutputStreamTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.619 s - in org.apache.flink.runtime.state.OperatorStateBackendTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.571 s - in org.apache.flink.runtime.state.filesystem.FsCheckpointStorageTest
+[INFO] Running org.apache.flink.runtime.state.StateSerializerProviderTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.053 s - in org.apache.flink.runtime.state.StateSerializerProviderTest
+[INFO] Running org.apache.flink.runtime.state.ttl.HeapSyncSnapshotTtlStateTest
+[INFO] Running org.apache.flink.runtime.state.SnapshotDirectoryTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.203 s - in org.apache.flink.runtime.state.SnapshotDirectoryTest
+[INFO] Running org.apache.flink.runtime.state.ttl.MockTtlStateTest
+[INFO] Running org.apache.flink.runtime.state.ttl.HeapAsyncSnapshotTtlStateTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.571 s - in org.apache.flink.runtime.state.filesystem.CheckpointStateOutputStreamTest
+[INFO] Running org.apache.flink.runtime.state.ttl.TtlSerializerStateMigrationTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.466 s - in org.apache.flink.runtime.state.ttl.TtlSerializerStateMigrationTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.42 s - in org.apache.flink.runtime.state.filesystem.FsCheckpointStateOutputStreamTest
+[INFO] Running org.apache.flink.runtime.state.KeyedStateCheckpointOutputStreamTest
+[INFO] Running org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManagerTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 s - in org.apache.flink.runtime.state.KeyedStateCheckpointOutputStreamTest
+[INFO] Running org.apache.flink.runtime.state.SnapshotResultTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.4 s - in org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManagerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.006 s - in org.apache.flink.runtime.state.SnapshotResultTest
+[INFO] Running org.apache.flink.runtime.state.SerializationProxiesTest
+[INFO] Running org.apache.flink.runtime.state.StateSnapshotCompressionTest
+[INFO] Running org.apache.flink.runtime.state.FileStateBackendTest
+[INFO] Running org.apache.flink.runtime.state.DuplicatingCheckpointOutputStreamTest
+[WARNING] Tests run: 126, Failures: 0, Errors: 0, Skipped: 23, Time elapsed: 9.313 s - in org.apache.flink.runtime.state.ttl.MockTtlStateTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 s - in org.apache.flink.runtime.state.DuplicatingCheckpointOutputStreamTest
+[INFO] Running org.apache.flink.runtime.state.HeapKeyedStateBackendAsyncByDefaultTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.146 s - in org.apache.flink.runtime.state.SerializationProxiesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.242 s - in org.apache.flink.runtime.state.StateSnapshotCompressionTest
+[WARNING] Tests run: 126, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 12.678 s - in org.apache.flink.runtime.state.ttl.HeapSyncSnapshotTtlStateTest
+[INFO] Running org.apache.flink.runtime.state.KeyGroupRangeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.056 s - in org.apache.flink.runtime.state.KeyGroupRangeTest
+[WARNING] Tests run: 126, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 11.076 s - in org.apache.flink.runtime.state.ttl.HeapAsyncSnapshotTtlStateTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.674 s - in org.apache.flink.runtime.state.HeapKeyedStateBackendAsyncByDefaultTest
+[INFO] Running org.apache.flink.runtime.state.metainfo.StateMetaInfoSnapshotEnumConstantsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.flink.runtime.state.metainfo.StateMetaInfoSnapshotEnumConstantsTest
+[INFO] Running org.apache.flink.runtime.state.OperatorStreamStateHandleTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.flink.runtime.state.OperatorStreamStateHandleTest
+[INFO] Running org.apache.flink.runtime.state.heap.CopyOnWriteStateTableTest
+[INFO] Running org.apache.flink.runtime.state.VoidNamespacieSerializerSnapshotMigrationTest
+[INFO] Running org.apache.flink.runtime.state.StateBackendLoadingTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.189 s - in org.apache.flink.runtime.state.VoidNamespacieSerializerSnapshotMigrationTest
+[INFO] Running org.apache.flink.runtime.state.CheckpointStreamWithResultProviderTest
+[INFO] Running org.apache.flink.runtime.state.MemoryStateBackendTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.168 s - in org.apache.flink.runtime.state.heap.CopyOnWriteStateTableTest
+[INFO] Running org.apache.flink.runtime.state.heap.HeapKeyedStateBackendSnapshotMigrationTest
+[INFO] Running org.apache.flink.runtime.state.heap.KeyGroupPartitionedPriorityQueueTest
+[INFO] Running org.apache.flink.runtime.state.heap.HeapPriorityQueueTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.427 s - in org.apache.flink.runtime.state.heap.HeapPriorityQueueTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.744 s - in org.apache.flink.runtime.state.heap.KeyGroupPartitionedPriorityQueueTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.475 s - in org.apache.flink.runtime.state.CheckpointStreamWithResultProviderTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.611 s - in org.apache.flink.runtime.state.StateBackendLoadingTest
+[INFO] Running org.apache.flink.runtime.state.heap.StateTableSnapshotCompatibilityTest
+[WARNING] Tests run: 130, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 13.959 s - in org.apache.flink.runtime.state.FileStateBackendTest
+[INFO] Running org.apache.flink.runtime.state.TaskLocalStateStoreImplTest
+[INFO] Running org.apache.flink.runtime.state.heap.HeapPriorityQueueSetTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.309 s - in org.apache.flink.runtime.state.heap.HeapKeyedStateBackendSnapshotMigrationTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.456 s - in org.apache.flink.runtime.state.heap.HeapPriorityQueueSetTest
+[INFO] Running org.apache.flink.runtime.state.heap.CopyOnWriteStateMapTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.925 s - in org.apache.flink.runtime.state.heap.StateTableSnapshotCompatibilityTest
+[INFO] Running org.apache.flink.runtime.state.FileStateBackendMigrationTest
+[INFO] Running org.apache.flink.runtime.accumulators.StringifiedAccumulatorResultTest
+[INFO] Running org.apache.flink.runtime.net.ConnectionUtilsTest
+[WARNING] Tests run: 130, Failures: 0, Errors: 0, Skipped: 2, Time elapsed: 10.319 s - in org.apache.flink.runtime.state.MemoryStateBackendTest
+[INFO] Running org.apache.flink.runtime.throwable.ThrowableClassifierTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.apache.flink.runtime.throwable.ThrowableClassifierTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.017 s - in org.apache.flink.runtime.state.TaskLocalStateStoreImplTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.922 s - in org.apache.flink.runtime.state.FileStateBackendMigrationTest
+[INFO] Running org.apache.flink.runtime.net.SSLUtilsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.31 s - in org.apache.flink.runtime.accumulators.StringifiedAccumulatorResultTest
+[INFO] Running org.apache.flink.runtime.akka.AkkaUtilsTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskManagerRunnerTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskExecutorSubmissionTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskManagerRunnerConfigurationTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.DefaultJobLeaderServiceTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.844 s - in org.apache.flink.runtime.akka.AkkaUtilsTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.996 s - in org.apache.flink.runtime.state.heap.CopyOnWriteStateMapTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.238 s - in org.apache.flink.runtime.net.ConnectionUtilsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.207 s - in org.apache.flink.runtime.taskexecutor.DefaultJobLeaderServiceTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.513 s - in org.apache.flink.runtime.taskexecutor.TaskManagerRunnerConfigurationTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.126 s - in org.apache.flink.runtime.net.SSLUtilsTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.slot.TimerServiceTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.258 s - in org.apache.flink.runtime.taskexecutor.slot.TaskSlotTableTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.337 s - in org.apache.flink.runtime.taskexecutor.TaskManagerRunnerTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.slot.TaskSlotTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.126 s - in org.apache.flink.runtime.taskexecutor.slot.TaskSlotTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.166 s - in org.apache.flink.runtime.taskexecutor.slot.TimerServiceTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.DefaultJobTableTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.25 s - in org.apache.flink.runtime.taskexecutor.DefaultJobTableTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.NettyShuffleEnvironmentConfigurationTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.apache.flink.runtime.taskexecutor.NettyShuffleEnvironmentConfigurationTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskManagerRunnerStartupTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtilsTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 s - in org.apache.flink.runtime.taskexecutor.TaskExecutorResourceUtilsTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskExecutorOperatorEventHandlingTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.054 s - in org.apache.flink.runtime.taskexecutor.TaskManagerRunnerStartupTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 14.951 s - in org.apache.flink.runtime.taskexecutor.TaskExecutorSubmissionTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.BackPressureSampleServiceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.144 s - in org.apache.flink.runtime.taskexecutor.BackPressureSampleServiceTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskExecutorSlotLifetimeTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.partition.PartitionTableTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.apache.flink.runtime.taskexecutor.partition.PartitionTableTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskExecutorPartitionLifecycleTest
+[INFO] Running akka.actor.RobustActorSystemTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskExecutorTest
+[INFO] Running org.apache.flink.runtime.taskexecutor.TaskExecutorToResourceManagerConnectionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.143 s - in org.apache.flink.runtime.taskexecutor.TaskExecutorSlotLifetimeTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.895 s - in org.apache.flink.runtime.taskexecutor.TaskExecutorOperatorEventHandlingTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.442 s - in org.apache.flink.runtime.taskexecutor.TaskExecutorToResourceManagerConnectionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.448 s - in org.apache.flink.runtime.taskexecutor.TaskExecutorPartitionLifecycleTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.374 s - in akka.actor.RobustActorSystemTest
+[INFO] Tests run: 27, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.948 s - in org.apache.flink.runtime.taskexecutor.TaskExecutorTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   UnionInputGateTest.testUpdateInputChannel:165 
+Expected: is <LocalInputChannel [918def5f9439b46dc2031493e2f0239d#-1@d1ad05f34874f731d77c7126c25ad4fe]>
+     but: was <UnknownInputChannel [918def5f9439b46dc2031493e2f0239d#-1@d1ad05f34874f731d77c7126c25ad4fe]>
+[INFO] 
+[ERROR] Tests run: 4496, Failures: 1, Errors: 0, Skipped: 39
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14:12 min
+[INFO] Finished at: 2025-05-23T00:05:14+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.22.1:test (default-test) on project flink-runtime_2.11: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-runtime/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
