@@ -1,0 +1,112 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Fabian Paul
+        '@username': fpaul
+      attachments: null
+      comments:
+        comment:
+          '#text': "<p>Fixed in:</p>\n<ul>\n\t<li>master\n\t<ul>\n\t\t<li>2ae710671442e382888b615c65f8aed5781bfaa4</li>\n\
+            \t</ul>\n\t</li>\n\t<li>1.14\n\t<ul>\n\t\t<li>8c1033d9dfc3133891ee543f4c6b4ea568789ab0</li>\n\
+            \t</ul>\n\t</li>\n</ul>"
+          '@author': dawidwys
+          '@created': Tue, 14 Sep 2021 19:54:56 +0000
+          '@id': '17415131'
+      created: Tue, 14 Sep 2021 14:01:57 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '0.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: 'false'
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 3 years, 36 weeks, 1 day ago
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|z0uwc8:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+      description: "<p>To dynamically calculate the outgoing topic we allow passing\
+        \ a lambda. Unfortunately, it is currently not marked as serializable hence\
+        \ the\_following code fails in during closure cleaning when used within a\
+        \ job.<br/>\n\_</p>\n<div class=\"code panel\" style=\"border-width: 1px;\"\
+        ><div class=\"codeContent panelContent\">\n<pre class=\"code-java\">\nKafkaRecordSerializationSchema.builder()\n\
+        \        .setTopic(topic)\n        .setValueSerializationSchema(serSchema)\n\
+        \        .setPartitioner(partitioner)\n        .build())\n</pre>\n</div></div>\n\
+        \n<p>\_</p>"
+      due: null
+      environment: null
+      key:
+        '#text': FLINK-24282
+        '@id': '13401028'
+      labels:
+        label: pull-request-available
+      link: https://issues.apache.org/jira/browse/FLINK-24282
+      priority:
+        '#text': Blocker
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/blocker.svg
+        '@id': '1'
+      project:
+        '#text': Flink
+        '@id': '12315522'
+        '@key': FLINK
+      reporter:
+        '#text': Fabian Paul
+        '@username': fpaul
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Tue, 14 Sep 2021 19:54:56 +0000
+      status:
+        '#text': Closed
+        '@description': The issue is considered finished, the resolution is correct.
+          Issues which are not closed can be reopened.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/closed.png
+        '@id': '6'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: KafkaRecordSerializationSchema TopicSelector is not serializable
+      title: '[FLINK-24282] KafkaRecordSerializationSchema TopicSelector is not serializable'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Tue, 14 Sep 2021 19:54:56 +0000
+      version: 1.14.0
+      votes: '0'
+      watches: '2'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA

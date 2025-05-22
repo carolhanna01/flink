@@ -1,0 +1,90 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.flink:flink-connector-kafka_2.11:jar:1.15-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-connector-kafka_${scala.binary.version}:1.15-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/pom.xml, line 33, column 14
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] ------------< org.apache.flink:flink-connector-kafka_2.11 >-------------
+[INFO] Building Flink : Connectors : Kafka 1.15-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-connector-kafka_2.11 ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-connector-kafka_2.11 ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-connector-kafka_2.11 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-connector-kafka_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-connector-kafka_2.11 ---
+[INFO] Compiling 106 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/target/classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/streaming/connectors/kafka/internals/KafkaConsumerThread.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/streaming/connectors/kafka/internals/KafkaConsumerThread.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/streaming/connectors/kafka/internals/KafkaFetcher.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/main/java/org/apache/flink/streaming/connectors/kafka/internals/KafkaFetcher.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-connector-kafka_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 47 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-connector-kafka_2.11 ---
+[INFO] Compiling 80 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/target/test-classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/test/java/org/apache/flink/streaming/connectors/kafka/testutils/TestPartitionDiscoverer.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/test/java/org/apache/flink/streaming/connectors/kafka/testutils/TestPartitionDiscoverer.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/test/java/org/apache/flink/streaming/connectors/kafka/KafkaMigrationTestBase.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/test/java/org/apache/flink/streaming/connectors/kafka/KafkaMigrationTestBase.java: Recompile with -Xlint:unchecked for details.
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/test/java/org/apache/flink/connector/kafka/sink/KafkaRecordSerializationSchemaBuilderTest.java:[107,15] cannot find symbol
+  symbol:   class TopicSelector
+  location: class org.apache.flink.connector.kafka.sink.KafkaRecordSerializationSchemaBuilderTest
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  45.234 s
+[INFO] Finished at: 2025-05-22T20:50:36+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.0:testCompile (default-testCompile) on project flink-connector-kafka_2.11: Compilation failure
+[ERROR] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-connectors/flink-connector-kafka/src/test/java/org/apache/flink/connector/kafka/sink/KafkaRecordSerializationSchemaBuilderTest.java:[107,15] cannot find symbol
+[ERROR]   symbol:   class TopicSelector
+[ERROR]   location: class org.apache.flink.connector.kafka.sink.KafkaRecordSerializationSchemaBuilderTest
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
