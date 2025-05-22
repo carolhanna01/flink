@@ -1,0 +1,1446 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.flink:flink-table-api-scala_2.12:jar:1.16-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-table-api-scala_${scala.binary.version}:1.16-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/pom.xml, line 30, column 14
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.flink:flink-table-api-scala-bridge_2.12:jar:1.16-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-table-api-scala-bridge_${scala.binary.version}:1.16-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/pom.xml, line 30, column 14
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.flink:flink-table-planner_2.12:jar:1.16-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-table-planner_${scala.binary.version}:1.16-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-planner/pom.xml, line 30, column 14
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Flink : Table :                                                    [pom]
+[INFO] Flink : Table : Common                                             [jar]
+[INFO] Flink : Table : API Java                                           [jar]
+[INFO] Flink : Table : API Scala                                          [jar]
+[INFO] Flink : Table : API bridge base                                    [jar]
+[INFO] Flink : Table : API Java bridge                                    [jar]
+[INFO] Flink : Table : API Scala bridge                                   [jar]
+[INFO] Flink : Table : API Java Uber                                      [jar]
+[INFO] Flink : Table : SQL Parser                                         [jar]
+[INFO] Flink : Table : SQL Parser Hive                                    [jar]
+[INFO] Flink : Table : Code Splitter                                      [jar]
+[INFO] Flink : Table : Runtime                                            [jar]
+[INFO] Flink : Table : Planner                                            [jar]
+[INFO] Flink : Table : Planner Loader Bundle                              [jar]
+[INFO] Flink : Table : Planner Loader                                     [jar]
+[INFO] Flink : Table : SQL Client                                         [jar]
+[INFO] Flink : Table : Test Utils                                         [jar]
+[INFO] 
+[INFO] --------------------< org.apache.flink:flink-table >--------------------
+[INFO] Building Flink : Table : 1.16-SNAPSHOT                            [1/17]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table ---
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] ----------------< org.apache.flink:flink-table-common >-----------------
+[INFO] Building Flink : Table : Common 1.16-SNAPSHOT                     [2/17]
+[INFO]   from flink-table-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-common ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-common ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-common ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-common ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-common ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-common ---
+[INFO] Compiling 461 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/target/classes
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/src/main/java/org/apache/flink/table/data/columnar/vector/heap/AbstractHeapVector.java:[34,33] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/src/main/java/org/apache/flink/table/types/logical/utils/LogicalTypeChecks.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/src/main/java/org/apache/flink/table/types/logical/utils/LogicalTypeChecks.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/src/main/java/org/apache/flink/table/dataview/ListViewSerializer.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/src/main/java/org/apache/flink/table/dataview/ListViewSerializer.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-common ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-common ---
+[INFO] Compiling 112 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/target/test-classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/src/test/java/org/apache/flink/table/types/extraction/DataTypeExtractorTest.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-common/src/test/java/org/apache/flink/table/types/extraction/DataTypeExtractorTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-common ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.table.plan.stats.TableStatsTest
+[INFO] Running org.apache.flink.table.utils.TypeStringUtilsTest
+[INFO] Running org.apache.flink.table.utils.PartitionPathUtilsTest
+[INFO] Running org.apache.flink.table.utils.TypeMappingUtilsTest
+[INFO] Running org.apache.flink.table.connector.ProjectionTest
+[INFO] Running org.apache.flink.table.utils.EncodingUtilsTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.285 s - in org.apache.flink.table.plan.stats.TableStatsTest
+[INFO] Running org.apache.flink.table.utils.TableSchemaUtilsTest
+[INFO] Running org.apache.flink.table.utils.print.TableauStyleTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.352 s - in org.apache.flink.table.utils.PartitionPathUtilsTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.417 s - in org.apache.flink.table.connector.ProjectionTest
+[INFO] Running org.apache.flink.table.types.LogicalTypeCastsTest
+[INFO] Running org.apache.flink.table.catalog.ObjectIdentifierTest
+[INFO] Running org.apache.flink.table.types.ClassDataTypeConverterTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.634 s - in org.apache.flink.table.utils.TypeMappingUtilsTest
+[INFO] Running org.apache.flink.table.types.utils.DataTypeUtilsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.431 s - in org.apache.flink.table.utils.TableSchemaUtilsTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.202 s - in org.apache.flink.table.types.ClassDataTypeConverterTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.179 s - in org.apache.flink.table.types.utils.DataTypeUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.305 s - in org.apache.flink.table.catalog.ObjectIdentifierTest
+[INFO] Running org.apache.flink.table.types.inference.TypeTransformationsTest
+[INFO] Running org.apache.flink.table.types.LogicalTypeCastAvoidanceTest
+[INFO] Running org.apache.flink.table.types.DataTypesTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.024 s - in org.apache.flink.table.types.LogicalTypeCastsTest
+[INFO] Tests run: 48, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.539 s - in org.apache.flink.table.types.LogicalTypeCastAvoidanceTest
+[INFO] Running org.apache.flink.table.types.inference.SubsequenceInputTypeStrategyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 s - in org.apache.flink.table.types.inference.SubsequenceInputTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.TypeStrategiesTest
+[INFO] Running org.apache.flink.table.types.inference.InputTypeStrategiesTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.apache.flink.table.types.inference.TypeStrategiesTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.ArrayTypeStrategyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s - in org.apache.flink.table.types.inference.strategies.ArrayTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.RowTypeStrategyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.612 s - in org.apache.flink.table.utils.TypeStringUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.flink.table.types.inference.strategies.RowTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.DecimalTypeStrategyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.apache.flink.table.types.inference.strategies.DecimalTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.TypeLiteralArgumentTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.CurrentWatermarkTypeStrategyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.flink.table.types.inference.strategies.CurrentWatermarkTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.RepeatingSequenceInputTypeStrategyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.apache.flink.table.types.inference.strategies.RepeatingSequenceInputTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.StringConcatTypeStrategyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.flink.table.types.inference.strategies.StringConcatTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.MapTypeStrategyTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.003 s - in org.apache.flink.table.types.inference.strategies.MapTypeStrategyTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 s - in org.apache.flink.table.types.inference.strategies.TypeLiteralArgumentTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.SymbolArgumentTypeStrategyTest
+[INFO] Tests run: 255, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.365 s - in org.apache.flink.table.types.DataTypesTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.054 s - in org.apache.flink.table.types.inference.strategies.SymbolArgumentTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.MappingTypeStrategiesTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.GetTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.inference.strategies.CurrentWatermarkInputTypeStrategyTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.024 s - in org.apache.flink.table.types.inference.MappingTypeStrategiesTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.152 s - in org.apache.flink.table.types.inference.strategies.GetTypeStrategyTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.159 s - in org.apache.flink.table.types.inference.strategies.CurrentWatermarkInputTypeStrategyTest
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.85 s - in org.apache.flink.table.types.inference.InputTypeStrategiesTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.022 s - in org.apache.flink.table.utils.EncodingUtilsTest
+[INFO] Running org.apache.flink.table.types.DataTypeTest
+[INFO] Running org.apache.flink.table.types.extraction.DataTypeExtractorTest
+[INFO] Running org.apache.flink.table.types.ValueDataTypeConverterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.256 s - in org.apache.flink.table.utils.print.TableauStyleTest
+[INFO] Running org.apache.flink.table.types.inference.ComparableInputTypeStrategyTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.137 s - in org.apache.flink.table.types.ValueDataTypeConverterTest
+[INFO] Tests run: 17, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.339 s - in org.apache.flink.table.types.DataTypeTest
+[INFO] Running org.apache.flink.table.types.LogicalTypeParserTest
+[INFO] Running org.apache.flink.table.types.extraction.TypeInferenceExtractorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.016 s - in org.apache.flink.table.types.inference.TypeTransformationsTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.452 s - in org.apache.flink.table.types.inference.ComparableInputTypeStrategyTest
+[INFO] Running org.apache.flink.table.types.LogicalCommonTypeTest
+[INFO] Tests run: 50, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.606 s - in org.apache.flink.table.types.extraction.DataTypeExtractorTest
+[INFO] Running org.apache.flink.table.types.logical.utils.LogicalTypeChecksTest
+[INFO] Running org.apache.flink.table.types.LogicalTypeDuplicatorTest
+[INFO] Running org.apache.flink.table.types.LogicalTypesTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.134 s - in org.apache.flink.table.types.LogicalTypeDuplicatorTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.155 s - in org.apache.flink.table.types.logical.utils.LogicalTypeChecksTest
+[INFO] Running org.apache.flink.table.descriptors.DescriptorPropertiesTest
+[INFO] Running org.apache.flink.table.types.logical.utils.LogicalTypeMergingTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.apache.flink.table.types.logical.utils.LogicalTypeMergingTest
+[INFO] Running org.apache.flink.table.data.utils.ProjectedRowDataTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 s - in org.apache.flink.table.data.utils.ProjectedRowDataTest
+[INFO] Running org.apache.flink.table.data.utils.JoinedRowDataTest
+[INFO] Tests run: 42, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.472 s - in org.apache.flink.table.types.LogicalCommonTypeTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.303 s - in org.apache.flink.table.descriptors.DescriptorPropertiesTest
+[INFO] Running org.apache.flink.table.data.columnar.vector.ColumnVectorTest
+[INFO] Running org.apache.flink.table.data.columnar.vector.VectorizedColumnBatchTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.213 s - in org.apache.flink.table.data.columnar.vector.ColumnVectorTest
+[INFO] Tests run: 264, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.117 s - in org.apache.flink.table.types.LogicalTypeParserTest
+[INFO] Running org.apache.flink.table.factories.TableSinkFactoryServiceTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.407 s - in org.apache.flink.table.data.columnar.vector.VectorizedColumnBatchTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.169 s - in org.apache.flink.table.factories.TableSinkFactoryServiceTest
+[INFO] Running org.apache.flink.table.factories.module.CoreModuleFactoryTest
+[INFO] Running org.apache.flink.table.factories.TableFormatFactoryBaseTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.apache.flink.table.factories.TableFormatFactoryBaseTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.143 s - in org.apache.flink.table.types.LogicalTypesTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.096 s - in org.apache.flink.table.factories.module.CoreModuleFactoryTest
+[INFO] Running org.apache.flink.table.module.CoreModuleTest
+[INFO] Running org.apache.flink.table.factories.FactoryUtilTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.128 s - in org.apache.flink.table.module.CoreModuleTest
+[INFO] Running org.apache.flink.table.dataview.NullAwareMapSerializerTest
+[INFO] Running org.apache.flink.table.api.TableSchemaTest
+[INFO] Tests run: 19, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.apache.flink.table.api.TableSchemaTest
+[INFO] Running org.apache.flink.table.api.constraints.UniqueConstraintTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s - in org.apache.flink.table.api.constraints.UniqueConstraintTest
+[INFO] Running org.apache.flink.table.functions.UserDefinedFunctionHelperTest
+[INFO] Running org.apache.flink.table.expressions.ExpressionTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 s - in org.apache.flink.table.expressions.ExpressionTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.524 s - in org.apache.flink.table.dataview.NullAwareMapSerializerTest
+[INFO] Running org.apache.flink.table.types.TypeInfoDataTypeConverterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.apache.flink.table.types.TypeInfoDataTypeConverterTest
+[INFO] Tests run: 198, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.306 s - in org.apache.flink.table.types.extraction.TypeInferenceExtractorTest
+[INFO] Tests run: 26, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.741 s - in org.apache.flink.table.functions.UserDefinedFunctionHelperTest
+[INFO] Running org.apache.flink.table.functions.UserDefinedFunctionHelperTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.008 s - in org.apache.flink.table.functions.UserDefinedFunctionHelperTest
+[INFO] Running org.apache.flink.table.types.LegacyTypeInfoDataTypeConverterTest
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.105 s - in org.apache.flink.table.types.LegacyTypeInfoDataTypeConverterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.182 s - in org.apache.flink.table.data.utils.JoinedRowDataTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.865 s - in org.apache.flink.table.factories.FactoryUtilTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 1424, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ---------------< org.apache.flink:flink-table-api-java >----------------
+[INFO] Building Flink : Table : API Java 1.16-SNAPSHOT                   [3/17]
+[INFO]   from flink-table-api-java/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-api-java ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-api-java ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-api-java ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-api-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-api-java ---
+[INFO] Compiling 233 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/target/classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/main/java/org/apache/flink/table/typeutils/FieldInfoUtils.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/main/java/org/apache/flink/table/typeutils/FieldInfoUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/main/java/org/apache/flink/table/api/internal/TableEnvironmentImpl.java: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/main/java/org/apache/flink/table/api/internal/TableEnvironmentImpl.java uses unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/main/java/org/apache/flink/table/api/internal/TableEnvironmentImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-api-java ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-api-java ---
+[INFO] Compiling 29 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/target/test-classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/test/java/org/apache/flink/table/utils/FunctionLookupMock.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/test/java/org/apache/flink/table/utils/FunctionLookupMock.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/test/java/org/apache/flink/table/typeutils/FieldInfoUtilsTest.java: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/test/java/org/apache/flink/table/typeutils/FieldInfoUtilsTest.java uses unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java/src/test/java/org/apache/flink/table/typeutils/FieldInfoUtilsTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-api-java ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.table.catalog.SchemaTranslatorTest
+[INFO] Running org.apache.flink.table.catalog.CatalogTableImpTest
+[INFO] Running org.apache.flink.table.catalog.FunctionCatalogTest
+[INFO] Running org.apache.flink.table.catalog.GenericInMemoryCatalogFactoryTest
+[INFO] Running org.apache.flink.table.catalog.SchemaResolutionTest
+[INFO] Running org.apache.flink.table.catalog.CatalogBaseTableResolutionTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 s - in org.apache.flink.table.catalog.CatalogTableImpTest
+[INFO] Running org.apache.flink.table.operations.QueryOperationTest
+[INFO] Running org.apache.flink.table.operations.utils.ValuesOperationTreeBuilderTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.574 s - in org.apache.flink.table.catalog.SchemaTranslatorTest
+[INFO] Running org.apache.flink.table.catalog.GenericInMemoryCatalogTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.208 s - in org.apache.flink.table.operations.QueryOperationTest
+[INFO] Running org.apache.flink.table.module.ModuleManagerTest
+[INFO] Running org.apache.flink.table.api.TableDescriptorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.691 s - in org.apache.flink.table.catalog.GenericInMemoryCatalogFactoryTest
+[INFO] Running org.apache.flink.table.api.EnvironmentSettingsTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.flink.table.api.EnvironmentSettingsTest
+[INFO] Running org.apache.flink.table.api.TableConfigTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in org.apache.flink.table.api.TableConfigTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3 s - in org.apache.flink.table.catalog.SchemaResolutionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.021 s - in org.apache.flink.table.catalog.CatalogBaseTableResolutionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.615 s - in org.apache.flink.table.module.ModuleManagerTest
+[INFO] Running org.apache.flink.table.typeutils.FieldInfoUtilsTest
+[INFO] Running org.apache.flink.table.typeutils.FieldInfoUtilsTest$TestByPositionMode
+[INFO] Running org.apache.flink.table.expressions.ObjectToExpressionTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.666 s - in org.apache.flink.table.api.TableDescriptorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 s - in org.apache.flink.table.typeutils.FieldInfoUtilsTest$TestByPositionMode
+[INFO] Running org.apache.flink.table.typeutils.FieldInfoUtilsTest$TestByNameMode
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.275 s - in org.apache.flink.table.catalog.FunctionCatalogTest
+[INFO] Running org.apache.flink.table.api.TableEnvironmentTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.flink.table.typeutils.FieldInfoUtilsTest$TestByNameMode
+[INFO] Tests run: 0, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.apache.flink.table.typeutils.FieldInfoUtilsTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.194 s - in org.apache.flink.table.expressions.ObjectToExpressionTest
+[INFO] Running org.apache.flink.table.expressions.resolver.ExpressionResolverTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.313 s - in org.apache.flink.table.expressions.resolver.ExpressionResolverTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.553 s - in org.apache.flink.table.operations.utils.ValuesOperationTreeBuilderTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.67 s - in org.apache.flink.table.api.TableEnvironmentTest
+[INFO] Tests run: 95, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.616 s - in org.apache.flink.table.catalog.GenericInMemoryCatalogTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 206, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------< org.apache.flink:flink-table-api-scala_2.12 >-------------
+[INFO] Building Flink : Table : API Scala 1.16-SNAPSHOT                  [4/17]
+[INFO]   from flink-table-api-scala/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-api-scala_2.12 ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- scalastyle-maven-plugin:1.0.0:check (default) @ flink-table-api-scala_2.12 ---
+Saving to outputFile=/home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/target/scalastyle-output.xml
+Processed 8 file(s)
+Found 0 errors
+Found 0 warnings
+Found 0 infos
+Finished in 897 ms
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-api-scala_2.12 ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-api-scala_2.12 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ flink-table-api-scala_2.12 ---
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/src/main/scala:-1: info: compiling
+[INFO] Compiling 3 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/target/classes at 1747939221070
+[WARNING] warning: there were three deprecation warnings
+[WARNING] warning: there was one deprecation warning (since 2.11.0)
+[WARNING] warning: there were four deprecation warnings in total; re-run with -deprecation for details
+[WARNING] three warnings found
+[INFO] prepare-compile in 0 s
+[INFO] compile in 7 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-api-scala_2.12 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-api-scala_2.12 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile) @ flink-table-api-scala_2.12 ---
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/src/test/scala:-1: info: compiling
+[INFO] Compiling 5 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala/target/test-classes at 1747939228802
+[WARNING] warning: there were 9 deprecation warnings; re-run with -deprecation for details
+[WARNING] one warning found
+[INFO] prepare-compile in 0 s
+[INFO] compile in 9 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-api-scala_2.12 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-api-scala_2.12 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.table.types.extraction.DataTypeExtractorScalaTest
+[INFO] Running org.apache.flink.table.types.extraction.TypeInferenceExtractorScalaTest
+[INFO] Running org.apache.flink.table.api.ExpressionsConsistencyCheckTest
+[INFO] Running org.apache.flink.table.api.ImplicitConversionsTest
+[INFO] Running org.apache.flink.table.expressions.ObjectToExpressionScalaTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.374 s - in org.apache.flink.table.types.extraction.TypeInferenceExtractorScalaTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.508 s - in org.apache.flink.table.types.extraction.DataTypeExtractorScalaTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.624 s - in org.apache.flink.table.expressions.ObjectToExpressionScalaTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.849 s - in org.apache.flink.table.api.ExpressionsConsistencyCheckTest
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.717 s - in org.apache.flink.table.api.ImplicitConversionsTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 36, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ------------< org.apache.flink:flink-table-api-bridge-base >------------
+[INFO] Building Flink : Table : API bridge base 1.16-SNAPSHOT            [5/17]
+[INFO]   from flink-table-api-bridge-base/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-api-bridge-base ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-bridge-base/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-api-bridge-base ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-api-bridge-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-bridge-base/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-api-bridge-base ---
+[INFO] Compiling 4 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-bridge-base/target/classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-bridge-base/src/main/java/org/apache/flink/table/api/bridge/internal/AbstractStreamTableEnvironmentImpl.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-bridge-base/src/main/java/org/apache/flink/table/api/bridge/internal/AbstractStreamTableEnvironmentImpl.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-api-bridge-base ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-bridge-base/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-api-bridge-base ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-api-bridge-base ---
+[INFO] 
+[INFO] ------------< org.apache.flink:flink-table-api-java-bridge >------------
+[INFO] Building Flink : Table : API Java bridge 1.16-SNAPSHOT            [6/17]
+[INFO]   from flink-table-api-java-bridge/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-api-java-bridge ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-api-java-bridge ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-api-java-bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-api-java-bridge ---
+[INFO] Compiling 47 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/target/classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/src/main/java/org/apache/flink/table/descriptors/RowtimeValidator.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/src/main/java/org/apache/flink/table/descriptors/RowtimeValidator.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-api-java-bridge ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-api-java-bridge ---
+[INFO] Compiling 7 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/target/test-classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/src/test/java/org/apache/flink/table/factories/CsvTableSinkFactoryTest.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/src/test/java/org/apache/flink/table/factories/CsvTableSinkFactoryTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/src/test/java/org/apache/flink/table/factories/CsvTableSinkFactoryTest.java: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/src/test/java/org/apache/flink/table/factories/CsvTableSinkFactoryTest.java uses unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-bridge/src/test/java/org/apache/flink/table/factories/CsvTableSinkFactoryTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-api-java-bridge ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.table.factories.PrintSinkFactoryTest
+[INFO] Running org.apache.flink.table.sources.CsvTableSourceTest
+[INFO] Running org.apache.flink.table.factories.BlackHoleSinkFactoryTest
+[INFO] Running org.apache.flink.connector.datagen.table.types.DecimalDataRandomGeneratorTest
+[INFO] Running org.apache.flink.table.factories.DataGenTableSourceFactoryTest
+[INFO] Running org.apache.flink.table.api.bridge.java.internal.StreamTableEnvironmentImplTest
+[INFO] Running org.apache.flink.table.factories.CsvTableSinkFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.43 s - in org.apache.flink.table.sources.CsvTableSourceTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.322 s - in org.apache.flink.connector.datagen.table.types.DecimalDataRandomGeneratorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.47 s - in org.apache.flink.table.factories.PrintSinkFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.35 s - in org.apache.flink.table.factories.BlackHoleSinkFactoryTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.251 s - in org.apache.flink.table.factories.CsvTableSinkFactoryTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.605 s - in org.apache.flink.table.api.bridge.java.internal.StreamTableEnvironmentImplTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.01 s - in org.apache.flink.table.factories.DataGenTableSourceFactoryTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 30, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ---------< org.apache.flink:flink-table-api-scala-bridge_2.12 >---------
+[INFO] Building Flink : Table : API Scala bridge 1.16-SNAPSHOT           [7/17]
+[INFO]   from flink-table-api-scala-bridge/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- scalastyle-maven-plugin:1.0.0:check (default) @ flink-table-api-scala-bridge_2.12 ---
+Saving to outputFile=/home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/target/scalastyle-output.xml
+Processed 9 file(s)
+Found 0 errors
+Found 0 warnings
+Found 0 infos
+Finished in 241 ms
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/src/main/scala:-1: info: compiling
+[INFO] Compiling 7 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/target/classes at 1747939253287
+[WARNING] warning: there were 7 deprecation warnings
+[WARNING] warning: there were 11 deprecation warnings (since 2.11.0)
+[WARNING] warning: there were 18 deprecation warnings in total; re-run with -deprecation for details
+[WARNING] three warnings found
+[INFO] prepare-compile in 0 s
+[INFO] compile in 7 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/src/test/scala:-1: info: compiling
+[INFO] Compiling 2 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-scala-bridge/target/test-classes at 1747939261095
+[WARNING] warning: there were 9 deprecation warnings; re-run with -deprecation for details
+[WARNING] one warning found
+[INFO] prepare-compile in 0 s
+[INFO] compile in 7 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-api-scala-bridge_2.12 ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.table.api.bridge.scala.internal.StreamTableEnvironmentImplTest
+[INFO] Running org.apache.flink.table.types.TypeInfoDataTypeConverterScalaTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.108 s - in org.apache.flink.table.types.TypeInfoDataTypeConverterScalaTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.392 s - in org.apache.flink.table.api.bridge.scala.internal.StreamTableEnvironmentImplTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] -------------< org.apache.flink:flink-table-api-java-uber >-------------
+[INFO] Building Flink : Table : API Java Uber 1.16-SNAPSHOT              [8/17]
+[INFO]   from flink-table-api-java-uber/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-api-java-uber ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-uber/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-api-java-uber ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-api-java-uber ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-api-java-uber ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-api-java-uber ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-api-java-uber/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-api-java-uber ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-api-java-uber ---
+[INFO] 
+[INFO] -----------------< org.apache.flink:flink-sql-parser >------------------
+[INFO] Building Flink : Table : SQL Parser 1.16-SNAPSHOT                 [9/17]
+[INFO]   from flink-sql-parser/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-sql-parser ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.2.0:unpack (unpack-parser-template) @ flink-sql-parser ---
+[INFO] Configured Artifact: org.apache.calcite:calcite-core:?:jar
+[INFO] Unpacking /home/carol/.m2/repository/org/apache/calcite/calcite-core/1.26.0/calcite-core-1.26.0.jar to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target with includes "**/Parser.jj" and excludes ""
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (copy-fmpp-resources) @ flink-sql-parser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-sql-parser ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- fmpp-maven-plugin:1.0:generate (generate-fmpp-sources) @ flink-sql-parser ---
+- Executing: Parser.jj
+[INFO] Done
+[INFO] 
+[INFO] --- javacc-maven-plugin:2.4:javacc (javacc) @ flink-sql-parser ---
+Java Compiler Compiler Version 4.0 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target/generated-sources/javacc/Parser.jj . . .
+Note: UNICODE_INPUT option is specified. Please make sure you create the parser/lexer using a Reader with the correct character encoding.
+File "TokenMgrError.java" does not exist.  Will create one.
+File "ParseException.java" does not exist.  Will create one.
+File "Token.java" does not exist.  Will create one.
+File "SimpleCharStream.java" does not exist.  Will create one.
+Parser generated successfully.
+[INFO] Processed 1 grammar
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-sql-parser ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-sql-parser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-sql-parser ---
+[INFO] Compiling 91 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target/classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target/generated-sources/org/apache/flink/sql/parser/impl/FlinkSqlParserImpl.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target/generated-sources/org/apache/flink/sql/parser/impl/FlinkSqlParserImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-sql-parser ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-sql-parser ---
+[INFO] Compiling 15 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target/test-classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/src/test/java/org/apache/flink/sql/parser/CreateTableLikeTest.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/src/test/java/org/apache/flink/sql/parser/CreateTableLikeTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target/generated-sources/org/apache/flink/sql/parser/impl/FlinkSqlParserImpl.java: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target/generated-sources/org/apache/flink/sql/parser/impl/FlinkSqlParserImpl.java uses unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser/target/generated-sources/org/apache/flink/sql/parser/impl/FlinkSqlParserImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-sql-parser ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.sql.parser.FlinkSqlUnParserTest
+[WARNING] Tests run: 490, Failures: 0, Errors: 0, Skipped: 8, Time elapsed: 3.867 s - in org.apache.flink.sql.parser.FlinkSqlUnParserTest
+[INFO] Running org.apache.flink.sql.parser.ReservedKeywordTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.712 s - in org.apache.flink.sql.parser.ReservedKeywordTest
+[INFO] Running org.apache.flink.sql.parser.TableApiIdentifierParsingTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.721 s - in org.apache.flink.sql.parser.TableApiIdentifierParsingTest
+[INFO] Running org.apache.flink.sql.parser.CreateTableLikeTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.797 s - in org.apache.flink.sql.parser.CreateTableLikeTest
+[INFO] Running org.apache.flink.sql.parser.FlinkSqlParserImplTest
+[WARNING] Tests run: 490, Failures: 0, Errors: 0, Skipped: 7, Time elapsed: 3.269 s - in org.apache.flink.sql.parser.FlinkSqlParserImplTest
+[INFO] Running org.apache.flink.sql.parser.FlinkDDLDataTypeTest
+[INFO] Tests run: 231, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.542 s - in org.apache.flink.sql.parser.FlinkDDLDataTypeTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 1229, Failures: 0, Errors: 0, Skipped: 15
+[INFO] 
+[INFO] 
+[INFO] ---------------< org.apache.flink:flink-sql-parser-hive >---------------
+[INFO] Building Flink : Table : SQL Parser Hive 1.16-SNAPSHOT           [10/17]
+[INFO]   from flink-sql-parser-hive/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-sql-parser-hive ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.2.0:unpack (unpack-parser-template) @ flink-sql-parser-hive ---
+[INFO] Configured Artifact: org.apache.calcite:calcite-core:?:jar
+[INFO] Unpacking /home/carol/.m2/repository/org/apache/calcite/calcite-core/1.26.0/calcite-core-1.26.0.jar to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target with includes "**/Parser.jj" and excludes ""
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:copy-resources (copy-fmpp-resources) @ flink-sql-parser-hive ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-sql-parser-hive ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- fmpp-maven-plugin:1.0:generate (generate-fmpp-sources) @ flink-sql-parser-hive ---
+- Executing: Parser.jj
+[INFO] Done
+[INFO] 
+[INFO] --- javacc-maven-plugin:2.4:javacc (javacc) @ flink-sql-parser-hive ---
+Java Compiler Compiler Version 4.0 (Parser Generator)
+(type "javacc" with no arguments for help)
+Reading from file /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/generated-sources/javacc/Parser.jj . . .
+Note: UNICODE_INPUT option is specified. Please make sure you create the parser/lexer using a Reader with the correct character encoding.
+File "TokenMgrError.java" does not exist.  Will create one.
+File "ParseException.java" does not exist.  Will create one.
+File "Token.java" does not exist.  Will create one.
+File "SimpleCharStream.java" does not exist.  Will create one.
+Parser generated with 0 errors and 1 warnings.
+[INFO] Processed 1 grammar
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-sql-parser-hive ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-sql-parser-hive ---
+[INFO] Compiling 33 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/src/main/java/org/apache/flink/sql/parser/hive/ddl/HiveDDLUtils.java: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/src/main/java/org/apache/flink/sql/parser/hive/ddl/HiveDDLUtils.java uses or overrides a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/src/main/java/org/apache/flink/sql/parser/hive/ddl/HiveDDLUtils.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/generated-sources/org/apache/flink/sql/parser/hive/impl/FlinkHiveSqlParserImpl.java: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/generated-sources/org/apache/flink/sql/parser/hive/impl/FlinkHiveSqlParserImpl.java uses unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/generated-sources/org/apache/flink/sql/parser/hive/impl/FlinkHiveSqlParserImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-sql-parser-hive ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/src/test/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-sql-parser-hive ---
+[INFO] Compiling 8 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/test-classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/generated-sources/org/apache/flink/sql/parser/hive/impl/FlinkHiveSqlParserImpl.java: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/generated-sources/org/apache/flink/sql/parser/hive/impl/FlinkHiveSqlParserImpl.java uses unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-sql-parser-hive/target/generated-sources/org/apache/flink/sql/parser/hive/impl/FlinkHiveSqlParserImpl.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-sql-parser-hive ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.sql.parser.hive.FlinkHiveSqlParserImplTest
+[WARNING] Tests run: 379, Failures: 0, Errors: 0, Skipped: 5, Time elapsed: 3.047 s - in org.apache.flink.sql.parser.hive.FlinkHiveSqlParserImplTest
+[INFO] Running org.apache.flink.sql.parser.hive.FlinkHiveSqlParserImplTest
+[WARNING] Tests run: 54, Failures: 0, Errors: 0, Skipped: 3, Time elapsed: 0.123 s - in org.apache.flink.sql.parser.hive.FlinkHiveSqlParserImplTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[WARNING] Tests run: 433, Failures: 0, Errors: 0, Skipped: 8
+[INFO] 
+[INFO] 
+[INFO] -------------< org.apache.flink:flink-table-code-splitter >-------------
+[INFO] Building Flink : Table : Code Splitter 1.16-SNAPSHOT             [11/17]
+[INFO]   from flink-table-code-splitter/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-code-splitter ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-code-splitter/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-code-splitter ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- antlr4-maven-plugin:4.7:antlr4 (antlr) @ flink-table-code-splitter ---
+[INFO] ANTLR 4: Processing source directory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-code-splitter/src/main/antlr4
+[INFO] Processing grammar: JavaLexer.g4
+[INFO] Processing grammar: JavaParser.g4
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-code-splitter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-code-splitter ---
+[INFO] Compiling 15 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-code-splitter/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-code-splitter ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 60 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-code-splitter ---
+[INFO] Compiling 9 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-code-splitter/target/test-classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-code-splitter/src/test/java/org/apache/flink/table/codesplit/JavaCodeSplitterTest.java: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-code-splitter/src/test/java/org/apache/flink/table/codesplit/JavaCodeSplitterTest.java uses or overrides a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-code-splitter/src/test/java/org/apache/flink/table/codesplit/JavaCodeSplitterTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-code-splitter ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.table.codesplit.DeclarationRewriterTest
+[INFO] Running org.apache.flink.table.codesplit.AddBooleanBeforeReturnRewriterTest
+[INFO] Running org.apache.flink.table.codesplit.MemberFieldRewriterTest
+[INFO] Running org.apache.flink.table.codesplit.ReturnValueRewriterTest
+[INFO] Running org.apache.flink.table.codesplit.FunctionSplitterTest
+[INFO] Running org.apache.flink.table.codesplit.JavaParserTest
+[INFO] Running org.apache.flink.table.codesplit.JavaCodeSplitterTest
+[INFO] Running org.apache.flink.table.codesplit.IfStatementRewriterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.073 s - in org.apache.flink.table.codesplit.DeclarationRewriterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.775 s - in org.apache.flink.table.codesplit.JavaParserTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 s - in org.apache.flink.table.codesplit.AddBooleanBeforeReturnRewriterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.032 s - in org.apache.flink.table.codesplit.ReturnValueRewriterTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.189 s - in org.apache.flink.table.codesplit.MemberFieldRewriterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.122 s - in org.apache.flink.table.codesplit.IfStatementRewriterTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.236 s - in org.apache.flink.table.codesplit.FunctionSplitterTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.247 s - in org.apache.flink.table.codesplit.JavaCodeSplitterTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] ----------------< org.apache.flink:flink-table-runtime >----------------
+[INFO] Building Flink : Table : Runtime 1.16-SNAPSHOT                   [12/17]
+[INFO]   from flink-table-runtime/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ flink-table-runtime ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- spotless-maven-plugin:2.4.2:check (spotless-check) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven-version) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-snakeyaml) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (ban-unsafe-jackson) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-log4j-1) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-akka-rpc-dependencies) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (forbid-direct-table-planner-dependencies) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:directory-of (directories) @ flink-table-runtime ---
+[INFO] Directory of org.apache.flink:flink-parent set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-table-runtime ---
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ flink-table-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ flink-table-runtime ---
+[INFO] Compiling 451 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/target/classes
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/data/binary/BinaryRowDataUtil.java:[30,33] sun.misc.Unsafe is internal proprietary API and may be removed in a future release
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/runtime/typeutils/InternalSerializers.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/runtime/typeutils/InternalSerializers.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/runtime/operators/rank/TopNBuffer.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/runtime/operators/rank/TopNBuffer.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ flink-table-runtime ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 5 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ flink-table-runtime ---
+[INFO] Compiling 147 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/target/test-classes
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/test/java/org/apache/flink/table/runtime/operators/join/RandomSortMergeInnerJoinTest.java: Some input files use or override a deprecated API.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/test/java/org/apache/flink/table/runtime/operators/join/RandomSortMergeInnerJoinTest.java: Recompile with -Xlint:deprecation for details.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/test/java/org/apache/flink/table/runtime/operators/join/RandomSortMergeInnerJoinTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/src/test/java/org/apache/flink/table/runtime/operators/join/RandomSortMergeInnerJoinTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- maven-surefire-plugin:3.0.0-M5:test (default-test) @ flink-table-runtime ---
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running org.apache.flink.table.data.DecimalDataTest
+[INFO] Running org.apache.flink.table.data.binary.BinarySegmentUtilsTest
+[INFO] Running org.apache.flink.table.data.NestedRowDataTest
+[INFO] Running org.apache.flink.table.data.BinaryArrayDataTest
+[INFO] Running org.apache.flink.table.data.TimestampDataTest
+[INFO] Running org.apache.flink.table.data.RowDataTest
+[INFO] Running org.apache.flink.table.data.BinaryStringDataTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.534 s - in org.apache.flink.table.data.DecimalDataTest
+[INFO] Running org.apache.flink.table.data.DataFormatConvertersTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.447 s - in org.apache.flink.table.data.TimestampDataTest
+[INFO] Running org.apache.flink.table.data.BinaryRowDataTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by com.twitter.chill.java.ArraysAsListSerializer (file:/home/carol/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar) to field java.util.Arrays$ArrayList.a
+[ERROR] WARNING: Please consider reporting this to the maintainers of com.twitter.chill.java.ArraysAsListSerializer
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.098 s - in org.apache.flink.table.data.binary.BinarySegmentUtilsTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.178 s - in org.apache.flink.table.data.NestedRowDataTest
+[INFO] Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.117 s - in org.apache.flink.table.data.BinaryArrayDataTest
+[INFO] Running org.apache.flink.table.runtime.util.collections.binary.WindowBytesMultiMapTest
+[INFO] Running org.apache.flink.table.formats.raw.RawFormatFactoryTest
+[INFO] Running org.apache.flink.table.formats.raw.RawFormatSerDeSchemaTest
+[INFO] Running org.apache.flink.table.data.DataStructureConvertersTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by com.twitter.chill.java.ArraysAsListSerializer (file:/home/carol/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar) to field java.util.Arrays$ArrayList.a
+[ERROR] WARNING: Please consider reporting this to the maintainers of com.twitter.chill.java.ArraysAsListSerializer
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.188 s - in org.apache.flink.table.data.RowDataTest
+[INFO] Running org.apache.flink.table.runtime.util.collections.binary.BytesMultiMapTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.71 s - in org.apache.flink.table.formats.raw.RawFormatFactoryTest
+[INFO] Running org.apache.flink.table.runtime.util.collections.binary.BytesHashMapTest
+[INFO] Tests run: 96, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.742 s - in org.apache.flink.table.data.BinaryStringDataTest
+[INFO] Running org.apache.flink.table.runtime.util.collections.binary.WindowBytesHashMapTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.934 s - in org.apache.flink.table.data.DataFormatConvertersTest
+[INFO] Running org.apache.flink.table.runtime.util.ResettableExternalBufferTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.658 s - in org.apache.flink.table.runtime.util.collections.binary.WindowBytesMultiMapTest
+[INFO] Running org.apache.flink.table.runtime.util.TimeWindowUtilTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.127 s - in org.apache.flink.table.runtime.util.TimeWindowUtilTest
+[INFO] Running org.apache.flink.table.runtime.generated.CompileUtilsTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.997 s - in org.apache.flink.table.runtime.util.collections.binary.BytesMultiMapTest
+[INFO] Running org.apache.flink.table.runtime.operators.aggregate.window.SlicingWindowAggOperatorTest
+[INFO] Tests run: 33, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.729 s - in org.apache.flink.table.formats.raw.RawFormatSerDeSchemaTest
+[INFO] Running org.apache.flink.table.runtime.operators.aggregate.HashAggTest
+/* 1 */public class111 Main {
+/* 2 */  int i;
+/* 3 */  int j;
+/* 4 */}
+
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.538 s - in org.apache.flink.table.runtime.generated.CompileUtilsTest
+[INFO] Running org.apache.flink.table.runtime.operators.source.InputConversionOperatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.322 s - in org.apache.flink.table.runtime.operators.source.InputConversionOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.sink.SinkUpsertMaterializerTest
+[INFO] Tests run: 37, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.033 s - in org.apache.flink.table.data.DataStructureConvertersTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.Int2HashJoinOperatorTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.flink.api.java.ClosureCleaner (file:/home/carol/.m2/repository/org/apache/flink/flink-core/1.16-SNAPSHOT/flink-core-1.16-SNAPSHOT.jar) to field java.lang.Class.ANNOTATION
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.flink.api.java.ClosureCleaner
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by com.twitter.chill.java.ArraysAsListSerializer (file:/home/carol/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar) to field java.util.Arrays$ArrayList.a
+[ERROR] WARNING: Please consider reporting this to the maintainers of com.twitter.chill.java.ArraysAsListSerializer
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.366 s - in org.apache.flink.table.runtime.operators.aggregate.HashAggTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.AsyncLookupJoinHarnessTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.01 s - in org.apache.flink.table.runtime.operators.sink.SinkUpsertMaterializerTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.temporal.TemporalRowTimeJoinOperatorTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.725 s - in org.apache.flink.table.runtime.operators.aggregate.window.SlicingWindowAggOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.temporal.TemporalProcessTimeJoinOperatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.589 s - in org.apache.flink.table.runtime.operators.join.temporal.TemporalRowTimeJoinOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.interval.ProcTimeIntervalJoinTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by com.twitter.chill.java.ArraysAsListSerializer (file:/home/carol/.m2/repository/com/twitter/chill-java/0.7.6/chill-java-0.7.6.jar) to field java.util.Arrays$ArrayList.a
+[ERROR] WARNING: Please consider reporting this to the maintainers of com.twitter.chill.java.ArraysAsListSerializer
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.2 s - in org.apache.flink.table.runtime.operators.join.interval.ProcTimeIntervalJoinTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.interval.RowTimeIntervalJoinTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.635 s - in org.apache.flink.table.runtime.operators.join.AsyncLookupJoinHarnessTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.RandomSortMergeOuterJoinTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.309 s - in org.apache.flink.table.runtime.operators.join.interval.RowTimeIntervalJoinTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.821 s - in org.apache.flink.table.data.BinaryRowDataTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.LookupJoinHarnessTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.String2HashJoinOperatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.119 s - in org.apache.flink.table.runtime.operators.join.LookupJoinHarnessTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.RandomSortMergeInnerJoinTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.2 s - in org.apache.flink.table.runtime.operators.join.temporal.TemporalProcessTimeJoinOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.window.WindowJoinOperatorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.189 s - in org.apache.flink.table.runtime.util.collections.binary.BytesHashMapTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.Int2SortMergeJoinOperatorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.144 s - in org.apache.flink.table.runtime.util.collections.binary.WindowBytesHashMapTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.SortMergeJoinIteratorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.566 s - in org.apache.flink.table.runtime.operators.join.window.WindowJoinOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.join.String2SortMergeJoinOperatorTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.188 s - in org.apache.flink.table.runtime.operators.join.SortMergeJoinIteratorTest
+[INFO] Running org.apache.flink.table.runtime.operators.multipleinput.output.OutputTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.103 s - in org.apache.flink.table.runtime.operators.multipleinput.output.OutputTest
+[INFO] Running org.apache.flink.table.runtime.operators.multipleinput.input.InputTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 s - in org.apache.flink.table.runtime.operators.multipleinput.input.InputTest
+[INFO] Running org.apache.flink.table.runtime.operators.multipleinput.input.InputSelectionHandlerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.112 s - in org.apache.flink.table.runtime.operators.multipleinput.input.InputSelectionHandlerTest
+[INFO] Running org.apache.flink.table.runtime.operators.multipleinput.TableOperatorWrapperGeneratorTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.997 s - in org.apache.flink.table.runtime.operators.join.Int2HashJoinOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.multipleinput.TableOperatorWrapperTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.618 s - in org.apache.flink.table.runtime.operators.multipleinput.TableOperatorWrapperGeneratorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 s - in org.apache.flink.table.runtime.operators.multipleinput.TableOperatorWrapperTest
+[INFO] Running org.apache.flink.table.runtime.operators.multipleinput.BatchMultipleInputStreamOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.sort.RowTimeSortOperatorTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.flink.api.java.ClosureCleaner (file:/home/carol/.m2/repository/org/apache/flink/flink-core/1.16-SNAPSHOT/flink-core-1.16-SNAPSHOT.jar) to field java.lang.Class.ANNOTATION
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.flink.api.java.ClosureCleaner
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 s - in org.apache.flink.table.runtime.operators.multipleinput.BatchMultipleInputStreamOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.sort.BinaryMergeIteratorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.apache.flink.table.runtime.operators.sort.BinaryMergeIteratorTest
+[INFO] Running org.apache.flink.table.runtime.operators.sort.ProcTimeSortOperatorTest
+[ERROR] WARNING: An illegal reflective access operation has occurred
+[ERROR] WARNING: Illegal reflective access by org.apache.flink.api.java.ClosureCleaner (file:/home/carol/.m2/repository/org/apache/flink/flink-core/1.16-SNAPSHOT/flink-core-1.16-SNAPSHOT.jar) to field java.lang.Class.ANNOTATION
+[ERROR] WARNING: Please consider reporting this to the maintainers of org.apache.flink.api.java.ClosureCleaner
+[ERROR] WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+[ERROR] WARNING: All illegal access operations will be denied in a future release
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.869 s - in org.apache.flink.table.runtime.operators.sort.RowTimeSortOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.sort.StreamSortOperatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.09 s - in org.apache.flink.table.runtime.operators.sort.StreamSortOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.sort.BinaryExternalSorterTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.725 s - in org.apache.flink.table.runtime.operators.sort.ProcTimeSortOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.sort.SortUtilTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.flink.table.runtime.operators.sort.SortUtilTest
+[INFO] Running org.apache.flink.table.runtime.operators.sort.BufferedKVExternalSorterTest
+[INFO] Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.65 s - in org.apache.flink.table.runtime.operators.join.String2SortMergeJoinOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.wmassigners.RowTimeMiniBatchAssginerOperatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.069 s - in org.apache.flink.table.runtime.operators.wmassigners.RowTimeMiniBatchAssginerOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.wmassigners.WatermarkAssignerOperatorTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.088 s - in org.apache.flink.table.runtime.operators.wmassigners.WatermarkAssignerOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.wmassigners.ProcTimeMiniBatchAssignerOperatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.934 s - in org.apache.flink.table.runtime.operators.join.String2HashJoinOperatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.039 s - in org.apache.flink.table.runtime.operators.wmassigners.ProcTimeMiniBatchAssignerOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.WindowTableFunctionOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.MergingWindowSetTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.apache.flink.table.runtime.operators.window.MergingWindowSetTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.grouping.HeapWindowsGroupingTest
+valid window trigger
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 s - in org.apache.flink.table.runtime.operators.window.grouping.HeapWindowsGroupingTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.291 s - in org.apache.flink.table.runtime.operators.window.WindowTableFunctionOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.triggers.TriggersTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.WindowOperatorContractTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.flink.table.runtime.operators.window.triggers.TriggersTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.WindowOperatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.397 s - in org.apache.flink.table.runtime.operators.window.WindowOperatorContractTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.slicing.WindowedSliceAssignerTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.264 s - in org.apache.flink.table.runtime.operators.window.slicing.WindowedSliceAssignerTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.slicing.TumblingSliceAssignerTest
+[INFO] Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.081 s - in org.apache.flink.table.runtime.operators.window.slicing.TumblingSliceAssignerTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.slicing.HoppingSliceAssignerTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.158 s - in org.apache.flink.table.runtime.operators.window.slicing.HoppingSliceAssignerTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.slicing.CumulativeSliceAssignerTest
+[INFO] Tests run: 18, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.171 s - in org.apache.flink.table.runtime.operators.window.slicing.CumulativeSliceAssignerTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.assigners.SlidingWindowAssignerTest
+[INFO] Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.965 s - in org.apache.flink.table.runtime.operators.join.Int2SortMergeJoinOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.assigners.SessionWindowAssignerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.flink.table.runtime.operators.window.assigners.SlidingWindowAssignerTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.assigners.CumulativeWindowAssignerTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 s - in org.apache.flink.table.runtime.operators.window.assigners.CumulativeWindowAssignerTest
+[INFO] Running org.apache.flink.table.runtime.operators.window.assigners.TumblingWindowAssignerTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.014 s - in org.apache.flink.table.runtime.operators.window.assigners.TumblingWindowAssignerTest
+[INFO] Running org.apache.flink.table.runtime.operators.deduplicate.ProcTimeMiniBatchDeduplicateKeepLastRowFunctionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.267 s - in org.apache.flink.table.runtime.operators.window.assigners.SessionWindowAssignerTest
+[INFO] Running org.apache.flink.table.runtime.operators.deduplicate.ProcTimeDeduplicateKeepFirstRowFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.339 s - in org.apache.flink.table.runtime.operators.deduplicate.ProcTimeMiniBatchDeduplicateKeepLastRowFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.deduplicate.ProcTimeDeduplicateKeepLastRowFunctionTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.214 s - in org.apache.flink.table.runtime.operators.deduplicate.ProcTimeDeduplicateKeepLastRowFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.deduplicate.ProcTimeMiniBatchDeduplicateKeepFirstRowFunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.523 s - in org.apache.flink.table.runtime.operators.deduplicate.ProcTimeDeduplicateKeepFirstRowFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.deduplicate.window.RowTimeWindowDeduplicateOperatorTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.131 s - in org.apache.flink.table.runtime.operators.deduplicate.ProcTimeMiniBatchDeduplicateKeepFirstRowFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.deduplicate.RowTimeMiniBatchLatestChangeDeduplicateFunctionTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.656 s - in org.apache.flink.table.runtime.operators.deduplicate.window.RowTimeWindowDeduplicateOperatorTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.564 s - in org.apache.flink.table.runtime.operators.deduplicate.RowTimeMiniBatchLatestChangeDeduplicateFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.over.ProcTimeRangeBoundedPrecedingFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.deduplicate.RowTimeDeduplicateFunctionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 s - in org.apache.flink.table.runtime.operators.over.ProcTimeRangeBoundedPrecedingFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.over.NonBufferOverWindowOperatorTest
+[INFO] Tests run: 72, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.701 s - in org.apache.flink.table.runtime.operators.window.WindowOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.over.RowTimeRowsUnboundedPrecedingFunctionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.064 s - in org.apache.flink.table.runtime.operators.over.RowTimeRowsUnboundedPrecedingFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.over.BufferDataOverWindowOperatorTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.53 s - in org.apache.flink.table.runtime.operators.deduplicate.RowTimeDeduplicateFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.over.RowTimeRangeBoundedPrecedingFunctionTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 s - in org.apache.flink.table.runtime.operators.over.RowTimeRangeBoundedPrecedingFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.over.RowTimeRowsBoundedPrecedingFunctionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 s - in org.apache.flink.table.runtime.operators.over.RowTimeRowsBoundedPrecedingFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.over.RowTimeRangeUnboundedPrecedingFunctionTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.029 s - in org.apache.flink.table.runtime.operators.over.RowTimeRangeUnboundedPrecedingFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.bundle.trigger.CountCoBundleTriggerTest
+[INFO] Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.682 s - in org.apache.flink.table.runtime.operators.over.NonBufferOverWindowOperatorTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 s - in org.apache.flink.table.runtime.operators.bundle.trigger.CountCoBundleTriggerTest
+[INFO] Running org.apache.flink.table.runtime.operators.bundle.MapBundleOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.bundle.trigger.CountBundleTriggerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.flink.table.runtime.operators.bundle.trigger.CountBundleTriggerTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.flink.table.runtime.operators.bundle.MapBundleOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.rank.AppendOnlyTopNFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.rank.RetractableTopNFunctionTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.545 s - in org.apache.flink.table.runtime.operators.sort.BufferedKVExternalSorterTest
+[INFO] Running org.apache.flink.table.runtime.operators.rank.window.WindowRankOperatorTest
+[INFO] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.016 s - in org.apache.flink.table.runtime.operators.over.BufferDataOverWindowOperatorTest
+[INFO] Running org.apache.flink.table.runtime.operators.rank.AppendOnlyFirstNFunctionTest
+[INFO] Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.017 s - in org.apache.flink.table.runtime.operators.rank.AppendOnlyTopNFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.rank.FastTop1FunctionTest
+[INFO] Tests run: 23, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.166 s - in org.apache.flink.table.runtime.operators.rank.RetractableTopNFunctionTest
+[INFO] Running org.apache.flink.table.runtime.operators.rank.UpdatableTopNFunctionTest
+[ERROR] Tests run: 10, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.446 s <<< FAILURE! - in org.apache.flink.table.runtime.operators.rank.AppendOnlyFirstNFunctionTest
+[ERROR] org.apache.flink.table.runtime.operators.rank.AppendOnlyFirstNFunctionTest.testConstantRankRangeWithOffset  Time elapsed: 0.091 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected size: 2 but was: 4 in:
+[Record @ (undef) : +I(book,2,12),
+    Record @ (undef) : +I(book,2,19),
+    Record @ (undef) : +I(fruit,1,33),
+    Record @ (undef) : +I(fruit,1,44)]
+	at org.apache.flink.table.runtime.util.RowDataHarnessAssertor.assertOutputEquals(RowDataHarnessAssertor.java:78)
+	at org.apache.flink.table.runtime.util.RowDataHarnessAssertor.assertOutputEquals(RowDataHarnessAssertor.java:58)
+	at org.apache.flink.table.runtime.operators.rank.AppendOnlyFirstNFunctionTest.testConstantRankRangeWithOffset(AppendOnlyFirstNFunctionTest.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:115)
+	at org.junit.vintage.engine.execution.RunnerExecutor.execute(RunnerExecutor.java:42)
+	at org.junit.vintage.engine.VintageTestEngine.executeAllChildren(VintageTestEngine.java:80)
+	at org.junit.vintage.engine.VintageTestEngine.execute(VintageTestEngine.java:72)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.lambda$execute$1(JUnitPlatformProvider.java:199)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:193)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:154)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+
+[INFO] Running org.apache.flink.table.runtime.io.CompressedHeaderlessChannelTest
+[INFO] Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.872 s - in org.apache.flink.table.runtime.operators.rank.window.WindowRankOperatorTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.659 s - in org.apache.flink.table.runtime.operators.rank.FastTop1FunctionTest
+[INFO] Running org.apache.flink.table.runtime.types.DataTypePrecisionFixerTest
+[INFO] Running org.apache.flink.table.runtime.types.LogicalTypeAssignableTest
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.168 s - in org.apache.flink.table.runtime.types.DataTypePrecisionFixerTest
+[INFO] Running org.apache.flink.table.runtime.hashtable.LongHashTableTest
+[INFO] Tests run: 31, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.142 s - in org.apache.flink.table.runtime.types.LogicalTypeAssignableTest
+[INFO] Running org.apache.flink.table.runtime.hashtable.BinaryHashTableTest
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.758 s - in org.apache.flink.table.runtime.io.CompressedHeaderlessChannelTest
+[INFO] Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.068 s - in org.apache.flink.table.runtime.operators.rank.UpdatableTopNFunctionTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.BigDecimalTypeInfoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 s - in org.apache.flink.table.runtime.typeutils.BigDecimalTypeInfoTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.InternalTypeInfosTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.ExternalSerializerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s - in org.apache.flink.table.runtime.typeutils.InternalTypeInfosTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.StringDataSerializerTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.321 s - in org.apache.flink.table.runtime.typeutils.StringDataSerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.WindowKeySerializerTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.288 s - in org.apache.flink.table.runtime.typeutils.WindowKeySerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.TimestampDataSerializerTest
+[INFO] Tests run: 64, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.206 s - in org.apache.flink.table.runtime.typeutils.TimestampDataSerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.LinkedListSerializerUpgradeTest
+[WARNING] Tests run: 12, Failures: 0, Errors: 0, Skipped: 6, Time elapsed: 0.143 s - in org.apache.flink.table.runtime.typeutils.LinkedListSerializerUpgradeTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.ArrayDataSerializerTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 s - in org.apache.flink.table.runtime.typeutils.ArrayDataSerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.ExternalTypeInfoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.135 s - in org.apache.flink.table.runtime.typeutils.ExternalTypeInfoTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.MapDataSerializerTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s - in org.apache.flink.table.runtime.typeutils.MapDataSerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.RawValueDataSerializerTest
+[INFO] Tests run: 80, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.588 s - in org.apache.flink.table.runtime.typeutils.ExternalSerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.InternalTypeInfoTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.049 s - in org.apache.flink.table.runtime.typeutils.InternalTypeInfoTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.DecimalSerializerTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.286 s - in org.apache.flink.table.runtime.typeutils.RawValueDataSerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.LinkedListSerializerTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.28 s - in org.apache.flink.table.runtime.typeutils.DecimalSerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.BinaryRowSerializerTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.243 s - in org.apache.flink.table.runtime.typeutils.LinkedListSerializerTest
+[INFO] Running org.apache.flink.table.runtime.typeutils.RowDataSerializerTest
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 s - in org.apache.flink.table.runtime.typeutils.BinaryRowSerializerTest
+[INFO] Tests run: 90, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.204 s - in org.apache.flink.table.runtime.typeutils.RowDataSerializerTest
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 33.487 s - in org.apache.flink.table.runtime.operators.join.RandomSortMergeOuterJoinTest
+[INFO] Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 34.085 s - in org.apache.flink.table.runtime.operators.join.RandomSortMergeInnerJoinTest
+[INFO] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 48.17 s - in org.apache.flink.table.runtime.util.ResettableExternalBufferTest
+[INFO] Tests run: 28, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 83.485 s - in org.apache.flink.table.runtime.operators.sort.BinaryExternalSorterTest
+[INFO] Tests run: 20, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 110.724 s - in org.apache.flink.table.runtime.hashtable.LongHashTableTest
+[INFO] Tests run: 32, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 164.927 s - in org.apache.flink.table.runtime.hashtable.BinaryHashTableTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[ERROR] Failures: 
+[ERROR]   AppendOnlyFirstNFunctionTest.testConstantRankRangeWithOffset:140 
+Expected size: 2 but was: 4 in:
+[Record @ (undef) : +I(book,2,12),
+    Record @ (undef) : +I(book,2,19),
+    Record @ (undef) : +I(fruit,1,33),
+    Record @ (undef) : +I(fruit,1,44)]
+[INFO] 
+[ERROR] Tests run: 1255, Failures: 1, Errors: 0, Skipped: 2
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Flink : Table : 1.16-SNAPSHOT:
+[INFO] 
+[INFO] Flink : Table : .................................... SUCCESS [  2.680 s]
+[INFO] Flink : Table : Common ............................. SUCCESS [ 41.834 s]
+[INFO] Flink : Table : API Java ........................... SUCCESS [ 17.911 s]
+[INFO] Flink : Table : API Scala .......................... SUCCESS [ 23.354 s]
+[INFO] Flink : Table : API bridge base .................... SUCCESS [  1.083 s]
+[INFO] Flink : Table : API Java bridge .................... SUCCESS [  8.883 s]
+[INFO] Flink : Table : API Scala bridge ................... SUCCESS [ 19.942 s]
+[INFO] Flink : Table : API Java Uber ...................... SUCCESS [  0.321 s]
+[INFO] Flink : Table : SQL Parser ......................... SUCCESS [ 28.694 s]
+[INFO] Flink : Table : SQL Parser Hive .................... SUCCESS [ 11.425 s]
+[INFO] Flink : Table : Code Splitter ...................... SUCCESS [  7.286 s]
+[INFO] Flink : Table : Runtime ............................ FAILURE [03:36 min]
+[INFO] Flink : Table : Planner ............................ SKIPPED
+[INFO] Flink : Table : Planner Loader Bundle .............. SKIPPED
+[INFO] Flink : Table : Planner Loader ..................... SKIPPED
+[INFO] Flink : Table : SQL Client ......................... SKIPPED
+[INFO] Flink : Table : Test Utils ......................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:20 min
+[INFO] Finished at: 2025-05-22T19:45:36+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5:test (default-test) on project flink-table-runtime: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-table/flink-table-runtime/target/surefire-reports for the individual test results.
+[ERROR] Please refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :flink-table-runtime
