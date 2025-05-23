@@ -1,0 +1,148 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.apache.flink:flink-mesos_2.11:jar:1.6-SNAPSHOT
+[WARNING] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-mesos_${scala.binary.version}:1.6-SNAPSHOT, /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/pom.xml, line 30, column 14
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -----------------< org.apache.flink:flink-mesos_2.11 >------------------
+[INFO] Building flink-mesos 1.6-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ flink-mesos_2.11 ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-mesos_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-maven) @ flink-mesos_2.11 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (dependency-convergence) @ flink-mesos_2.11 ---
+[INFO] 
+[INFO] --- directory-maven-plugin:0.1:highest-basedir (directories) @ flink-mesos_2.11 ---
+[INFO] Highest basedir set to: /home/carol/Desktop/benchmark/bugs-dot-jar/flink
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-source (add-source) @ flink-mesos_2.11 ---
+[INFO] Source directory: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/scala added.
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ flink-mesos_2.11 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ flink-mesos_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ flink-mesos_2.11 ---
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java:-1: info: compiling
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/scala:-1: info: compiling
+[INFO] Compiling 50 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/target/classes at 1747983961218
+[WARNING] warning: there were 8 feature warnings; re-run with -feature for details
+[WARNING] one warning found
+[INFO] prepare-compile in 0 s
+[INFO] compile in 5 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-mesos_2.11 ---
+[INFO] Compiling 43 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/target/classes
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/MesosTaskManagerRunner.java:[38,30] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/MesosApplicationMasterRunner.java:[63,30] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosJobClusterEntrypoint.java:[54,30] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosTaskExecutorRunner.java:[38,30] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosSessionClusterEntrypoint.java:[51,30] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/services/AbstractMesosServices.java:[58,36] shutdown() in akka.actor.ActorSystem has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/util/MesosArtifactServer.java:[143,49] setSSLVerAndCipherSuites(javax.net.ssl.SSLEngine,org.apache.flink.configuration.Configuration) in org.apache.flink.runtime.net.SSLUtils has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/LaunchableMesosWorker.java:[233,68] TASK_MANAGER_HOSTNAME_KEY in org.apache.flink.configuration.ConfigConstants has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/MesosTaskManagerRunner.java:[70,48] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/MesosApplicationMasterRunner.java:[155,56] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/MesosApplicationMasterRunner.java:[342,57] getJobManagerLeaderRetriever(org.apache.flink.api.common.JobID) in org.apache.flink.runtime.highavailability.HighAvailabilityServices has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/MesosApplicationMasterRunner.java:[378,52] shutdown() in akka.actor.ActorSystem has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/runtime/clusterframework/MesosApplicationMasterRunner.java:[415,28] awaitTermination() in akka.actor.ActorSystem has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosJobClusterEntrypoint.java:[194,48] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosTaskExecutorRunner.java:[69,48] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/main/java/org/apache/flink/mesos/entrypoint/MesosSessionClusterEntrypoint.java:[165,48] org.apache.commons.cli.PosixParser in org.apache.commons.cli has been deprecated
+[INFO] 
+[INFO] --- build-helper-maven-plugin:1.7:add-test-source (add-test-source) @ flink-mesos_2.11 ---
+[INFO] Test Source directory: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/test/scala added.
+[INFO] 
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ flink-mesos_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile) @ flink-mesos_2.11 ---
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/test/java:-1: info: compiling
+[INFO] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/test/scala:-1: info: compiling
+[INFO] Compiling 11 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/target/test-classes at 1747983968528
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/src/test/scala/org/apache/flink/mesos/Utils.scala:34: warning: abstract type T in type pattern java.util.Collection[T] is unchecked since it is eliminated by erasure
+[WARNING]         case actual: java.util.Collection[T] =>
+[WARNING]                                ^
+[WARNING] warning: there was one feature warning; re-run with -feature for details
+[WARNING] two warnings found
+[INFO] prepare-compile in 0 s
+[INFO] compile in 7 s
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-mesos_2.11 ---
+[INFO] Compiling 5 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/target/test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ flink-mesos_2.11 ---
+[INFO] Surefire report directory: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.mesos.runtime.clusterframework.MesosTaskManagerParametersTest
+Running org.apache.flink.mesos.scheduler.OfferTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.269 sec - in org.apache.flink.mesos.runtime.clusterframework.MesosTaskManagerParametersTest
+Tests run: 9, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.405 sec - in org.apache.flink.mesos.scheduler.OfferTest
+Running org.apache.flink.mesos.util.MesosResourceAllocationTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.apache.flink.mesos.util.MesosResourceAllocationTest
+Running org.apache.flink.mesos.runtime.clusterframework.MesosResourceManagerTest
+Running org.apache.flink.mesos.scheduler.ReconciliationCoordinatorTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.501 sec - in org.apache.flink.mesos.scheduler.ReconciliationCoordinatorTest
+Running org.apache.flink.mesos.scheduler.TaskMonitorTest
+Tests run: 39, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.565 sec - in org.apache.flink.mesos.scheduler.TaskMonitorTest
+Running org.apache.flink.mesos.scheduler.LaunchCoordinatorTest
+Tests run: 24, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.222 sec - in org.apache.flink.mesos.scheduler.LaunchCoordinatorTest
+Running org.apache.flink.mesos.scheduler.TasksTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.296 sec - in org.apache.flink.mesos.scheduler.TasksTest
+Running org.apache.flink.mesos.runtime.clusterframework.MesosFlinkResourceManagerTest
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.918 sec - in org.apache.flink.mesos.runtime.clusterframework.MesosFlinkResourceManagerTest
+Tests run: 13, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.864 sec <<< FAILURE! - in org.apache.flink.mesos.runtime.clusterframework.MesosResourceManagerTest
+testWorkerFailed(org.apache.flink.mesos.runtime.clusterframework.MesosResourceManagerTest)  Time elapsed: 0.067 sec  <<< FAILURE!
+java.lang.AssertionError: 
+Expected: map containing [<taskmanager-00002>->ANYTHING]
+     but: map was []
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.junit.Assert.assertThat(Assert.java:956)
+	at org.junit.Assert.assertThat(Assert.java:923)
+	at org.apache.flink.mesos.runtime.clusterframework.MesosResourceManagerTest$8.<init>(MesosResourceManagerTest.java:699)
+	at org.apache.flink.mesos.runtime.clusterframework.MesosResourceManagerTest.testWorkerFailed(MesosResourceManagerTest.java:682)
+
+
+Results :
+
+Failed tests: 
+  MesosResourceManagerTest.testWorkerFailed:682 
+Expected: map containing [<taskmanager-00002>->ANYTHING]
+     but: map was []
+
+Tests run: 147, Failures: 1, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.294 s
+[INFO] Finished at: 2025-05-23T08:06:22+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project flink-mesos_2.11: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-mesos/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
