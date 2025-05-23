@@ -752,7 +752,8 @@ public abstract class StreamTask<OUT, OP extends StreamOperator<OUT>>
 				backendName = "jobmanager";
 			}
 
-			switch (backendName.toLowerCase()) {
+			backendName = backendName.toLowerCase();
+			switch (backendName) {
 				case "jobmanager":
 					LOG.info("State backend is set to heap memory (checkpoint to jobmanager)");
 					stateBackend = new MemoryStateBackend();
