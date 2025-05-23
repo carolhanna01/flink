@@ -1,0 +1,423 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------< org.apache.flink:flink-streaming-java_2.10 >-------------
+[INFO] Building flink-streaming-java 1.2-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ flink-streaming-java_2.10 ---
+[INFO] Deleting /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/target
+[INFO] 
+[INFO] --- maven-checkstyle-plugin:2.17:check (validate) @ flink-streaming-java_2.10 ---
+[INFO] 
+[INFO] --- maven-enforcer-plugin:1.4.1:enforce (enforce-maven) @ flink-streaming-java_2.10 ---
+[INFO] 
+[INFO] --- maven-remote-resources-plugin:1.5:process (default) @ flink-streaming-java_2.10 ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ flink-streaming-java_2.10 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ flink-streaming-java_2.10 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 249 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/target/classes
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/datastream/DataStream.java:[55,48] org.apache.flink.streaming.api.functions.TimestampExtractor in org.apache.flink.streaming.api.functions has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/datastream/DataStream.java:[82,52] org.apache.flink.streaming.runtime.operators.ExtractTimestampsOperator in org.apache.flink.streaming.runtime.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/StreamTask.java:[52,48] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/source/MessageAcknowledgingSourceBase.java:[36,49] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/source/StatefulSequenceSource.java:[22,49] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/source/ContinuousFileReaderOperator.java:[31,48] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/ExtractTimestampsOperator.java:[20,48] org.apache.flink.streaming.api.functions.TimestampExtractor in org.apache.flink.streaming.api.functions has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/GenericWriteAheadSink.java:[30,48] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractStreamOperator.java:[270,47] unchecked cast
+  required: org.apache.flink.runtime.state.KeyedStateBackend<K>
+  found:    org.apache.flink.runtime.state.AbstractKeyedStateBackend<capture#1 of ?>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractStreamOperator.java:[334,69] unchecked call to getKey(IN) as a member of the raw type org.apache.flink.api.java.functions.KeySelector
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractUdfStreamOperator.java:[63,17] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractUdfStreamOperator.java:[150,45] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractUdfStreamOperator.java:[152,25] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractUdfStreamOperator.java:[152,67] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractUdfStreamOperator.java:[172,45] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractUdfStreamOperator.java:[174,25] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/AbstractUdfStreamOperator.java:[174,67] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/datastream/KeyedStream.java:[158,119] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<T,R>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<R>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/datastream/CoGroupedStreams.java:[400,32] unchecked conversion
+  required: java.lang.Class<org.apache.flink.streaming.api.datastream.CoGroupedStreams.TaggedUnion<T1,T2>>
+  found:    java.lang.Class
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/StreamTask.java:[539,49] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/StreamTask.java:[550,59] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/StreamTask.java:[631,73] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/StreamTask.java:[640,67] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/windowing/WindowOperator.java:[664,63] <S>getKeyValueState(java.lang.String,org.apache.flink.api.common.typeinfo.TypeInformation<S>,S) in org.apache.flink.streaming.api.windowing.triggers.Trigger.TriggerContext has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/windowing/WindowOperator.java:[645,63] <S>getKeyValueState(java.lang.String,java.lang.Class<S>,S) in org.apache.flink.streaming.api.windowing.triggers.Trigger.TriggerContext has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/util/FieldAccessor.java:[127,66] unchecked method invocation: method getInfoFor in class org.apache.flink.api.common.typeinfo.BasicTypeInfo is applied to given types
+  required: java.lang.Class<X>
+  found: java.lang.Class
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/util/FieldAccessor.java:[127,107] unchecked conversion
+  required: java.lang.Class<X>
+  found:    java.lang.Class
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/source/ContinuousFileMonitoringFunction.java:[56,63] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/source/MessageAcknowledgingSourceBase.java:[83,20] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/source/StatefulSequenceSource.java:[29,89] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/source/FromElementsFunction.java:[66,55] Possible heap pollution from parameterized vararg type T
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/checkpoint/CheckpointedAsynchronously.java:[41,77] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/api/functions/source/ContinuousFileReaderOperator.java:[67,94] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/windowing/EvictingWindowOperator.java:[318,44] unchecked method invocation: method evict in interface org.apache.flink.streaming.api.windowing.evictors.Evictor is applied to given types
+  required: java.lang.Iterable<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<T>>,int,W
+  found: java.lang.Iterable,int,W
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/windowing/EvictingWindowOperator.java:[318,45] unchecked conversion
+  required: java.lang.Iterable<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<T>>
+  found:    java.lang.Iterable
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/windowing/EvictingWindowOperator.java:[356,89] unchecked cast
+  required: org.apache.flink.api.common.state.StateDescriptor<? extends org.apache.flink.api.common.state.AppendingState<IN,java.lang.Iterable<IN>>,?>
+  found:    org.apache.flink.api.common.state.StateDescriptor<capture#2 of ? extends org.apache.flink.api.common.state.ListState<org.apache.flink.streaming.runtime.streamrecord.StreamRecord<IN>>,capture#3 of ?>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/GenericWriteAheadSink.java:[56,60] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ flink-streaming-java_2.10 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 3 resources
+[INFO] Copying 3 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ flink-streaming-java_2.10 ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 114 source files to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/target/test-classes
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/OneInputStreamOperatorTestHarness.java:[33,48] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/tasks/SourceStreamTaskTest.java:[27,49] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/tasks/InterruptSensitiveRestoreTest.java:[54,49] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[34,48] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/tasks/OneInputStreamTaskTest.java:[48,48] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/OneInputStreamOperatorTestHarness.java:[228,40] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/OneInputStreamOperatorTestHarness.java:[229,27] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/OneInputStreamOperatorTestHarness.java:[247,40] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/OneInputStreamOperatorTestHarness.java:[249,35] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[78,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[100,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[124,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[147,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[171,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[196,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[223,171] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,java.lang.Integer>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<java.lang.Integer>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/AllWindowTranslationTest.java:[236,171] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,java.lang.Integer>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<java.lang.Integer>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/tasks/SourceStreamTaskTest.java:[146,91] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[70,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[89,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[109,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[132,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[162,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/TimeWindowTranslationTest.java:[180,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[107,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[129,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[154,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[178,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[203,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowTranslationTest.java:[229,203] unchecked cast
+  required: org.apache.flink.streaming.api.transformations.OneInputTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>,org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    org.apache.flink.streaming.api.transformations.StreamTransformation<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/RestartStrategyTest.java:[62,20] setNumberOfExecutionRetries(int) in org.apache.flink.streaming.api.environment.StreamExecutionEnvironment has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/RestartStrategyTest.java:[84,20] setNumberOfExecutionRetries(int) in org.apache.flink.streaming.api.environment.StreamExecutionEnvironment has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/RestartStrategyTest.java:[85,32] setExecutionRetryDelay(long) in org.apache.flink.api.common.ExecutionConfig has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/MockContext.java:[92,77] unchecked cast
+  required: OUT
+  found:    java.lang.Object
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/tasks/InterruptSensitiveRestoreTest.java:[247,76] org.apache.flink.streaming.api.checkpoint.Checkpointed in org.apache.flink.streaming.api.checkpoint has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/windowing/WindowOperatorTest.java:[1100,116] unchecked cast
+  required: org.apache.flink.streaming.runtime.streamrecord.StreamRecord<org.apache.flink.api.java.tuple.Tuple2<java.lang.String,java.lang.Integer>>
+  found:    java.lang.Object
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/functions/source/FileMonitoringFunctionTest.java:[33,23] org.apache.flink.streaming.api.functions.source.FileMonitoringFunction in org.apache.flink.streaming.api.functions.source has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/functions/source/FileMonitoringFunctionTest.java:[34,39] org.apache.flink.streaming.api.functions.source.FileMonitoringFunction in org.apache.flink.streaming.api.functions.source has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/functions/source/FileMonitoringFunctionTest.java:[34,88] org.apache.flink.streaming.api.functions.source.FileMonitoringFunction in org.apache.flink.streaming.api.functions.source has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/DataStreamTest.java:[762,69] unchecked call to <R>map(org.apache.flink.streaming.api.functions.co.CoMapFunction<IN1,IN2,R>) as a member of the raw type org.apache.flink.streaming.api.datastream.ConnectedStreams
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/DataStreamTest.java:[775,30] unchecked method invocation: method addSink in class org.apache.flink.streaming.api.datastream.DataStream is applied to given types
+  required: org.apache.flink.streaming.api.functions.sink.SinkFunction<T>
+  found: org.apache.flink.streaming.api.functions.sink.DiscardingSink
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/api/DataStreamTest.java:[775,31] unchecked conversion
+  required: org.apache.flink.streaming.api.functions.sink.SinkFunction<T>
+  found:    org.apache.flink.streaming.api.functions.sink.DiscardingSink
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[124,105] unchecked method invocation: method createKeyedStateBackend in class org.apache.flink.runtime.state.AbstractStateBackend is applied to given types
+  required: org.apache.flink.runtime.execution.Environment,org.apache.flink.api.common.JobID,java.lang.String,org.apache.flink.api.common.typeutils.TypeSerializer<K>,int,org.apache.flink.runtime.state.KeyGroupRange,org.apache.flink.runtime.query.TaskKvStateRegistry
+  found: org.apache.flink.runtime.execution.Environment,org.apache.flink.api.common.JobID,java.lang.String,org.apache.flink.api.common.typeutils.TypeSerializer,int,org.apache.flink.runtime.state.KeyGroupRange,org.apache.flink.runtime.query.TaskKvStateRegistry
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[128,65] unchecked conversion
+  required: org.apache.flink.api.common.typeutils.TypeSerializer<K>
+  found:    org.apache.flink.api.common.typeutils.TypeSerializer
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[134,106] unchecked method invocation: method restoreKeyedStateBackend in class org.apache.flink.runtime.state.AbstractStateBackend is applied to given types
+  required: org.apache.flink.runtime.execution.Environment,org.apache.flink.api.common.JobID,java.lang.String,org.apache.flink.api.common.typeutils.TypeSerializer<K>,int,org.apache.flink.runtime.state.KeyGroupRange,java.util.List<org.apache.flink.runtime.state.KeyGroupsStateHandle>,org.apache.flink.runtime.query.TaskKvStateRegistry
+  found: org.apache.flink.runtime.execution.Environment,org.apache.flink.api.common.JobID,java.lang.String,org.apache.flink.api.common.typeutils.TypeSerializer,int,org.apache.flink.runtime.state.KeyGroupRange,java.util.List<org.apache.flink.runtime.state.KeyGroupsStateHandle>,org.apache.flink.runtime.query.TaskKvStateRegistry
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[138,65] unchecked conversion
+  required: org.apache.flink.api.common.typeutils.TypeSerializer<K>
+  found:    org.apache.flink.api.common.typeutils.TypeSerializer
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[147,66] unchecked method invocation: method createKeyedStateBackend in class org.apache.flink.streaming.runtime.tasks.StreamTask is applied to given types
+  required: org.apache.flink.api.common.typeutils.TypeSerializer<K>,int,org.apache.flink.runtime.state.KeyGroupRange
+  found: org.apache.flink.api.common.typeutils.TypeSerializer,int,org.apache.flink.runtime.state.KeyGroupRange
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[147,70] unchecked conversion
+  required: org.apache.flink.api.common.typeutils.TypeSerializer<K>
+  found:    org.apache.flink.api.common.typeutils.TypeSerializer
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[165,41] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[166,27] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[194,49] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/util/KeyedOneInputStreamOperatorTestHarness.java:[195,35] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/tasks/OneInputStreamTaskTest.java:[531,72] unchecked conversion
+  required: java.util.Collection<org.apache.flink.runtime.state.OperatorStateHandle>[]
+  found:    java.util.Collection[]
+[WARNING] /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/tasks/OneInputStreamTaskTest.java:[548,69] org.apache.flink.streaming.api.operators.StreamCheckpointedOperator in org.apache.flink.streaming.api.operators has been deprecated
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.18.1:test (default-test) @ flink-streaming-java_2.10 ---
+[INFO] Surefire report directory: /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running org.apache.flink.streaming.util.AbstractDeserializationSchemaTest
+Running org.apache.flink.streaming.graph.StreamingJobGraphGeneratorNodeHashTest
+Running org.apache.flink.streaming.util.TypeInformationSerializationSchemaTest
+Running org.apache.flink.streaming.util.keys.ArrayKeySelectorTest
+Running org.apache.flink.streaming.runtime.operators.StreamOperatorChainingTest
+Running org.apache.flink.streaming.util.FieldAccessorTest
+Running org.apache.flink.streaming.util.HDFSCopyUtilitiesTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.274 sec - in org.apache.flink.streaming.util.keys.ArrayKeySelectorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.216 sec - in org.apache.flink.streaming.util.FieldAccessorTest
+Running org.apache.flink.streaming.graph.TranslationTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.619 sec - in org.apache.flink.streaming.util.AbstractDeserializationSchemaTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.3 sec - in org.apache.flink.streaming.graph.StreamingJobGraphGeneratorNodeHashTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.082 sec - in org.apache.flink.streaming.graph.TranslationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.68 sec - in org.apache.flink.streaming.util.TypeInformationSerializationSchemaTest
+Running org.apache.flink.streaming.runtime.operators.TimestampsAndPunctuatedWatermarksOperatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.957 sec - in org.apache.flink.streaming.util.HDFSCopyUtilitiesTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.321 sec - in org.apache.flink.streaming.runtime.operators.StreamOperatorChainingTest
+Running org.apache.flink.streaming.runtime.operators.StreamSourceOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.KeyMapTest
+Running org.apache.flink.streaming.runtime.operators.StreamTaskTimerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.826 sec - in org.apache.flink.streaming.runtime.operators.TimestampsAndPunctuatedWatermarksOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.AccumulatingAlignedProcessingTimeWindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.TestTimeProviderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.768 sec - in org.apache.flink.streaming.runtime.operators.StreamSourceOperatorTest
+Running org.apache.flink.streaming.runtime.operators.GenericWriteAheadSinkTest
+Running org.apache.flink.streaming.runtime.operators.windowing.MergingWindowSetTest
+Running org.apache.flink.streaming.runtime.operators.windowing.TimeWindowTranslationTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.572 sec - in org.apache.flink.streaming.runtime.operators.windowing.MergingWindowSetTest
+Running org.apache.flink.streaming.runtime.operators.windowing.TimeWindowTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.044 sec - in org.apache.flink.streaming.runtime.operators.windowing.TimeWindowTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 1.114 sec - in org.apache.flink.streaming.runtime.operators.windowing.TimeWindowTranslationTest
+Running org.apache.flink.streaming.runtime.operators.windowing.AggregatingAlignedProcessingTimeWindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.AllWindowTranslationTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.893 sec - in org.apache.flink.streaming.runtime.operators.TestTimeProviderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.778 sec - in org.apache.flink.streaming.runtime.operators.windowing.AllWindowTranslationTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.61 sec - in org.apache.flink.streaming.runtime.operators.StreamTaskTimerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.676 sec - in org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.914 sec - in org.apache.flink.streaming.runtime.operators.GenericWriteAheadSinkTest
+Running org.apache.flink.streaming.runtime.operators.windowing.KeyMapPutIfAbsentTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.805 sec - in org.apache.flink.streaming.runtime.operators.windowing.AccumulatingAlignedProcessingTimeWindowOperatorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.758 sec - in org.apache.flink.streaming.runtime.operators.windowing.KeyMapTest
+Running org.apache.flink.streaming.runtime.operators.windowing.WindowOperatorTest
+Running org.apache.flink.streaming.runtime.operators.windowing.WindowingTestHarnessTest
+Running org.apache.flink.streaming.runtime.operators.windowing.KeyMapPutTest
+Running org.apache.flink.streaming.runtime.operators.windowing.WindowTranslationTest
+Running org.apache.flink.streaming.runtime.operators.TimestampsAndPeriodicWatermarksOperatorTest
+Running org.apache.flink.streaming.runtime.io.SpilledBufferOrEventSequenceTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.908 sec - in org.apache.flink.streaming.runtime.operators.windowing.WindowTranslationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.712 sec - in org.apache.flink.streaming.runtime.operators.windowing.WindowingTestHarnessTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.359 sec - in org.apache.flink.streaming.runtime.operators.TimestampsAndPeriodicWatermarksOperatorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.383 sec - in org.apache.flink.streaming.runtime.operators.windowing.KeyMapPutIfAbsentTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.697 sec - in org.apache.flink.streaming.runtime.operators.windowing.AggregatingAlignedProcessingTimeWindowOperatorTest
+Running org.apache.flink.streaming.runtime.io.BarrierBufferMassiveRandomTest
+Tests run: 36, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.818 sec - in org.apache.flink.streaming.runtime.operators.windowing.WindowOperatorTest
+Running org.apache.flink.streaming.runtime.io.BarrierBufferTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.62 sec - in org.apache.flink.streaming.runtime.io.SpilledBufferOrEventSequenceTest
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.575 sec - in org.apache.flink.streaming.runtime.io.BarrierBufferTest
+Running org.apache.flink.streaming.runtime.io.BufferSpillerTest
+Running org.apache.flink.streaming.runtime.io.BarrierTrackerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.956 sec - in org.apache.flink.streaming.runtime.operators.windowing.KeyMapPutTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.apache.flink.streaming.runtime.io.BarrierTrackerTest
+Running org.apache.flink.streaming.runtime.tasks.StreamTaskTest
+Running org.apache.flink.streaming.runtime.tasks.DefaultTimeServiceProviderTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec - in org.apache.flink.streaming.runtime.tasks.DefaultTimeServiceProviderTest
+Running org.apache.flink.streaming.runtime.tasks.InterruptSensitiveRestoreTest
+Running org.apache.flink.streaming.runtime.tasks.SourceStreamTaskStoppingTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.369 sec - in org.apache.flink.streaming.runtime.tasks.SourceStreamTaskStoppingTest
+Running org.apache.flink.streaming.runtime.io.StreamRecordWriterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.556 sec - in org.apache.flink.streaming.runtime.tasks.InterruptSensitiveRestoreTest
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 4.624 sec <<< FAILURE! - in org.apache.flink.streaming.runtime.tasks.StreamTaskTest
+testStateBackendLoading(org.apache.flink.streaming.runtime.tasks.StreamTaskTest)  Time elapsed: 2.144 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<FINISHED> but was:<FAILED>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.flink.streaming.runtime.tasks.StreamTaskTest.testStateBackendLoading(StreamTaskTest.java:154)
+
+Running org.apache.flink.streaming.runtime.tasks.OneInputStreamTaskTest
+Running org.apache.flink.streaming.runtime.tasks.TwoInputStreamTaskTest
+Running org.apache.flink.streaming.runtime.streamrecord.MultiplexingStreamRecordSerializerTest
+Running org.apache.flink.streaming.runtime.tasks.SourceStreamTaskTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.752 sec - in org.apache.flink.streaming.runtime.io.StreamRecordWriterTest
+Running org.apache.flink.streaming.runtime.streamrecord.StreamRecordSerializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.837 sec - in org.apache.flink.streaming.runtime.streamrecord.MultiplexingStreamRecordSerializerTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.289 sec - in org.apache.flink.streaming.runtime.streamrecord.StreamRecordSerializerTest
+Running org.apache.flink.streaming.runtime.streamrecord.StreamRecordTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.084 sec - in org.apache.flink.streaming.runtime.streamrecord.StreamRecordTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.817 sec - in org.apache.flink.streaming.runtime.io.BufferSpillerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.695 sec - in org.apache.flink.streaming.runtime.io.BarrierBufferMassiveRandomTest
+Running org.apache.flink.streaming.runtime.partitioner.ShufflePartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.042 sec - in org.apache.flink.streaming.runtime.partitioner.ShufflePartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.RebalancePartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec - in org.apache.flink.streaming.runtime.partitioner.RebalancePartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.KeyGroupStreamPartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.332 sec - in org.apache.flink.streaming.runtime.partitioner.KeyGroupStreamPartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.GlobalPartitionerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.043 sec - in org.apache.flink.streaming.runtime.partitioner.GlobalPartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.RescalePartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.BroadcastPartitionerTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec - in org.apache.flink.streaming.runtime.partitioner.BroadcastPartitionerTest
+Running org.apache.flink.streaming.runtime.partitioner.ForwardPartitionerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec - in org.apache.flink.streaming.runtime.partitioner.ForwardPartitionerTest
+Running org.apache.flink.streaming.api.SourceFunctionTest
+Running org.apache.flink.streaming.api.RestartStrategyTest
+Running org.apache.flink.streaming.api.graph.StreamingJobGraphGeneratorTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.518 sec - in org.apache.flink.streaming.runtime.tasks.TwoInputStreamTaskTest
+Running org.apache.flink.streaming.api.graph.SlotAllocationTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.52 sec - in org.apache.flink.streaming.api.SourceFunctionTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.648 sec - in org.apache.flink.streaming.api.RestartStrategyTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.376 sec - in org.apache.flink.streaming.api.graph.StreamingJobGraphGeneratorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.312 sec - in org.apache.flink.streaming.runtime.partitioner.RescalePartitionerTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.488 sec - in org.apache.flink.streaming.api.graph.SlotAllocationTest
+Running org.apache.flink.streaming.api.graph.StreamGraphGeneratorTest
+Running org.apache.flink.streaming.api.AggregationFunctionTest
+Running org.apache.flink.streaming.api.operators.StreamingRuntimeContextTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.997 sec - in org.apache.flink.streaming.api.graph.StreamGraphGeneratorTest
+Running org.apache.flink.streaming.api.operators.StreamGroupedFoldTest
+Running org.apache.flink.streaming.api.operators.StreamFlatMapTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.265 sec - in org.apache.flink.streaming.runtime.tasks.OneInputStreamTaskTest
+Running org.apache.flink.streaming.api.operators.co.CoStreamMapTest
+Running org.apache.flink.streaming.api.operators.co.CoStreamFlatMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.226 sec - in org.apache.flink.streaming.api.operators.StreamFlatMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.294 sec - in org.apache.flink.streaming.runtime.tasks.SourceStreamTaskTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.412 sec - in org.apache.flink.streaming.api.operators.co.CoStreamMapTest
+Running org.apache.flink.streaming.api.operators.FoldApplyWindowFunctionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.997 sec - in org.apache.flink.streaming.api.AggregationFunctionTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.974 sec - in org.apache.flink.streaming.api.operators.StreamGroupedFoldTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.319 sec - in org.apache.flink.streaming.api.operators.FoldApplyWindowFunctionTest
+Running org.apache.flink.streaming.api.operators.StreamGroupedReduceTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.044 sec - in org.apache.flink.streaming.api.operators.StreamingRuntimeContextTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.333 sec - in org.apache.flink.streaming.api.operators.co.CoStreamFlatMapTest
+Running org.apache.flink.streaming.api.operators.StreamCounterTest
+Running org.apache.flink.streaming.api.operators.StateDescriptorPassingTest
+Running org.apache.flink.streaming.api.operators.StreamMapTest
+Running org.apache.flink.streaming.api.operators.StreamProjectTest
+Running org.apache.flink.streaming.api.operators.StreamFilterTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.598 sec - in org.apache.flink.streaming.api.operators.StreamGroupedReduceTest
+Running org.apache.flink.streaming.api.TypeFillTest
+Running org.apache.flink.streaming.api.operators.windowing.functions.InternalWindowFunctionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.424 sec - in org.apache.flink.streaming.api.operators.StreamCounterTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.556 sec - in org.apache.flink.streaming.api.TypeFillTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.38 sec - in org.apache.flink.streaming.api.operators.StreamMapTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.458 sec - in org.apache.flink.streaming.api.operators.StreamFilterTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.068 sec - in org.apache.flink.streaming.api.operators.windowing.functions.InternalWindowFunctionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.755 sec - in org.apache.flink.streaming.api.operators.StreamProjectTest
+Running org.apache.flink.streaming.api.DataStreamTest
+Running org.apache.flink.streaming.api.functions.AscendingTimestampExtractorTest
+Running org.apache.flink.streaming.api.functions.source.SocketTextStreamFunctionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 sec - in org.apache.flink.streaming.api.functions.AscendingTimestampExtractorTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.306 sec - in org.apache.flink.streaming.api.operators.StateDescriptorPassingTest
+Running org.apache.flink.streaming.api.functions.source.InputFormatSourceFunctionTest
+Running org.apache.flink.streaming.api.functions.sink.SocketClientSinkTest
+Running org.apache.flink.streaming.api.functions.source.FileMonitoringFunctionTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.779 sec - in org.apache.flink.streaming.api.DataStreamTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.564 sec - in org.apache.flink.streaming.api.functions.source.InputFormatSourceFunctionTest
+Running org.apache.flink.streaming.api.functions.PrintSinkFunctionTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.393 sec - in org.apache.flink.streaming.api.functions.source.SocketTextStreamFunctionTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.88 sec - in org.apache.flink.streaming.api.functions.sink.SocketClientSinkTest
+Running org.apache.flink.streaming.api.functions.BoundedOutOfOrdernessTimestampExtractorTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.027 sec - in org.apache.flink.streaming.api.functions.BoundedOutOfOrdernessTimestampExtractorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.267 sec - in org.apache.flink.streaming.api.functions.source.FileMonitoringFunctionTest
+Running org.apache.flink.streaming.api.streamtask.StreamIterationHeadTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.854 sec - in org.apache.flink.streaming.api.functions.PrintSinkFunctionTest
+Running org.apache.flink.streaming.api.functions.FromElementsFunctionTest
+Running org.apache.flink.streaming.api.functions.IngestionTimeExtractorTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.244 sec - in org.apache.flink.streaming.api.functions.IngestionTimeExtractorTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.ConcatenatedExtractTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldsFromTupleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.ConcatenatedExtractTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.059 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldsFromTupleTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldFromArrayTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldFromArrayTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.ArrayFromTupleTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldFromTupleTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.092 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.ArrayFromTupleTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.103 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldFromTupleTest
+Running org.apache.flink.streaming.api.collector.OutputSelectorTest
+Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldsFromArrayTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.113 sec - in org.apache.flink.streaming.api.collector.OutputSelectorTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.041 sec - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.FieldsFromArrayTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.827 sec - in org.apache.flink.streaming.api.functions.FromElementsFunctionTest
+Running org.apache.flink.streaming.api.windowing.deltafunction.CosineDistanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec - in org.apache.flink.streaming.api.windowing.deltafunction.CosineDistanceTest
+Running org.apache.flink.streaming.api.windowing.deltafunction.EuclideanDistanceTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec - in org.apache.flink.streaming.api.windowing.deltafunction.EuclideanDistanceTest
+Running org.apache.flink.streaming.api.StreamExecutionEnvironmentTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.557 sec - in org.apache.flink.streaming.api.streamtask.StreamIterationHeadTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.794 sec - in org.apache.flink.streaming.api.StreamExecutionEnvironmentTest
+
+Results :
+
+Failed tests: 
+  StreamTaskTest.testStateBackendLoading:154 expected:<FINISHED> but was:<FAILED>
+
+Tests run: 330, Failures: 1, Errors: 0, Skipped: 1
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:01 min
+[INFO] Finished at: 2025-05-23T11:11:57+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-surefire-plugin:2.18.1:test (default-test) on project flink-streaming-java_2.10: There are test failures.
+[ERROR] 
+[ERROR] Please refer to /home/carol/Desktop/benchmark/bugs-dot-jar/flink/flink-streaming-java/target/surefire-reports for the individual test results.
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
