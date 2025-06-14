@@ -666,13 +666,13 @@ class StreamExecutionEnvironment(javaEnv: JavaEnv) {
     * Create a DataStream using a [[Source]].
     */
   @Experimental
-  def fromSource[T: TypeInformation](
+  def continuousSource[T: TypeInformation](
       source: Source[T, _ <: SourceSplit, _],
       watermarkStrategy: WatermarkStrategy[T],
       sourceName: String): DataStream[T] = {
 
     val typeInfo = implicitly[TypeInformation[T]]
-    asScalaStream(javaEnv.fromSource(source, watermarkStrategy, sourceName, typeInfo))
+    asScalaStream(javaEnv.continuousSource(source, watermarkStrategy, sourceName, typeInfo))
   }
 
   /**
