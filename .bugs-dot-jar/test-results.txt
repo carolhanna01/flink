@@ -1,0 +1,65 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-streaming-scala_2.11:jar:1.12-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-streaming-scala_${scala.binary.version}:1.12-SNAPSHOT, /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-scala/pom.xml, line 31, column 14
+[[1;33mWARNING[m] 'build.plugins.plugin.version' for org.codehaus.mojo:build-helper-maven-plugin is missing. @ org.apache.flink:flink-streaming-scala_${scala.binary.version}:1.12-SNAPSHOT, /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-scala/pom.xml, line 208, column 12
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------< [0;36morg.apache.flink:flink-streaming-scala_2.11[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding flink-streaming-scala 1.12-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-checkstyle-plugin:2.17:check[m [1m(validate)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven-version)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(ban-unsafe-jackson)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(forbid-log4j-1)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-versions)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mdirectory-maven-plugin:0.1:highest-basedir[m [1m(directories)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] Highest basedir set to: /home/carol/Downloads/Workspaces/bugs-dot-jar/flink
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mbuild-helper-maven-plugin:3.6.1:add-source[m [1m(add-source)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] Source directory: /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-scala/src/main/scala added.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-scala/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mscala-maven-plugin:3.2.2:compile[m [1m(scala-compile-first)[m @ [36mflink-streaming-scala_2.11[0;1m ---[m
+[[1;34mINFO[m] /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-scala/src/main/scala:-1: info: compiling
+[[1;34mINFO[m] Compiling 41 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-scala/target/classes at 1749906651303
+[[1;34mINFO[m] compiler plugin: BasicArtifact(org.scalamacros,paradise_2.11.12,2.1.0,null)
+[[1;33mWARNING[m] /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-scala/src/main/scala/org/apache/flink/streaming/api/scala/DataStream.scala:246: warning: abstract type X in type pattern org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator[X] is unchecked since it is eliminated by erasure
+[[1;33mWARNING[m]     case stream : SingleOutputStreamOperator[X] =>
+[[1;33mWARNING[m]                   ^
+[[1;31mERROR[m] /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-scala/src/main/scala/org/apache/flink/streaming/api/scala/StreamExecutionEnvironment.scala:675: error: value continuousSource is not a member of org.apache.flink.streaming.api.environment.StreamExecutionEnvironment
+[[1;31mERROR[m]     asScalaStream(javaEnv.continuousSource(source, watermarkStrategy, sourceName, typeInfo))
+[[1;31mERROR[m]                           ^
+[[1;33mWARNING[m] one warning found
+[[1;31mERROR[m] one error found
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  5.786 s
+[[1;34mINFO[m] Finished at: 2025-06-14T14:10:54+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32mnet.alchim31.maven:scala-maven-plugin:3.2.2:compile[m [1m(scala-compile-first)[m on project [36mflink-streaming-scala_2.11[m: [1;31mwrap: org.apache.commons.exec.ExecuteException: Process exited with an error: 1 (Exit value: 1)[m -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException

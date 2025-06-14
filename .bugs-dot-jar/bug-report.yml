@@ -1,0 +1,115 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Jiangjie Qin
+        '@username': becket_qin
+      attachments: null
+      comments:
+        comment:
+          '#text': "<p>Fixed in</p>\n<ul class=\"alternate\" type=\"square\">\n\t\
+            <li>1.11.0 via 369d4a6ce46dddfd2a14ad66ac2e189bd4827158</li>\n\t<li>1.12.0\
+            \ (master) via 49b5103299374641662d66b5165441b532206b71</li>\n</ul>"
+          '@author': stephanewen
+          '@created': Wed, 24 Jun 2020 18:49:13 +0000
+          '@id': '17144198'
+      component: API / DataStream
+      created: Wed, 24 Jun 2020 12:32:22 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '0.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: 'false'
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 4 years, 51 weeks, 2 days ago
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|z0g5oo:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+      description: "<p>The current code in master did not follow the [latest FLIP-27\
+        \ discussion|<a href=\"https://lists.apache.org/thread.html/r54287e9c9880916560bb97c38962db7b4d326056a7b23a9d0416e6a7%40%3Cdev.flink.apache.org%3E\"\
+        \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\">https://lists.apache.org/thread.html/r54287e9c9880916560bb97c38962db7b4d326056a7b23a9d0416e6a7%40%3Cdev.flink.apache.org%3E</a>],\
+        \ where we should have a <tt>StreamExecutionEnvironment#source()</tt> instead\
+        \ of\_\_<tt>StreamExecutionEnvironment#continuousSource()</tt>. The concern\
+        \ was that the latter would mislead the users to think that the execution\
+        \ is always in streaming mode while it actually depends on the boundedness\
+        \ of the source.</p>"
+      due: null
+      environment: null
+      fixVersion: 1.11.0
+      key:
+        '#text': FLINK-18428
+        '@id': '13313240'
+      labels:
+        label: pull-request-available
+      link: https://issues.apache.org/jira/browse/FLINK-18428
+      priority:
+        '#text': Blocker
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/blocker.svg
+        '@id': '1'
+      project:
+        '#text': Flink
+        '@id': '12315522'
+        '@key': FLINK
+      reporter:
+        '#text': Jiangjie Qin
+        '@username': becket_qin
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Wed, 24 Jun 2020 18:49:13 +0000
+      status:
+        '#text': Closed
+        '@description': The issue is considered finished, the resolution is correct.
+          Issues which are not closed can be reopened.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/closed.png
+        '@id': '6'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: StreamExecutionEnvironment#continuousSource() method should be renamed
+        to source()
+      title: '[FLINK-18428] StreamExecutionEnvironment#continuousSource() method should
+        be renamed to source()'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Wed, 24 Jun 2020 18:49:17 +0000
+      votes: '0'
+      watches: '4'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA
