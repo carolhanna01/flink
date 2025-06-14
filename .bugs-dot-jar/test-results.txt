@@ -1,0 +1,466 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-streaming-java_2.11:jar:1.11-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-streaming-java_${scala.binary.version}:1.11-SNAPSHOT, /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-java/pom.xml, line 32, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m-------------< [0;36morg.apache.flink:flink-streaming-java_2.11[0;1m >-------------[m
+[[1;34mINFO[m] [1mBuilding flink-streaming-java 1.11-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-checkstyle-plugin:2.17:check[m [1m(validate)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven-version)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-versions)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mdirectory-maven-plugin:0.1:highest-basedir[m [1m(directories)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] Highest basedir set to: /home/carol/Downloads/Workspaces/bugs-dot-jar/flink
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] skip non existing resourceDirectory /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-java/src/main/resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] Compiling 4 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-java/target/classes
+[[1;34mINFO[m] /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/TwoInputStreamTask.java: Some input files use or override a deprecated API.
+[[1;34mINFO[m] /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/TwoInputStreamTask.java: Recompile with -Xlint:deprecation for details.
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 90 resources
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] Compiling 4 source files to /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-java/target/test-classes
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mflink-streaming-java_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mStreamSourceOperatorWatermarksTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mCountTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.graph.[1mStreamingJobGraphGeneratorNodeHashTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.graph.[1mStreamGraphCoLocationConstraintTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mTimestampsAndPeriodicWatermarksOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.graph.[1mWithMasterCheckpointHookConfigTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mSlidingProcessingTimeWindowsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.streamrecord.[1mStreamElementSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.graph.[1mTranslationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.streamrecord.[1mStreamElementSerializerMigrationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.environment.[1mExecutorDiscoveryAndJobClientTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mPurgingTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.streamrecord.[1mStreamRecordTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mContinuousEventTimeTriggerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.373 s - in org.apache.flink.streaming.runtime.streamrecord.[1mStreamRecordTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.868 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mCountTriggerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.709 s - in org.apache.flink.streaming.runtime.streamrecord.[1mStreamElementSerializerMigrationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.938 s - in org.apache.flink.streaming.runtime.operators.[1mTimestampsAndPeriodicWatermarksOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.077 s - in org.apache.flink.streaming.graph.[1mTranslationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.035 s - in org.apache.flink.streaming.environment.[1mExecutorDiscoveryAndJobClientTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.396 s - in org.apache.flink.streaming.graph.[1mStreamGraphCoLocationConstraintTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mTumblingEventTimeWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.522 s - in org.apache.flink.streaming.graph.[1mWithMasterCheckpointHookConfigTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.053 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mContinuousEventTimeTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mRegularWindowOperatorContractTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.7 s - in org.apache.flink.streaming.runtime.streamrecord.[1mStreamElementSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mProcessingTimeTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mKeyMapPutTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.816 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mPurgingTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mWindowTranslationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mEventTimeTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mAllWindowTranslationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.766 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mProcessingTimeTriggerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.596 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mSlidingProcessingTimeWindowsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mKeyMapTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.025 s - in org.apache.flink.streaming.runtime.operators.[1mStreamSourceOperatorWatermarksTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mEventTimeSessionWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.718 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mEventTimeTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mWindowSerializerSnapshotsMigrationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mWindowOperatorMigrationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m24[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.598 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mWindowSerializerSnapshotsMigrationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mGlobalWindowsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mTimeWindowTranslationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mKeyMapPutIfAbsentTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mTimeWindowTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.254 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mTimeWindowTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m40[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.243 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mAllWindowTranslationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m44[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.379 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mWindowTranslationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m71[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.252 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mRegularWindowOperatorContractTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.554 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mTumblingEventTimeWindowsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mDynamicEventTimeSessionWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.297 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mEventTimeSessionWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.068 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mTimeWindowTranslationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mMergingWindowSetTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.111 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mKeyMapPutTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mDynamicProcessingTimeSessionWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.68 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mGlobalWindowsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mTumblingProcessingTimeWindowsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mEvictingWindowOperatorContractTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mSlidingEventTimeWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m35[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.21 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mProcessingTimeSessionWindowsTest[m
+[[1;33mWARNING[m] [1;33mTests [0;1mrun: [0;1m112[m, Failures: 0, Errors: 0, [1;33mSkipped: [0;1;33m56[m, Time elapsed: 4.327 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mWindowOperatorMigrationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.windowing.[1mEvictingWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mStreamTaskOperatorTimerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.185 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mMergingWindowSetTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.187 s - in org.apache.flink.streaming.graph.[1mStreamingJobGraphGeneratorNodeHashTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.825 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mKeyMapTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mContinuousFileProcessingRescalingTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.377 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mDynamicEventTimeSessionWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.744 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mDynamicProcessingTimeSessionWindowsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mMailboxOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mStreamSourceOperatorLatencyMetricsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.07 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mEvictingWindowOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.749 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mSlidingEventTimeWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.664 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mKeyMapPutIfAbsentTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mTestProcessingTimeServiceTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mStreamTaskTimerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mGenericWriteAheadSinkTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mTimestampsAndPunctuatedWatermarksOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.398 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mTumblingProcessingTimeWindowsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.operators.[1mStreamOperatorChainingTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.partitioner.[1mBroadcastPartitionerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.175 s - in org.apache.flink.streaming.runtime.operators.[1mContinuousFileProcessingRescalingTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.262 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mProcessingTimeSessionWindowsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.321 s - in org.apache.flink.streaming.runtime.partitioner.[1mBroadcastPartitionerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.394 s - in org.apache.flink.streaming.runtime.operators.[1mMailboxOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.partitioner.[1mForwardPartitionerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m69[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.979 s - in org.apache.flink.streaming.runtime.operators.windowing.[1mEvictingWindowOperatorContractTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.757 s - in org.apache.flink.streaming.runtime.operators.[1mTimestampsAndPunctuatedWatermarksOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.partitioner.[1mShufflePartitionerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.884 s - in org.apache.flink.streaming.runtime.operators.[1mGenericWriteAheadSinkTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.514 s - in org.apache.flink.streaming.runtime.operators.[1mStreamSourceOperatorLatencyMetricsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.partitioner.[1mRescalePartitionerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.196 s - in org.apache.flink.streaming.runtime.partitioner.[1mForwardPartitionerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.215 s - in org.apache.flink.streaming.runtime.partitioner.[1mShufflePartitionerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.partitioner.[1mRebalancePartitionerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.338 s - in org.apache.flink.streaming.runtime.operators.[1mTestProcessingTimeServiceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.166 s - in org.apache.flink.streaming.runtime.operators.[1mStreamOperatorChainingTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.partitioner.[1mKeyGroupStreamPartitionerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.[1mCreditBasedCheckpointBarrierAlignerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.393 s - in org.apache.flink.streaming.runtime.partitioner.[1mRebalancePartitionerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.[1mStreamTaskNetworkInputTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.076 s - in org.apache.flink.streaming.runtime.operators.[1mStreamTaskOperatorTimerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.partitioner.[1mGlobalPartitionerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.[1mCachedBufferStorageTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.apache.flink.streaming.runtime.partitioner.[1mKeyGroupStreamPartitionerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.[1mCheckpointBarrierAlignerMassiveRandomTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.benchmark.[1mStreamNetworkThroughputBenchmarkTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.22 s - in org.apache.flink.streaming.runtime.partitioner.[1mGlobalPartitionerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.benchmark.[1mStreamNetworkPointToPointBenchmarkTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.948 s - in org.apache.flink.streaming.runtime.operators.[1mStreamTaskTimerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.benchmark.[1mStreamNetworkBroadcastThroughputBenchmarkTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.548 s - in org.apache.flink.streaming.runtime.io.[1mStreamTaskNetworkInputTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.[1mCheckpointBarrierTrackerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.benchmark.[1mDataSkewStreamNetworkThroughputBenchmarkTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.641 s - in org.apache.flink.streaming.runtime.io.[1mCachedBufferStorageTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.[1mLinkedBufferStorageTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.metrics.[1mWatermarkGaugeTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.522 s - in org.apache.flink.streaming.runtime.partitioner.[1mRescalePartitionerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.io.[1mCheckpointBarrierAlignerAlignmentLimitTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.062 s - in org.apache.flink.streaming.runtime.metrics.[1mWatermarkGaugeTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.465 s - in org.apache.flink.streaming.runtime.io.[1mCheckpointBarrierTrackerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.311 s - in org.apache.flink.streaming.runtime.io.[1mLinkedBufferStorageTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m18[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.31 s - in org.apache.flink.streaming.runtime.io.[1mCreditBasedCheckpointBarrierAlignerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.metrics.[1mMinWatermarkGaugeTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.167 s - in org.apache.flink.streaming.runtime.metrics.[1mMinWatermarkGaugeTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.streamstatus.[1mStatusWatermarkValveTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.24 s - in org.apache.flink.streaming.runtime.io.benchmark.[1mStreamNetworkPointToPointBenchmarkTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.streamstatus.[1mStreamStatusTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.507 s - in org.apache.flink.streaming.runtime.io.[1mCheckpointBarrierAlignerMassiveRandomTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m13[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.125 s - in org.apache.flink.streaming.runtime.streamstatus.[1mStatusWatermarkValveTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mSynchronousCheckpointTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.712 s - in org.apache.flink.streaming.runtime.io.[1mCheckpointBarrierAlignerAlignmentLimitTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.139 s - in org.apache.flink.streaming.runtime.streamstatus.[1mStreamStatusTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mStreamTaskTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mStreamTaskCancellationBarrierTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mCheckpointExceptionHandlerConfigurationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mRestoreStreamTaskTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mOperatorChainTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mStreamTaskTestHarnessTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.749 s - in org.apache.flink.streaming.runtime.tasks.[1mSynchronousCheckpointTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mLocalStateForwardingTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mOneInputStreamTaskTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.728 s - in org.apache.flink.streaming.runtime.tasks.[1mCheckpointExceptionHandlerConfigurationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mSystemProcessingTimeServiceTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mSourceTaskTerminationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.458 s - in org.apache.flink.streaming.runtime.tasks.[1mStreamTaskTestHarnessTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mTaskCheckpointingBehaviourTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mStreamTaskTerminationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.579 s - in org.apache.flink.streaming.runtime.tasks.[1mOperatorChainTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mStreamTaskSelectiveReadingTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.18 s - in org.apache.flink.streaming.runtime.tasks.[1mStreamTaskCancellationBarrierTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.571 s - in org.apache.flink.streaming.runtime.tasks.[1mSystemProcessingTimeServiceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.845 s - in org.apache.flink.streaming.runtime.tasks.[1mLocalStateForwardingTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mSourceExternalCheckpointTriggerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.07 s - in org.apache.flink.streaming.runtime.tasks.[1mSourceTaskTerminationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mInterruptSensitiveRestoreTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.047 s - in org.apache.flink.streaming.runtime.tasks.[1mRestoreStreamTaskTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mSourceReaderStreamTaskTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.345 s - in org.apache.flink.streaming.runtime.io.benchmark.[1mStreamNetworkThroughputBenchmarkTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mTwoInputStreamTaskTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.967 s - in org.apache.flink.streaming.runtime.tasks.[1mStreamTaskSelectiveReadingTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.mailbox.[1mMailboxExecutorImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.753 s - in org.apache.flink.streaming.runtime.io.benchmark.[1mStreamNetworkBroadcastThroughputBenchmarkTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.mailbox.[1mTaskMailboxProcessorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.745 s - in org.apache.flink.streaming.runtime.tasks.[1mStreamTaskTerminationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.226 s - in org.apache.flink.streaming.runtime.tasks.mailbox.[1mMailboxExecutorImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.112 s - in org.apache.flink.streaming.runtime.tasks.[1mTaskCheckpointingBehaviourTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.985 s - in org.apache.flink.streaming.runtime.io.benchmark.[1mDataSkewStreamNetworkThroughputBenchmarkTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.mailbox.[1mTaskMailboxImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.025 s - in org.apache.flink.streaming.runtime.tasks.[1mSourceExternalCheckpointTriggerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m11[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.141 s - in org.apache.flink.streaming.runtime.tasks.[1mOneInputStreamTaskTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mSourceStreamTaskTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.runtime.tasks.[1mStreamTaskExecutionDecorationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.util.[1mAbstractStreamOperatorTestHarnessTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.083 s - in org.apache.flink.streaming.runtime.tasks.[1mSourceReaderStreamTaskTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.util.[1mProcessFunctionTestHarnessesTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.util.keys.[1mArrayKeySelectorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.266 s - in org.apache.flink.streaming.runtime.tasks.[1mStreamTaskExecutionDecorationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.util.typeutils.[1mFieldAccessorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.checkpoint.[1mListCheckpointedTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m14[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.899 s - in org.apache.flink.streaming.runtime.tasks.mailbox.[1mTaskMailboxImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.239 s - in org.apache.flink.streaming.util.keys.[1mArrayKeySelectorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.util.[1mLatencyStatsTest[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m8[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 2.19 s[1;31m <<< FAILURE![m - in org.apache.flink.streaming.runtime.tasks.[1mTwoInputStreamTaskTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.584 s - in org.apache.flink.streaming.util.[1mAbstractStreamOperatorTestHarnessTest[m
+[[1;31mERROR[m] testCheckpointBarrierMetrics(org.apache.flink.streaming.runtime.tasks.TwoInputStreamTaskTest)  Time elapsed: 0.037 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expected: map containing ["checkpointAlignmentTime"->ANYTHING]
+     but: map was [<numBytesOutPerSecond=org.apache.flink.metrics.MeterView@2c78324b>, <numRecordsOutPerSecond=org.apache.flink.metrics.MeterView@79defdc>, <numBytesOut=org.apache.flink.metrics.SimpleCounter@18317edc>, <numBytesIn=org.apache.flink.metrics.SimpleCounter@4e0ae11f>, <numRecordsOut=org.apache.flink.metrics.SimpleCounter@238d68ff>, <numRecordsIn=org.apache.flink.metrics.SimpleCounter@4b86805d>, <numRecordsInPerSecond=org.apache.flink.metrics.MeterView@5852c06f>, <numBuffersOutPerSecond=org.apache.flink.metrics.MeterView@4149c063>, <numBytesInPerSecond=org.apache.flink.metrics.MeterView@9cb8225>, <numBuffersOut=org.apache.flink.metrics.SimpleCounter@76b07f29>, <currentOutputWatermark=org.apache.flink.streaming.runtime.metrics.WatermarkGauge@38af9828>]
+	at org.apache.flink.streaming.runtime.tasks.TwoInputStreamTaskTest.testCheckpointBarrierMetrics(TwoInputStreamTaskTest.java:651)
+
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m13[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.377 s - in org.apache.flink.streaming.util.typeutils.[1mFieldAccessorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.927 s - in org.apache.flink.streaming.runtime.tasks.[1mInterruptSensitiveRestoreTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m18[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.274 s - in org.apache.flink.streaming.runtime.tasks.[1mStreamTaskTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.[1mTypeFillTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.335 s - in org.apache.flink.streaming.util.[1mLatencyStatsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.924 s - in org.apache.flink.streaming.util.[1mProcessFunctionTestHarnessesTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.[1mDataStreamTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.734 s - in org.apache.flink.streaming.api.checkpoint.[1mListCheckpointedTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.[1mStreamExecutionEnvironmentTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamTaskStateInitializerImplTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mWrappingFunctionSnapshotRestoreTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.windowing.functions.[1mInternalWindowFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mTimerSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.183 s - in org.apache.flink.streaming.runtime.tasks.mailbox.[1mTaskMailboxProcessorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mInternalTimeServiceManagerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mLegacyKeyedProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.749 s - in org.apache.flink.streaming.api.[1mTypeFillTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.193 s - in org.apache.flink.streaming.api.operators.[1mInternalTimeServiceManagerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mKeyedProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m11[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.145 s - in org.apache.flink.streaming.runtime.tasks.[1mSourceStreamTaskTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mOperatorSnapshotFuturesTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.648 s - in org.apache.flink.streaming.api.operators.[1mWrappingFunctionSnapshotRestoreTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.563 s - in org.apache.flink.streaming.api.operators.[1mTimerSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamProjectTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamingRuntimeContextTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStateInitializationContextImplTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mInputSelectionTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamGroupedReduceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 s - in org.apache.flink.streaming.api.operators.[1mLegacyKeyedProcessOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mBackendRestorerProcedureTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in org.apache.flink.streaming.api.operators.[1mInputSelectionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.673 s - in org.apache.flink.streaming.api.operators.[1mStreamProjectTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.953 s - in org.apache.flink.streaming.api.operators.[1mKeyedProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.056 s - in org.apache.flink.streaming.api.operators.[1mOperatorSnapshotFuturesTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m27[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.876 s - in org.apache.flink.streaming.api.[1mDataStreamTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStateDescriptorPassingTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.062 s - in org.apache.flink.streaming.api.[1mStreamExecutionEnvironmentTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.692 s - in org.apache.flink.streaming.api.operators.[1mStreamGroupedReduceTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.async.queue.[1mUnorderedStreamElementQueueTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.async.[1mAsyncWaitOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.async.queue.[1mOrderedStreamElementQueueTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.async.queue.[1mStreamElementQueueTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.345 s - in org.apache.flink.streaming.api.operators.async.queue.[1mOrderedStreamElementQueueTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.39 s - in org.apache.flink.streaming.api.operators.async.queue.[1mUnorderedStreamElementQueueTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.538 s - in org.apache.flink.streaming.api.operators.[1mStreamTaskStateInitializerImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.374 s - in org.apache.flink.streaming.api.operators.windowing.functions.[1mInternalWindowFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.371 s - in org.apache.flink.streaming.api.operators.async.queue.[1mStreamElementQueueTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamFilterTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mInternalTimerServiceImplTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mGetOperatorUniqueIDTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.809 s - in org.apache.flink.streaming.api.operators.[1mStateInitializationContextImplTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.54 s - in org.apache.flink.streaming.api.operators.[1mBackendRestorerProcedureTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mCoBroadcastWithNonKeyedOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mCoProcessOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamFlatMapTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mAbstractStreamOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.632 s - in org.apache.flink.streaming.api.operators.[1mStreamFilterTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mBufferEntrySerializerMigrationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mCoStreamMapTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.707 s - in org.apache.flink.streaming.api.operators.[1mStreamingRuntimeContextTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.745 s - in org.apache.flink.streaming.api.operators.[1mProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.586 s - in org.apache.flink.streaming.api.operators.co.[1mCoProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.397 s - in org.apache.flink.streaming.api.operators.co.[1mBufferEntrySerializerMigrationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mKeyedCoProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.763 s - in org.apache.flink.streaming.api.operators.[1mStreamFlatMapTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.042 s - in org.apache.flink.streaming.api.operators.co.[1mCoBroadcastWithNonKeyedOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.846 s - in org.apache.flink.streaming.api.operators.co.[1mCoStreamMapTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.637 s - in org.apache.flink.streaming.api.operators.[1mStateDescriptorPassingTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mLegacyKeyedCoProcessOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mCoBroadcastWithKeyedOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mIntervalJoinOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.co.[1mCoStreamFlatMapTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamGroupedFoldTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamSinkOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mKeyGroupPartitionerForTimersTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mTimerSerializerSnapshotMigrationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.899 s - in org.apache.flink.streaming.api.operators.co.[1mLegacyKeyedCoProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.755 s - in org.apache.flink.streaming.api.operators.co.[1mCoStreamFlatMapTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 s - in org.apache.flink.streaming.api.operators.[1mKeyGroupPartitionerForTimersTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mOperatorSnapshotFinalizerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.691 s - in org.apache.flink.streaming.api.operators.co.[1mKeyedCoProcessOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.183 s - in org.apache.flink.streaming.api.operators.co.[1mCoBroadcastWithKeyedOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.975 s - in org.apache.flink.streaming.api.operators.[1mStreamGroupedFoldTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.308 s - in org.apache.flink.streaming.api.operators.[1mOperatorSnapshotFinalizerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.463 s - in org.apache.flink.streaming.api.operators.[1mTimerSerializerSnapshotMigrationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStateSnapshotContextSynchronousImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.09 s - in org.apache.flink.streaming.api.operators.[1mStreamSinkOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.23 s - in org.apache.flink.streaming.api.operators.async.[1mAsyncWaitOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mStreamMapTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.operators.[1mAbstractUdfStreamOperatorLifecycleTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.graph.[1mStreamGraphGeneratorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.graph.[1mStreamingJobGraphGeneratorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.graph.[1mSlotAllocationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.windowing.deltafunction.[1mCosineDistanceTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.windowing.deltafunction.[1mEuclideanDistanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.219 s - in org.apache.flink.streaming.api.windowing.deltafunction.[1mCosineDistanceTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.86 s - in org.apache.flink.streaming.api.operators.[1mStreamMapTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.201 s - in org.apache.flink.streaming.api.windowing.deltafunction.[1mEuclideanDistanceTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.[1mRestartStrategyTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.streamtask.[1mStreamIterationHeadTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m36[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.848 s - in org.apache.flink.streaming.api.operators.co.[1mIntervalJoinOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.603 s - in org.apache.flink.streaming.api.operators.[1mStateSnapshotContextSynchronousImplTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.environment.[1mStreamExecutionEnvironmentConfigurationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.environment.[1mStreamExecutionEnvironmentComplexConfigurationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m20[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.223 s - in org.apache.flink.streaming.api.graph.[1mStreamingJobGraphGeneratorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.642 s - in org.apache.flink.streaming.api.[1mRestartStrategyTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.environment.[1mCheckpointConfigFromConfigurationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.35 s - in org.apache.flink.streaming.api.graph.[1mSlotAllocationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m14[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.795 s - in org.apache.flink.streaming.api.graph.[1mStreamGraphGeneratorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.45 s - in org.apache.flink.streaming.api.environment.[1mCheckpointConfigFromConfigurationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.568 s - in org.apache.flink.streaming.api.environment.[1mStreamExecutionEnvironmentComplexConfigurationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.634 s - in org.apache.flink.streaming.api.environment.[1mStreamExecutionEnvironmentConfigurationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.environment.[1mRemoteStreamExecutionEnvironmentTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.91 s - in org.apache.flink.streaming.api.operators.[1mGetOperatorUniqueIDTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mFieldsFromTupleTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mFieldFromArrayTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mArrayFromTupleTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mFieldFromArrayTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.24 s - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mFieldsFromTupleTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mFieldsFromArrayTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mFieldFromTupleTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.199 s - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mArrayFromTupleTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mConcatenatedExtractTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.146 s - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mFieldsFromArrayTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.17 s - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mFieldFromTupleTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.source.[1mSocketTextStreamFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.651 s - in org.apache.flink.streaming.api.environment.[1mRemoteStreamExecutionEnvironmentTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.178 s - in org.apache.flink.streaming.api.functions.windowing.delta.extractor.[1mConcatenatedExtractTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.source.[1mFileMonitoringFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.11 s - in org.apache.flink.streaming.api.streamtask.[1mStreamIterationHeadTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.source.[1mInputFormatSourceFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.[1mPrintSinkFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.[1mOutputFormatSinkFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.317 s - in org.apache.flink.streaming.api.operators.[1mAbstractUdfStreamOperatorLifecycleTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.[1mFromElementsFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.filesystem.[1mLocalStreamingFileSinkTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.filesystem.[1mBucketStateSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.filesystem.[1mBucketsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.filesystem.[1mBulkWriterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.562 s - in org.apache.flink.streaming.api.functions.source.[1mInputFormatSourceFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.533 s - in org.apache.flink.streaming.api.functions.[1mPrintSinkFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.432 s - in org.apache.flink.streaming.api.functions.sink.filesystem.[1mBucketStateSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.filesystem.[1mRollingPolicyTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.667 s - in org.apache.flink.streaming.api.functions.sink.filesystem.[1mBucketsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.28 s - in org.apache.flink.streaming.api.functions.source.[1mSocketTextStreamFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.375 s - in org.apache.flink.streaming.api.functions.sink.filesystem.[1mRollingPolicyTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.827 s - in org.apache.flink.streaming.api.functions.sink.filesystem.[1mBulkWriterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.324 s - in org.apache.flink.streaming.api.functions.source.[1mFileMonitoringFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.988 s - in org.apache.flink.streaming.api.functions.sink.filesystem.[1mLocalStreamingFileSinkTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.filesystem.[1mBucketTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.filesystem.bucketassigners.[1mDateTimeBucketAssignerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.437 s - in org.apache.flink.streaming.api.operators.[1mAbstractStreamOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.[1mTwoPhaseCommitSinkStateSerializerMigrationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 s - in org.apache.flink.streaming.api.functions.sink.filesystem.bucketassigners.[1mDateTimeBucketAssignerTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.[1mSocketClientSinkTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.49 s - in org.apache.flink.streaming.api.functions.sink.filesystem.[1mBucketTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.556 s - in org.apache.flink.streaming.api.functions.sink.[1mOutputFormatSinkFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.[1mTwoPhaseCommitSinkFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.[1mAscendingTimestampExtractorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.[1mIngestionTimeExtractorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.sink.[1mTransactionHolderTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.async.[1mRichAsyncFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 s - in org.apache.flink.streaming.api.functions.sink.[1mTwoPhaseCommitSinkStateSerializerMigrationTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.[1mBoundedOutOfOrdernessTimestampExtractorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.107 s - in org.apache.flink.streaming.api.functions.sink.[1mTransactionHolderTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.264 s - in org.apache.flink.streaming.api.functions.[1mAscendingTimestampExtractorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.collector.[1mOutputSelectorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.229 s - in org.apache.flink.streaming.api.functions.[1mBoundedOutOfOrdernessTimestampExtractorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.functions.[1mStatefulSequenceSourceTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.[1mSourceFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.362 s - in org.apache.flink.streaming.api.functions.[1mIngestionTimeExtractorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in org.apache.flink.streaming.api.collector.[1mOutputSelectorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.183 s - in org.apache.flink.streaming.api.[1mSourceFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.315 s - in org.apache.flink.streaming.api.functions.[1mFromElementsFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.datastream.[1mUnionSerializerMigrationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.967 s - in org.apache.flink.streaming.api.functions.sink.[1mSocketClientSinkTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.datastream.[1mSplitSideOutputTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.datastream.[1mCoGroupedStreamsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.datastream.[1mJoinedStreamsTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.datastream.[1mUnionSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.35 s - in org.apache.flink.streaming.api.datastream.[1mUnionSerializerMigrationTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.705 s - in org.apache.flink.streaming.api.functions.[1mStatefulSequenceSourceTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.experimental.[1mSocketStreamIteratorTest[m
+[[1;34mINFO[m] Running org.apache.flink.streaming.api.[1mAggregationFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m102[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.97 s - in org.apache.flink.streaming.api.operators.[1mInternalTimerServiceImplTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.458 s - in org.apache.flink.streaming.api.functions.sink.[1mTwoPhaseCommitSinkFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.573 s - in org.apache.flink.streaming.api.datastream.[1mCoGroupedStreamsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.646 s - in org.apache.flink.streaming.api.datastream.[1mSplitSideOutputTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.255 s - in org.apache.flink.streaming.experimental.[1mSocketStreamIteratorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.585 s - in org.apache.flink.streaming.api.datastream.[1mJoinedStreamsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.508 s - in org.apache.flink.streaming.api.functions.async.[1mRichAsyncFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.763 s - in org.apache.flink.streaming.api.datastream.[1mUnionSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.479 s - in org.apache.flink.streaming.api.[1mAggregationFunctionTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  TwoInputStreamTaskTest.testCheckpointBarrierMetrics:651 
+Expected: map containing ["checkpointAlignmentTime"->ANYTHING]
+     but: map was [<numBytesOutPerSecond=org.apache.flink.metrics.MeterView@2c78324b>, <numRecordsOutPerSecond=org.apache.flink.metrics.MeterView@79defdc>, <numBytesOut=org.apache.flink.metrics.SimpleCounter@18317edc>, <numBytesIn=org.apache.flink.metrics.SimpleCounter@4e0ae11f>, <numRecordsOut=org.apache.flink.metrics.SimpleCounter@238d68ff>, <numRecordsIn=org.apache.flink.metrics.SimpleCounter@4b86805d>, <numRecordsInPerSecond=org.apache.flink.metrics.MeterView@5852c06f>, <numBuffersOutPerSecond=org.apache.flink.metrics.MeterView@4149c063>, <numBytesInPerSecond=org.apache.flink.metrics.MeterView@9cb8225>, <numBuffersOut=org.apache.flink.metrics.SimpleCounter@76b07f29>, <currentOutputWatermark=org.apache.flink.streaming.runtime.metrics.WatermarkGauge@38af9828>][m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 1416, Failures: 1, Errors: 0, Skipped: 56[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  39.859 s
+[[1;34mINFO[m] Finished at: 2025-06-14T14:34:26+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.22.1:test[m [1m(default-test)[m on project [36mflink-streaming-java_2.11[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-streaming-java/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
