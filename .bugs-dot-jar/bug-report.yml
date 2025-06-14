@@ -1,0 +1,411 @@
+rss:
+  '@version': '0.92'
+  channel:
+    build-info:
+      build-date: 22-06-2022
+      build-number: '820010'
+      version: 8.20.10
+    description: This file is an XML representation of an issue
+    item:
+      assignee:
+        '#text': Chesnay Schepler
+        '@username': chesnay
+      attachments: null
+      comments:
+        comment:
+        - '#text': "<p>GitHub user zentol opened a pull request:</p>\n\n<p>    <a\
+            \ href=\"https://github.com/apache/flink/pull/6292\" class=\"external-link\"\
+            \ target=\"_blank\" rel=\"nofollow noopener\">https://github.com/apache/flink/pull/6292</a></p>\n\
+            \n<p>    <a href=\"https://issues.apache.org/jira/browse/FLINK-9789\"\
+            \ title=\"Watermark metrics for an operator&amp;task shadow each other\"\
+            \ class=\"issue-link\" data-issue-key=\"FLINK-9789\"><del>FLINK-9789</del></a><span\
+            \ class=\"error\">&#91;metrics&#93;</span> Ensure uniqueness of watermark\
+            \ metrics</p>\n\n<ol>\n\t<li>\n\t<ol>\n\t\t<li>What is the purpose of\
+            \ the change</li>\n\t</ol>\n\t</li>\n</ol>\n\n\n<p>    This PR ensures\
+            \ that all registered watermark metric objects are only registered once;\
+            \ shared gauges must be wrapped and registered separately to avoid collisions\
+            \ in reporters which generally assume that metric objects are unique.</p>\n\
+            \n<ol>\n\t<li>\n\t<ol>\n\t\t<li>Brief change log</li>\n\t</ol>\n\t</li>\n\
+            </ol>\n\n\n<ul>\n\t<li>ensure uniqueness by wrapping re-used metrics in\
+            \ `<span class=\"error\">&#91;One|Two&#93;</span>InputStreamTask` and\
+            \ `OperatorChain`</li>\n\t<li>add `InterceptingTaskMetricGroup` to gather\
+            \ registered metrics</li>\n\t<li>modify `<span class=\"error\">&#91;One|Two&#93;</span>InputStreamTask#testWatermarkMetrics`\
+            \ to check uniqueness of registered objects, and cover re-use for tasks</li>\n\
+            </ul>\n\n\n<ol>\n\t<li>\n\t<ol>\n\t\t<li>Verifying this change</li>\n\t\
+            </ol>\n\t</li>\n</ol>\n\n\n<ul>\n\t<li>run `<span class=\"error\">&#91;One|Two&#93;</span>InputStreamTask#testWatermarkMetrics`</li>\n\
+            \t<li>run any streaming job and check existence of all watermark metrics\
+            \ for task and operator</li>\n\t<li>(via REST API: /job/&lt;job_id&gt;/vertices/&lt;vertex_id&gt;/metrics)</li>\n\
+            \t<li>see the <span class=\"error\">&#91;metrics documentation&#93;</span>(<a\
+            \ href=\"https://ci.apache.org/projects/flink/flink-docs-master/monitoring/metrics.html#io\"\
+            \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\"\
+            >https://ci.apache.org/projects/flink/flink-docs-master/monitoring/metrics.html#io</a>)\
+            \ for a list of expected metrics</li>\n</ul>\n\n\n\n<p>You can merge this\
+            \ pull request into a Git repository by running:</p>\n\n<p>    $ git pull\
+            \ <a href=\"https://github.com/zentol/flink\" class=\"external-link\"\
+            \ target=\"_blank\" rel=\"nofollow noopener\">https://github.com/zentol/flink</a>\
+            \ 9789</p>\n\n<p>Alternatively you can review and apply these changes\
+            \ as the patch at:</p>\n\n<p>    <a href=\"https://github.com/apache/flink/pull/6292.patch\"\
+            \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\"\
+            >https://github.com/apache/flink/pull/6292.patch</a></p>\n\n<p>To close\
+            \ this pull request, make a commit to your master/trunk branch<br/>\n\
+            with (at least) the following in the commit message:</p>\n\n<p>    This\
+            \ closes #6292</p>\n\n<hr />\n<p>commit 4a7a0c6114893250e625dc36d953209de22ce57e<br/>\n\
+            Author: zentol &lt;chesnay@...&gt;<br/>\nDate:   2018-07-10T11:27:34Z</p>\n\
+            \n<p>    <a href=\"https://issues.apache.org/jira/browse/FLINK-9789\"\
+            \ title=\"Watermark metrics for an operator&amp;task shadow each other\"\
+            \ class=\"issue-link\" data-issue-key=\"FLINK-9789\"><del>FLINK-9789</del></a><span\
+            \ class=\"error\">&#91;metrics&#93;</span> Ensure uniqueness of watermark\
+            \ metrics</p>\n\n<hr />"
+          '@author': githubbot
+          '@created': Tue, 10 Jul 2018 11:42:36 +0000
+          '@id': '16538446'
+        - '#text': "<p>Github user yanghua commented on a diff in the pull request:</p>\n\
+            \n<p>    <a href=\"https://github.com/apache/flink/pull/6292#discussion_r201313023\"\
+            \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\"\
+            >https://github.com/apache/flink/pull/6292#discussion_r201313023</a></p>\n\
+            \n<p>    &#8212; Diff: flink-runtime/src/test/java/org/apache/flink/runtime/metrics/util/InterceptingTaskMetricGroup.java\
+            \ &#8212;<br/>\n    @@ -0,0 +1,53 @@<br/>\n    +/*<br/>\n    + * Licensed\
+            \ to the Apache Software Foundation (ASF) under one<br/>\n    + * or more\
+            \ contributor license agreements.  See the NOTICE file<br/>\n    + * distributed\
+            \ with this work for additional information<br/>\n    + * regarding copyright\
+            \ ownership.  The ASF licenses this file<br/>\n    + * to you under the\
+            \ Apache License, Version 2.0 (the<br/>\n    + * \"License\"); you may\
+            \ not use this file except in compliance<br/>\n    + * with the License.\
+            \  You may obtain a copy of the License at<br/>\n    + *<br/>\n    + *\
+            \     <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" class=\"\
+            external-link\" target=\"_blank\" rel=\"nofollow noopener\">http://www.apache.org/licenses/LICENSE-2.0</a><br/>\n\
+            \    + *<br/>\n    + * Unless required by applicable law or agreed to\
+            \ in writing, software<br/>\n    + * distributed under the License is\
+            \ distributed on an \"AS IS\" BASIS,<br/>\n    + * WITHOUT WARRANTIES\
+            \ OR CONDITIONS OF ANY KIND, either express or implied.<br/>\n    + *\
+            \ See the License for the specific language governing permissions and<br/>\n\
+            \    + * limitations under the License.<br/>\n    + */<br/>\n    +<br/>\n\
+            \    +package org.apache.flink.runtime.metrics.util;<br/>\n    +<br/>\n\
+            \    +import org.apache.flink.metrics.Metric;<br/>\n    +import org.apache.flink.runtime.metrics.groups.TaskMetricGroup;<br/>\n\
+            \    +import org.apache.flink.runtime.metrics.groups.UnregisteredMetricGroups;<br/>\n\
+            \    +<br/>\n    +import java.util.HashMap;<br/>\n    +import java.util.Map;<br/>\n\
+            \    +<br/>\n    +/**<br/>\n    + * A </p>\n{@link TaskMetricGroup}\n\
+            <p> that exposes all registered metrics.<br/>\n    + */<br/>\n    +public\
+            \ class InterceptingTaskMetricGroup extends UnregisteredMetricGroups.UnregisteredTaskMetricGroup\
+            \ {<br/>\n    +<br/>\n    +\tprivate Map&lt;String, Metric&gt; intercepted;<br/>\n\
+            \    +<br/>\n    +\t/**<br/>\n    +\t * Returns the registered metric\
+            \ for the given name, or null if it was never registered.<br/>\n    +\t\
+            \ *<br/>\n    +\t * @param name metric name<br/>\n    +\t * @return registered\
+            \ metric for the given name, or null if it was never registered<br/>\n\
+            \    +\t */<br/>\n    +\tpublic Metric get(String name) {<br/>\n    +\t\
+            \treturn intercepted.get(name);<br/>\n    &#8212; End diff &#8211;</p>\n\
+            \n<p>     if this method is invoked before `addMetric` , then the `intercepted`\
+            \ would not be initialized, seems it can trigger NPE</p>"
+          '@author': githubbot
+          '@created': Tue, 10 Jul 2018 11:53:04 +0000
+          '@id': '16538464'
+        - '#text': "<p>Github user zentol commented on a diff in the pull request:</p>\n\
+            \n<p>    <a href=\"https://github.com/apache/flink/pull/6292#discussion_r201315827\"\
+            \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\"\
+            >https://github.com/apache/flink/pull/6292#discussion_r201315827</a></p>\n\
+            \n<p>    &#8212; Diff: flink-runtime/src/test/java/org/apache/flink/runtime/metrics/util/InterceptingTaskMetricGroup.java\
+            \ &#8212;<br/>\n    @@ -0,0 +1,53 @@<br/>\n    +/*<br/>\n    + * Licensed\
+            \ to the Apache Software Foundation (ASF) under one<br/>\n    + * or more\
+            \ contributor license agreements.  See the NOTICE file<br/>\n    + * distributed\
+            \ with this work for additional information<br/>\n    + * regarding copyright\
+            \ ownership.  The ASF licenses this file<br/>\n    + * to you under the\
+            \ Apache License, Version 2.0 (the<br/>\n    + * \"License\"); you may\
+            \ not use this file except in compliance<br/>\n    + * with the License.\
+            \  You may obtain a copy of the License at<br/>\n    + *<br/>\n    + *\
+            \     <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" class=\"\
+            external-link\" target=\"_blank\" rel=\"nofollow noopener\">http://www.apache.org/licenses/LICENSE-2.0</a><br/>\n\
+            \    + *<br/>\n    + * Unless required by applicable law or agreed to\
+            \ in writing, software<br/>\n    + * distributed under the License is\
+            \ distributed on an \"AS IS\" BASIS,<br/>\n    + * WITHOUT WARRANTIES\
+            \ OR CONDITIONS OF ANY KIND, either express or implied.<br/>\n    + *\
+            \ See the License for the specific language governing permissions and<br/>\n\
+            \    + * limitations under the License.<br/>\n    + */<br/>\n    +<br/>\n\
+            \    +package org.apache.flink.runtime.metrics.util;<br/>\n    +<br/>\n\
+            \    +import org.apache.flink.metrics.Metric;<br/>\n    +import org.apache.flink.runtime.metrics.groups.TaskMetricGroup;<br/>\n\
+            \    +import org.apache.flink.runtime.metrics.groups.UnregisteredMetricGroups;<br/>\n\
+            \    +<br/>\n    +import java.util.HashMap;<br/>\n    +import java.util.Map;<br/>\n\
+            \    +<br/>\n    +/**<br/>\n    + * A </p>\n{@link TaskMetricGroup}\n\
+            <p> that exposes all registered metrics.<br/>\n    + */<br/>\n    +public\
+            \ class InterceptingTaskMetricGroup extends UnregisteredMetricGroups.UnregisteredTaskMetricGroup\
+            \ {<br/>\n    +<br/>\n    +\tprivate Map&lt;String, Metric&gt; intercepted;<br/>\n\
+            \    +<br/>\n    +\t/**<br/>\n    +\t * Returns the registered metric\
+            \ for the given name, or null if it was never registered.<br/>\n    +\t\
+            \ *<br/>\n    +\t * @param name metric name<br/>\n    +\t * @return registered\
+            \ metric for the given name, or null if it was never registered<br/>\n\
+            \    +\t */<br/>\n    +\tpublic Metric get(String name) {<br/>\n    +\t\
+            \treturn intercepted.get(name);<br/>\n    &#8212; End diff &#8211;</p>\n\
+            \n<p>    That's true, but the same code exists in the `InterceptingOperatorMetricGroup`.\
+            \ We could simplify that but I'd do it in a separate ticket.<br/>\n  \
+            \  The NPE is virtually impossible to occur unless used in weird ways\
+            \ (i.e. not being passed to a task).</p>"
+          '@author': githubbot
+          '@created': Tue, 10 Jul 2018 12:03:57 +0000
+          '@id': '16538476'
+        - '#text': "<p>Github user aljoscha commented on a diff in the pull request:</p>\n\
+            \n<p>    <a href=\"https://github.com/apache/flink/pull/6292#discussion_r201340299\"\
+            \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\"\
+            >https://github.com/apache/flink/pull/6292#discussion_r201340299</a></p>\n\
+            \n<p>    &#8212; Diff: flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/OneInputStreamTask.java\
+            \ &#8212;<br/>\n    @@ -93,7 +93,7 @@ public void init() throws Exception\
+            \ </p>\n{\n     \t\t\t\t\tinputWatermarkGauge);\n     \t\t}\n<p>     \t\
+            \theadOperator.getMetricGroup().gauge(MetricNames.IO_CURRENT_INPUT_WATERMARK,\
+            \ this.inputWatermarkGauge);</p>\n<ul class=\"alternate\" type=\"square\"\
+            >\n\t<li>getEnvironment().getMetricGroup().gauge(MetricNames.IO_CURRENT_INPUT_WATERMARK,\
+            \ this.inputWatermarkGauge);<br/>\n    +\t\tgetEnvironment().getMetricGroup().gauge(MetricNames.IO_CURRENT_INPUT_WATERMARK,\
+            \ this.inputWatermarkGauge::getValue);\n\t<ul class=\"alternate\" type=\"\
+            square\">\n\t\t<li>\n\t\t<ul class=\"alternate\" type=\"square\">\n\t\t\
+            \t<li>End diff &#8211;</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n\
+            </ul>\n\n\n<p>    maybe document that we create a wrapping metric because\
+            \ registered metrics objects have to be unique</p>"
+          '@author': githubbot
+          '@created': Tue, 10 Jul 2018 13:25:08 +0000
+          '@id': '16538582'
+        - '#text': "<p>Github user zentol commented on a diff in the pull request:</p>\n\
+            \n<p>    <a href=\"https://github.com/apache/flink/pull/6292#discussion_r201347774\"\
+            \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\"\
+            >https://github.com/apache/flink/pull/6292#discussion_r201347774</a></p>\n\
+            \n<p>    &#8212; Diff: flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/tasks/OneInputStreamTask.java\
+            \ &#8212;<br/>\n    @@ -93,7 +93,7 @@ public void init() throws Exception\
+            \ </p>\n{\n     \t\t\t\t\tinputWatermarkGauge);\n     \t\t}\n<p>     \t\
+            \theadOperator.getMetricGroup().gauge(MetricNames.IO_CURRENT_INPUT_WATERMARK,\
+            \ this.inputWatermarkGauge);</p>\n<ul class=\"alternate\" type=\"square\"\
+            >\n\t<li>getEnvironment().getMetricGroup().gauge(MetricNames.IO_CURRENT_INPUT_WATERMARK,\
+            \ this.inputWatermarkGauge);<br/>\n    +\t\tgetEnvironment().getMetricGroup().gauge(MetricNames.IO_CURRENT_INPUT_WATERMARK,\
+            \ this.inputWatermarkGauge::getValue);\n\t<ul class=\"alternate\" type=\"\
+            square\">\n\t\t<li>\n\t\t<ul class=\"alternate\" type=\"square\">\n\t\t\
+            \t<li>End diff &#8211;</li>\n\t\t</ul>\n\t\t</li>\n\t</ul>\n\t</li>\n\
+            </ul>\n\n\n<p>    will add a comment while merging</p>"
+          '@author': githubbot
+          '@created': Tue, 10 Jul 2018 13:46:07 +0000
+          '@id': '16538610'
+        - '#text': "<p>Github user aljoscha commented on a diff in the pull request:</p>\n\
+            \n<p>    <a href=\"https://github.com/apache/flink/pull/6292#discussion_r201352126\"\
+            \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\"\
+            >https://github.com/apache/flink/pull/6292#discussion_r201352126</a></p>\n\
+            \n<p>    &#8212; Diff: flink-runtime/src/test/java/org/apache/flink/runtime/metrics/util/InterceptingTaskMetricGroup.java\
+            \ &#8212;<br/>\n    @@ -0,0 +1,53 @@<br/>\n    +/*<br/>\n    + * Licensed\
+            \ to the Apache Software Foundation (ASF) under one<br/>\n    + * or more\
+            \ contributor license agreements.  See the NOTICE file<br/>\n    + * distributed\
+            \ with this work for additional information<br/>\n    + * regarding copyright\
+            \ ownership.  The ASF licenses this file<br/>\n    + * to you under the\
+            \ Apache License, Version 2.0 (the<br/>\n    + * \"License\"); you may\
+            \ not use this file except in compliance<br/>\n    + * with the License.\
+            \  You may obtain a copy of the License at<br/>\n    + *<br/>\n    + *\
+            \     <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" class=\"\
+            external-link\" target=\"_blank\" rel=\"nofollow noopener\">http://www.apache.org/licenses/LICENSE-2.0</a><br/>\n\
+            \    + *<br/>\n    + * Unless required by applicable law or agreed to\
+            \ in writing, software<br/>\n    + * distributed under the License is\
+            \ distributed on an \"AS IS\" BASIS,<br/>\n    + * WITHOUT WARRANTIES\
+            \ OR CONDITIONS OF ANY KIND, either express or implied.<br/>\n    + *\
+            \ See the License for the specific language governing permissions and<br/>\n\
+            \    + * limitations under the License.<br/>\n    + */<br/>\n    +<br/>\n\
+            \    +package org.apache.flink.runtime.metrics.util;<br/>\n    +<br/>\n\
+            \    +import org.apache.flink.metrics.Metric;<br/>\n    +import org.apache.flink.runtime.metrics.groups.TaskMetricGroup;<br/>\n\
+            \    +import org.apache.flink.runtime.metrics.groups.UnregisteredMetricGroups;<br/>\n\
+            \    +<br/>\n    +import java.util.HashMap;<br/>\n    +import java.util.Map;<br/>\n\
+            \    +<br/>\n    +/**<br/>\n    + * A </p>\n{@link TaskMetricGroup}\n\
+            <p> that exposes all registered metrics.<br/>\n    + */<br/>\n    +public\
+            \ class InterceptingTaskMetricGroup extends UnregisteredMetricGroups.UnregisteredTaskMetricGroup\
+            \ {<br/>\n    +<br/>\n    +\tprivate Map&lt;String, Metric&gt; intercepted;<br/>\n\
+            \    +<br/>\n    +\t/**<br/>\n    +\t * Returns the registered metric\
+            \ for the given name, or null if it was never registered.<br/>\n    +\t\
+            \ *<br/>\n    +\t * @param name metric name<br/>\n    +\t * @return registered\
+            \ metric for the given name, or null if it was never registered<br/>\n\
+            \    +\t */<br/>\n    +\tpublic Metric get(String name) {<br/>\n    +\t\
+            \treturn intercepted.get(name);<br/>\n    &#8212; End diff &#8211;</p>\n\
+            \n<p>    this is also only for testing, right?</p>"
+          '@author': githubbot
+          '@created': Tue, 10 Jul 2018 13:56:42 +0000
+          '@id': '16538625'
+        - '#text': "<p>Github user zentol commented on a diff in the pull request:</p>\n\
+            \n<p>    <a href=\"https://github.com/apache/flink/pull/6292#discussion_r201358726\"\
+            \ class=\"external-link\" target=\"_blank\" rel=\"nofollow noopener\"\
+            >https://github.com/apache/flink/pull/6292#discussion_r201358726</a></p>\n\
+            \n<p>    &#8212; Diff: flink-runtime/src/test/java/org/apache/flink/runtime/metrics/util/InterceptingTaskMetricGroup.java\
+            \ &#8212;<br/>\n    @@ -0,0 +1,53 @@<br/>\n    +/*<br/>\n    + * Licensed\
+            \ to the Apache Software Foundation (ASF) under one<br/>\n    + * or more\
+            \ contributor license agreements.  See the NOTICE file<br/>\n    + * distributed\
+            \ with this work for additional information<br/>\n    + * regarding copyright\
+            \ ownership.  The ASF licenses this file<br/>\n    + * to you under the\
+            \ Apache License, Version 2.0 (the<br/>\n    + * \"License\"); you may\
+            \ not use this file except in compliance<br/>\n    + * with the License.\
+            \  You may obtain a copy of the License at<br/>\n    + *<br/>\n    + *\
+            \     <a href=\"http://www.apache.org/licenses/LICENSE-2.0\" class=\"\
+            external-link\" target=\"_blank\" rel=\"nofollow noopener\">http://www.apache.org/licenses/LICENSE-2.0</a><br/>\n\
+            \    + *<br/>\n    + * Unless required by applicable law or agreed to\
+            \ in writing, software<br/>\n    + * distributed under the License is\
+            \ distributed on an \"AS IS\" BASIS,<br/>\n    + * WITHOUT WARRANTIES\
+            \ OR CONDITIONS OF ANY KIND, either express or implied.<br/>\n    + *\
+            \ See the License for the specific language governing permissions and<br/>\n\
+            \    + * limitations under the License.<br/>\n    + */<br/>\n    +<br/>\n\
+            \    +package org.apache.flink.runtime.metrics.util;<br/>\n    +<br/>\n\
+            \    +import org.apache.flink.metrics.Metric;<br/>\n    +import org.apache.flink.runtime.metrics.groups.TaskMetricGroup;<br/>\n\
+            \    +import org.apache.flink.runtime.metrics.groups.UnregisteredMetricGroups;<br/>\n\
+            \    +<br/>\n    +import java.util.HashMap;<br/>\n    +import java.util.Map;<br/>\n\
+            \    +<br/>\n    +/**<br/>\n    + * A </p>\n{@link TaskMetricGroup}\n\
+            <p> that exposes all registered metrics.<br/>\n    + */<br/>\n    +public\
+            \ class InterceptingTaskMetricGroup extends UnregisteredMetricGroups.UnregisteredTaskMetricGroup\
+            \ {<br/>\n    +<br/>\n    +\tprivate Map&lt;String, Metric&gt; intercepted;<br/>\n\
+            \    +<br/>\n    +\t/**<br/>\n    +\t * Returns the registered metric\
+            \ for the given name, or null if it was never registered.<br/>\n    +\t\
+            \ *<br/>\n    +\t * @param name metric name<br/>\n    +\t * @return registered\
+            \ metric for the given name, or null if it was never registered<br/>\n\
+            \    +\t */<br/>\n    +\tpublic Metric get(String name) {<br/>\n    +\t\
+            \treturn intercepted.get(name);<br/>\n    &#8212; End diff &#8211;</p>\n\
+            \n<p>    correct.</p>"
+          '@author': githubbot
+          '@created': Tue, 10 Jul 2018 14:13:25 +0000
+          '@id': '16538660'
+        - '#text': '<p>1.5: a0a810720d251fb9ab6a4cf9d995828d99a3f2c8</p>'
+          '@author': zentol
+          '@created': Tue, 10 Jul 2018 18:48:19 +0000
+          '@id': '16539088'
+        - '#text': '<p>Github user aljoscha commented on the issue:</p>
+
+
+            <p>    <a href="https://github.com/apache/flink/pull/6292" class="external-link"
+            target="_blank" rel="nofollow noopener">https://github.com/apache/flink/pull/6292</a></p>
+
+
+            <p>    +1 to merge this now but I think in the long run we should make
+            the metrics system not rely on metrics objects being unique (or them correctly
+            implementing `hashCode()`/`equals()`).</p>'
+          '@author': githubbot
+          '@created': Wed, 11 Jul 2018 08:48:39 +0000
+          '@id': '16539741'
+        - '#text': '<p>Github user zentol commented on the issue:</p>
+
+
+            <p>    <a href="https://github.com/apache/flink/pull/6292" class="external-link"
+            target="_blank" rel="nofollow noopener">https://github.com/apache/flink/pull/6292</a></p>
+
+
+            <p>    Relying on hashCode/equals implementations would mean we could
+            no longer use lambdas/method references for gauges which imo isn''t a
+            viable option.</p>'
+          '@author': githubbot
+          '@created': Wed, 11 Jul 2018 10:01:47 +0000
+          '@id': '16539818'
+        - '#text': '<p>Github user asfgit closed the pull request at:</p>
+
+
+            <p>    <a href="https://github.com/apache/flink/pull/6292" class="external-link"
+            target="_blank" rel="nofollow noopener">https://github.com/apache/flink/pull/6292</a></p>'
+          '@author': githubbot
+          '@created': Wed, 11 Jul 2018 10:07:19 +0000
+          '@id': '16539827'
+        - '#text': '<p>master: 60df251ad34ac033ed6c4423a69765739cb04199<br/>
+
+            1.5: a0a810720d251fb9ab6a4cf9d995828d99a3f2c8</p>'
+          '@author': zentol
+          '@created': Wed, 11 Jul 2018 10:08:39 +0000
+          '@id': '16539838'
+      component: Runtime / Metrics
+      created: Tue, 10 Jul 2018 10:41:18 +0000
+      customfields:
+        customfield:
+        - '@id': customfield_12310310
+          '@key': com.atlassian.jira.toolkit:attachments
+          customfieldname: Attachment count
+          customfieldvalues:
+            customfieldvalue: '0.0'
+        - '@id': customfield_12314020
+          '@key': com.atlassian.jira.plugins.jira-development-integration-plugin:devsummary
+          customfieldname: Development
+          customfieldvalues: null
+        - '@id': customfield_12313422
+          '@key': com.atlassian.jirafisheyeplugin:jobcheckbox
+          customfieldname: Enable Automatic Patch Review
+          customfieldvalues:
+            customfieldvalue: 'false'
+        - '@id': customfield_12310420
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Global Rank
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+        - '@id': customfield_12312521
+          '@key': com.atlassian.jira.toolkit:LastCommentDate
+          customfieldname: Last public comment date
+          customfieldvalues: 6 years, 49 weeks, 3 days ago
+        - '@id': customfield_12311820
+          '@key': com.pyxis.greenhopper.jira:gh-lexo-rank
+          customfieldname: Rank
+          customfieldvalues:
+            customfieldvalue: '0|i3vpvz:'
+        - '@id': customfield_12310920
+          '@key': com.pyxis.greenhopper.jira:gh-global-rank
+          customfieldname: Rank (Obsolete)
+          customfieldvalues:
+            customfieldvalue: '9223372036854775807'
+      description: '<p>In <a href="https://issues.apache.org/jira/browse/FLINK-4812"
+        title="Report Watermark metrics in all operators" class="issue-link" data-issue-key="FLINK-4812"><del>FLINK-4812</del></a>
+        we reworked the watermark metrics to be exposed for each operator.<br/>
+
+        In <a href="https://issues.apache.org/jira/browse/FLINK-9467" title="No Watermark
+        display on Web UI" class="issue-link" data-issue-key="FLINK-9467"><del>FLINK-9467</del></a>
+        we made further modifications to also expose these metrics again for tasks.</p>
+
+
+        <p>In both JIRAs we register a single metric multiple times, for example the
+        input watermark metric is registered for both the first operator in the task,
+        and the task itself.</p>
+
+
+        <p>Unfortunately, the metric system assumes metric objects to be unique, as
+        can be seen in virtually all reporter implementations as well as the MetricQueryService.</p>
+
+
+        <p>As a result the watermark metrics override each other in the reporter,
+        causing only one to be reported, whichever was registered last.</p>'
+      due: null
+      environment: null
+      fixVersion:
+      - 1.5.1
+      - 1.6.0
+      key:
+        '#text': FLINK-9789
+        '@id': '13171113'
+      labels:
+        label: pull-request-available
+      link: https://issues.apache.org/jira/browse/FLINK-9789
+      priority:
+        '#text': Blocker
+        '@iconUrl': https://issues.apache.org/jira/images/icons/priorities/blocker.svg
+        '@id': '1'
+      project:
+        '#text': Flink
+        '@id': '12315522'
+        '@key': FLINK
+      reporter:
+        '#text': Chesnay Schepler
+        '@username': chesnay
+      resolution:
+        '#text': Fixed
+        '@id': '1'
+      resolved: Tue, 10 Jul 2018 18:48:19 +0000
+      status:
+        '#text': Closed
+        '@description': The issue is considered finished, the resolution is correct.
+          Issues which are not closed can be reopened.
+        '@iconUrl': https://issues.apache.org/jira/images/icons/statuses/closed.png
+        '@id': '6'
+      statusCategory:
+        '@colorName': green
+        '@id': '3'
+        '@key': done
+      subtasks: null
+      summary: Watermark metrics for an operator&task shadow each other
+      title: '[FLINK-9789] Watermark metrics for an operator&task shadow each other'
+      type:
+        '#text': Bug
+        '@iconUrl': https://issues.apache.org/jira/secure/viewavatar?size=xsmall&avatarId=21133&avatarType=issuetype
+        '@id': '1'
+      updated: Wed, 11 Jul 2018 10:08:39 +0000
+      version:
+      - 1.5.0
+      - 1.6.0
+      votes: '0'
+      watches: '2'
+    language: en-uk
+    link: https://issues.apache.org/jira
+    title: ASF JIRA
