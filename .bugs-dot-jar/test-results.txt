@@ -1,0 +1,283 @@
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for org.apache.flink:flink-table-runtime-blink_2.11:jar:1.12-SNAPSHOT
+[[1;33mWARNING[m] 'artifactId' contains an expression but should be a constant. @ org.apache.flink:flink-table-runtime-blink_${scala.binary.version}:1.12-SNAPSHOT, /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-table/flink-table-runtime-blink/pom.xml, line 30, column 14
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m----------< [0;36morg.apache.flink:flink-table-runtime-blink_2.11[0;1m >-----------[m
+[[1;34mINFO[m] [1mBuilding Flink : Table : Runtime Blink 1.12-SNAPSHOT[m
+[[1;34mINFO[m] [1m--------------------------------[ jar ]---------------------------------[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-checkstyle-plugin:2.17:check[m [1m(validate)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven-version)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-maven)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(ban-unsafe-jackson)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(forbid-log4j-1)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-enforcer-plugin:3.0.0-M1:enforce[m [1m(enforce-versions)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mdirectory-maven-plugin:0.1:highest-basedir[m [1m(directories)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] Highest basedir set to: /home/carol/Downloads/Workspaces/bugs-dot-jar/flink
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-remote-resources-plugin:1.5:process[m [1m(process-resource-bundles)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:resources[m [1m(default-resources)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:compile[m [1m(default-compile)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-resources-plugin:3.1.0:testResources[m [1m(default-testResources)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] Using 'UTF-8' encoding to copy filtered resources.
+[[1;34mINFO[m] Copying 1 resource
+[[1;34mINFO[m] Copying 3 resources
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-compiler-plugin:3.8.0:testCompile[m [1m(default-testCompile)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] Nothing to compile - all classes are up to date
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--- [0;32mmaven-surefire-plugin:2.22.1:test[m [1m(default-test)[m @ [36mflink-table-runtime-blink_2.11[0;1m ---[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m]  T E S T S
+[[1;34mINFO[m] -------------------------------------------------------
+[[1;34mINFO[m] Running org.apache.flink.table.filesystem.[1mPartitionWriterTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.filesystem.[1mFileSystemOutputFormatTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.filesystem.[1mRowPartitionComputerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.filesystem.[1mFileSystemCommitterTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.generated.[1mCompileUtilsTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.filesystem.stream.[1mStreamingFileWriterTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.aggregate.[1mHashAggTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.aggregate.[1mBytesHashMapTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.over.[1mBufferDataOverWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.over.[1mNonBufferOverWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.over.[1mProcTimeRangeBoundedPrecedingFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.over.[1mRowTimeRangeBoundedPrecedingFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.348 s - in org.apache.flink.table.filesystem.[1mRowPartitionComputerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.rank.[1mAppendOnlyTopNFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.rank.[1mUpdatableTopNFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.rank.[1mRetractableTopNFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.502 s - in org.apache.flink.table.filesystem.[1mPartitionWriterTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.wmassigners.[1mProcTimeMiniBatchAssignerOperatorTest[m
+/* 1 */public class111 Main {
+/* 2 */  int i;
+/* 3 */  int j;
+/* 4 */}
+
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.155 s - in org.apache.flink.table.runtime.generated.[1mCompileUtilsTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.wmassigners.[1mWatermarkAssignerOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.339 s - in org.apache.flink.table.filesystem.[1mFileSystemOutputFormatTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.wmassigners.[1mRowTimeMiniBatchAssginerOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.543 s - in org.apache.flink.table.runtime.operators.aggregate.[1mHashAggTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.sort.[1mRowTimeSortOperatorTest[m
+[[1;31mERROR[m] [1;31mTests [0;1mrun: [0;1m1[m, [1;31mFailures: [0;1;31m1[m, Errors: 0, Skipped: 0, Time elapsed: 2.806 s[1;31m <<< FAILURE![m - in org.apache.flink.table.filesystem.stream.[1mStreamingFileWriterTest[m
+[[1;31mERROR[m] testFailover(org.apache.flink.table.filesystem.stream.StreamingFileWriterTest)  Time elapsed: 2.553 s  <<< FAILURE!
+java.lang.AssertionError: expected:<[1, 2, 3, 4]> but was:<[3, 4]>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at org.apache.flink.table.filesystem.stream.StreamingFileWriterTest.testFailover(StreamingFileWriterTest.java:94)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:48)
+	at org.junit.rules.RunRules.evaluate(RunRules.java:20)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.645 s - in org.apache.flink.table.runtime.operators.over.[1mRowTimeRangeBoundedPrecedingFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.sort.[1mProcTimeSortOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.sort.[1mBinaryExternalSorterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.064 s - in org.apache.flink.table.filesystem.[1mFileSystemCommitterTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.sort.[1mBinaryMergeIteratorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.643 s - in org.apache.flink.table.runtime.operators.wmassigners.[1mProcTimeMiniBatchAssignerOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.flink.table.runtime.operators.sort.[1mBinaryMergeIteratorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.234 s - in org.apache.flink.table.runtime.operators.sort.[1mProcTimeSortOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.sort.[1mSortUtilTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.sort.[1mStreamSortOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.sort.[1mBufferedKVExternalSorterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.flink.table.runtime.operators.sort.[1mSortUtilTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.window.assigners.[1mTumblingWindowAssignerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.036 s - in org.apache.flink.table.runtime.operators.window.assigners.[1mTumblingWindowAssignerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.window.assigners.[1mSessionWindowAssignerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.146 s - in org.apache.flink.table.runtime.operators.over.[1mProcTimeRangeBoundedPrecedingFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.window.assigners.[1mSlidingWindowAssignerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.091 s - in org.apache.flink.table.runtime.operators.wmassigners.[1mRowTimeMiniBatchAssginerOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.window.grouping.[1mHeapWindowsGroupingTest[m
+valid window trigger
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.063 s - in org.apache.flink.table.runtime.operators.window.assigners.[1mSlidingWindowAssignerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.05 s - in org.apache.flink.table.runtime.operators.window.grouping.[1mHeapWindowsGroupingTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.window.[1mWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.window.triggers.[1mTriggersTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.flink.table.runtime.operators.window.triggers.[1mTriggersTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.window.[1mWindowOperatorContractTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.476 s - in org.apache.flink.table.runtime.operators.wmassigners.[1mWatermarkAssignerOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.533 s - in org.apache.flink.table.runtime.operators.sort.[1mStreamSortOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.bundle.trigger.[1mCountCoBundleTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.window.[1mMergingWindowSetTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.015 s - in org.apache.flink.table.runtime.operators.bundle.trigger.[1mCountCoBundleTriggerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.bundle.trigger.[1mCountBundleTriggerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.013 s - in org.apache.flink.table.runtime.operators.bundle.trigger.[1mCountBundleTriggerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 s - in org.apache.flink.table.runtime.operators.window.[1mMergingWindowSetTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.bundle.[1mMapBundleOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.deduplicate.[1mDeduplicateKeepLastRowFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.075 s - in org.apache.flink.table.runtime.operators.bundle.[1mMapBundleOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.deduplicate.[1mDeduplicateKeepFirstRowFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.87 s - in org.apache.flink.table.runtime.operators.over.[1mBufferDataOverWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.deduplicate.[1mMiniBatchDeduplicateKeepLastRowFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.579 s - in org.apache.flink.table.runtime.operators.deduplicate.[1mDeduplicateKeepLastRowFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.deduplicate.[1mMiniBatchDeduplicateKeepFirstRowFunctionTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.305 s - in org.apache.flink.table.runtime.operators.over.[1mNonBufferOverWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.interval.[1mProcTimeIntervalJoinTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.156 s - in org.apache.flink.table.runtime.operators.deduplicate.[1mMiniBatchDeduplicateKeepFirstRowFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.interval.[1mRowTimeIntervalJoinTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.736 s - in org.apache.flink.table.runtime.operators.deduplicate.[1mDeduplicateKeepFirstRowFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mInt2HashJoinOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.004 s - in org.apache.flink.table.runtime.operators.sort.[1mRowTimeSortOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mAsyncLookupJoinHarnessTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.44 s - in org.apache.flink.table.runtime.operators.window.assigners.[1mSessionWindowAssignerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mLookupJoinHarnessTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m11[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.462 s - in org.apache.flink.table.runtime.operators.rank.[1mAppendOnlyTopNFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mInt2SortMergeJoinOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.217 s - in org.apache.flink.table.runtime.operators.join.[1mLookupJoinHarnessTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mString2HashJoinOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m15[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.308 s - in org.apache.flink.table.runtime.operators.rank.[1mUpdatableTopNFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mRandomSortMergeOuterJoinTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.574 s - in org.apache.flink.table.runtime.operators.join.[1mAsyncLookupJoinHarnessTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mSortMergeJoinIteratorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.489 s - in org.apache.flink.table.runtime.operators.join.interval.[1mRowTimeIntervalJoinTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mRandomSortMergeInnerJoinTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.647 s - in org.apache.flink.table.runtime.operators.window.[1mWindowOperatorContractTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.operators.join.[1mString2SortMergeJoinOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.076 s - in org.apache.flink.table.runtime.operators.aggregate.[1mBytesHashMapTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.io.[1mCompressedHeaderlessChannelTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m28[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.892 s - in org.apache.flink.table.runtime.operators.window.[1mWindowOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mArrayDataSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.634 s - in org.apache.flink.table.runtime.operators.deduplicate.[1mMiniBatchDeduplicateKeepLastRowFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mStringDataSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m1[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.53 s - in org.apache.flink.table.runtime.io.[1mCompressedHeaderlessChannelTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mExternalSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.365 s - in org.apache.flink.table.runtime.typeutils.[1mArrayDataSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mTimestampDataSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.992 s - in org.apache.flink.table.runtime.operators.join.[1mString2HashJoinOperatorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mExternalTypeInfoTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 s - in org.apache.flink.table.runtime.typeutils.[1mExternalTypeInfoTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.901 s - in org.apache.flink.table.runtime.operators.sort.[1mBufferedKVExternalSorterTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mBigDecimalTypeInfoTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mMapDataSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.402 s - in org.apache.flink.table.runtime.typeutils.[1mStringDataSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.048 s - in org.apache.flink.table.runtime.typeutils.[1mBigDecimalTypeInfoTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mRowDataSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mRawValueDataSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.273 s - in org.apache.flink.table.runtime.typeutils.[1mRawValueDataSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mInternalTypeInfoTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.009 s - in org.apache.flink.table.runtime.typeutils.[1mInternalTypeInfoTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mDecimalSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.448 s - in org.apache.flink.table.runtime.typeutils.[1mMapDataSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mInternalTypeInfosTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.079 s - in org.apache.flink.table.runtime.typeutils.[1mInternalTypeInfosTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.typeutils.[1mBinaryRowSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.258 s - in org.apache.flink.table.runtime.operators.join.interval.[1mProcTimeIntervalJoinTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.util.[1mResettableExternalBufferTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.259 s - in org.apache.flink.table.runtime.typeutils.[1mDecimalSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.types.[1mLogicalTypeAssignableTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m6[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.622 s - in org.apache.flink.table.runtime.operators.join.[1mSortMergeJoinIteratorTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.types.[1mDataTypePrecisionFixerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m31[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.207 s - in org.apache.flink.table.runtime.types.[1mLogicalTypeAssignableTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m64[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.124 s - in org.apache.flink.table.runtime.typeutils.[1mTimestampDataSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.hashtable.[1mLongHashTableTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m16[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.327 s - in org.apache.flink.table.runtime.typeutils.[1mBinaryRowSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.runtime.hashtable.[1mBinaryHashTableTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mRowDataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m5[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.091 s - in org.apache.flink.table.data.[1mRowDataTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mTimestampDataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m10[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.246 s - in org.apache.flink.table.runtime.types.[1mDataTypePrecisionFixerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.01 s - in org.apache.flink.table.data.[1mTimestampDataTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.binary.[1mBinarySegmentUtilsTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m7[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.007 s - in org.apache.flink.table.data.binary.[1mBinarySegmentUtilsTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mDataFormatConvertersTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mBinaryRowDataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m19[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.534 s - in org.apache.flink.table.runtime.operators.rank.[1mRetractableTopNFunctionTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mNestedRowDataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.14 s - in org.apache.flink.table.data.[1mNestedRowDataTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mDataStructureConvertersTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m72[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.381 s - in org.apache.flink.table.runtime.typeutils.[1mRowDataSerializerTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mBinaryStringDataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m2[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.429 s - in org.apache.flink.table.data.[1mDataFormatConvertersTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mBinaryArrayDataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m9[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.011 s - in org.apache.flink.table.data.[1mBinaryArrayDataTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.[1mDecimalDataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.016 s - in org.apache.flink.table.data.[1mDecimalDataTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.vector.[1mVectorizedColumnBatchTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.047 s - in org.apache.flink.table.data.vector.[1mVectorizedColumnBatchTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m96[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.218 s - in org.apache.flink.table.data.[1mBinaryStringDataTest[m
+[[1;34mINFO[m] Running org.apache.flink.table.data.vector.[1mColumnVectorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m11[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.026 s - in org.apache.flink.table.data.vector.[1mColumnVectorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m80[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.871 s - in org.apache.flink.table.runtime.typeutils.[1mExternalSerializerTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m8[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.727 s - in org.apache.flink.table.runtime.operators.join.[1mString2SortMergeJoinOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m35[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.839 s - in org.apache.flink.table.data.[1mDataStructureConvertersTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.801 s - in org.apache.flink.table.runtime.operators.join.[1mInt2HashJoinOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m12[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.205 s - in org.apache.flink.table.runtime.operators.join.[1mInt2SortMergeJoinOperatorTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m28[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.181 s - in org.apache.flink.table.data.[1mBinaryRowDataTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m4[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.819 s - in org.apache.flink.table.runtime.operators.join.[1mRandomSortMergeInnerJoinTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m29[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.192 s - in org.apache.flink.table.runtime.util.[1mResettableExternalBufferTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m3[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.504 s - in org.apache.flink.table.runtime.operators.join.[1mRandomSortMergeOuterJoinTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m28[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.659 s - in org.apache.flink.table.runtime.operators.sort.[1mBinaryExternalSorterTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m20[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.395 s - in org.apache.flink.table.runtime.hashtable.[1mLongHashTableTest[m
+[[1;34mINFO[m] [1;32mTests run: [0;1;32m32[m, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 69.739 s - in org.apache.flink.table.runtime.hashtable.[1mBinaryHashTableTest[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Results:
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mFailures: [m
+[[1;31mERROR[m] [1;31m  StreamingFileWriterTest.testFailover:94 expected:<[1, 2, 3, 4]> but was:<[3, 4]>[m
+[[1;34mINFO[m] 
+[[1;31mERROR[m] [1;31mTests run: 923, Failures: 1, Errors: 0, Skipped: 0[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  01:23 min
+[[1;34mINFO[m] Finished at: 2025-06-14T13:07:13+01:00
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Failed to execute goal [32morg.apache.maven.plugins:maven-surefire-plugin:2.22.1:test[m [1m(default-test)[m on project [36mflink-table-runtime-blink_2.11[m: [1;31mThere are test failures.[m
+[[1;31mERROR[m] [1;31m[m
+[[1;31mERROR[m] [1;31mPlease refer to /home/carol/Downloads/Workspaces/bugs-dot-jar/flink/flink-table/flink-table-runtime-blink/target/surefire-reports for the individual test results.[m
+[[1;31mERROR[m] [1;31mPlease refer to dump files (if any exist) [date].dump, [date]-jvmRun[N].dump and [date].dumpstream.[m
+[[1;31mERROR[m] -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
